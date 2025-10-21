@@ -1,2050 +1,851 @@
-//Tue Oct 21 2025 06:32:46 GMT+0000 (Coordinated Universal Time)
+//Tue Oct 21 2025 06:35:12 GMT+0000 (Coordinated Universal Time)
 //Base:<url id="cv1cref6o68qmpt26ol0" type="url" status="parsed" title="GitHub - echo094/decode-js: JS混淆代码的AST分析工具 AST analysis tool for obfuscated JS code" wc="2165">https://github.com/echo094/decode-js</url>
 //Modify:<url id="cv1cref6o68qmpt26olg" type="url" status="parsed" title="GitHub - smallfawn/decode_action: 世界上本来不存在加密，加密的人多了，也便成就了解密" wc="741">https://github.com/smallfawn/decode_action</url>
+console.log("wmsafe:encrypt.js触发成功");
+var cdn = cdn || function (_0x121a87, _0x1f5304) {
+  var _0x5cb2f7 = {},
+    _0x51b11c = _0x5cb2f7.lib = {},
+    _0x4354a0 = function () {},
+    _0xf285b5 = _0x51b11c.Base = {
+      "extend": function (_0x57526f) {
+        {
+          _0x4354a0.prototype = this;
+          var _0x817c07 = new _0x4354a0();
+          _0x57526f && _0x817c07.mixIn(_0x57526f);
+          !_0x817c07.hasOwnProperty("init") && (_0x817c07.init = function () {
+            _0x817c07.$super.init.apply(this, arguments);
+          });
+          _0x817c07.init.prototype = _0x817c07;
+          _0x817c07.$super = this;
+          return _0x817c07;
+        }
+      },
+      "create": function () {
+        var _0x2b1887 = this.extend();
+        _0x2b1887.init.apply(_0x2b1887, arguments);
+        return _0x2b1887;
+      },
+      "init": function () {},
+      "mixIn": function (_0x4de520) {
+        {
+          var _0x1c92c6;
+          for (_0x1c92c6 in _0x4de520) {
+            _0x4de520.hasOwnProperty(_0x1c92c6) && (this[_0x1c92c6] = _0x4de520[_0x1c92c6]);
+          }
+          _0x4de520.hasOwnProperty("toString") && (this.toString = _0x4de520.toString);
+        }
+      },
+      "clone": function () {
+        return this.init.prototype.extend(this);
+      }
+    },
+    _0x433fc9 = _0x51b11c.WordArray = _0xf285b5.extend({
+      "init": function (_0x2007e8, _0x1ac40c) {
+        _0x2007e8 = this.words = _0x2007e8 || [];
+        this.sigBytes = _0x1ac40c != _0x1f5304 ? _0x1ac40c : 4 * _0x2007e8.length;
+      },
+      "toString": function (_0xe6661a) {
+        return (_0xe6661a || _0x1245d4).stringify(this);
+      },
+      "concat": function (_0x1eea20) {
+        {
+          var _0x32aae1 = this.words,
+            _0x2e6193 = _0x1eea20.words,
+            _0x492726 = this.sigBytes;
+          _0x1eea20 = _0x1eea20.sigBytes;
+          this.clamp();
+          if (_0x492726 % 4) {
+            var _0x1b301d = 0;
+            for (; _0x1b301d < _0x1eea20; _0x1b301d++) {
+              _0x32aae1[_0x492726 + _0x1b301d >>> 2] |= (_0x2e6193[_0x1b301d >>> 2] >>> 24 - 8 * (_0x1b301d % 4) & 255) << 24 - 8 * ((_0x492726 + _0x1b301d) % 4);
+            }
+          } else {
+            if (65535 < _0x2e6193.length) {
+              _0x1b301d = 0;
+              for (; _0x1b301d < _0x1eea20; _0x1b301d += 4) {
+                _0x32aae1[_0x492726 + _0x1b301d >>> 2] = _0x2e6193[_0x1b301d >>> 2];
+              }
+            } else _0x32aae1.push.apply(_0x32aae1, _0x2e6193);
+          }
+          this.sigBytes += _0x1eea20;
+          return this;
+        }
+      },
+      "clamp": function () {
+        var _0x378296 = this.words,
+          _0x22b6b8 = this.sigBytes;
+        _0x378296[_0x22b6b8 >>> 2] &= 4294967295 << 32 - 8 * (_0x22b6b8 % 4);
+        _0x378296.length = _0x121a87.ceil(_0x22b6b8 / 4);
+      },
+      "clone": function () {
+        var _0x23a311 = _0xf285b5.clone.call(this);
+        _0x23a311.words = this.words.slice(0);
+        return _0x23a311;
+      },
+      "random": function (_0x472b85) {
+        {
+          var _0x50e8a7 = [],
+            _0x2f8459 = 0;
+          for (; _0x2f8459 < _0x472b85; _0x2f8459 += 4) {
+            _0x50e8a7.push(4294967296 * _0x121a87.random() | 0);
+          }
+          return new _0x433fc9.init(_0x50e8a7, _0x472b85);
+        }
+      }
+    }),
+    _0x976700 = _0x5cb2f7.enc = {},
+    _0x1245d4 = _0x976700.Hex = {
+      "stringify": function (_0x23dce3) {
+        var _0x43468e = _0x23dce3.words;
+        _0x23dce3 = _0x23dce3.sigBytes;
+        var _0x936798 = [],
+          _0x21319c = 0;
+        for (; _0x21319c < _0x23dce3; _0x21319c++) {
+          {
+            var _0x54da0c = _0x43468e[_0x21319c >>> 2] >>> 24 - 8 * (_0x21319c % 4) & 255;
+            _0x936798.push((_0x54da0c >>> 4).toString(16));
+            _0x936798.push((_0x54da0c & 15).toString(16));
+          }
+        }
+        return _0x936798.join("");
+      },
+      "parse": function (_0x3daf8e) {
+        var _0x29c005 = _0x3daf8e.length;
+        var _0xfed892 = [];
+        var _0x26509a = 0;
+        for (; _0x26509a < _0x29c005; _0x26509a += 2) {
+          _0xfed892[_0x26509a >>> 3] |= parseInt(_0x3daf8e.substr(_0x26509a, 2), 16) << 24 - 4 * (_0x26509a % 8);
+        }
+        return new _0x433fc9.init(_0xfed892, _0x29c005 / 2);
+      }
+    },
+    _0x34e92c = _0x976700.Latin1 = {
+      "stringify": function (_0x1b969d) {
+        var _0x43c759 = _0x1b969d.words;
+        _0x1b969d = _0x1b969d.sigBytes;
+        var _0x4d459a = [],
+          _0x520699 = 0;
+        for (; _0x520699 < _0x1b969d; _0x520699++) {
+          _0x4d459a.push(String.fromCharCode(_0x43c759[_0x520699 >>> 2] >>> 24 - 8 * (_0x520699 % 4) & 255));
+        }
+        return _0x4d459a.join("");
+      },
+      "parse": function (_0x2d2b8e) {
+        {
+          var _0x50febc = _0x2d2b8e.length,
+            _0x53f571 = [],
+            _0x2973c4 = 0;
+          for (; _0x2973c4 < _0x50febc; _0x2973c4++) {
+            _0x53f571[_0x2973c4 >>> 2] |= (_0x2d2b8e.charCodeAt(_0x2973c4) & 255) << 24 - 8 * (_0x2973c4 % 4);
+          }
+          return new _0x433fc9.init(_0x53f571, _0x50febc);
+        }
+      }
+    },
+    _0x2cf4ae = _0x976700.Utf8 = {
+      "stringify": function (_0x4ff5d7) {
+        try {
+          return decodeURIComponent(escape(_0x34e92c.stringify(_0x4ff5d7)));
+        } catch (_0x564d6d) {
+          throw Error("Malformed UTF-8 data");
+        }
+      },
+      "parse": function (_0x47aa17) {
+        return _0x34e92c.parse(unescape(encodeURIComponent(_0x47aa17)));
+      }
+    },
+    _0x58fe5b = _0x51b11c.BufferedBlockAlgorithm = _0xf285b5.extend({
+      "reset": function () {
+        this._data = new _0x433fc9.init();
+        this._nDataBytes = 0;
+      },
+      "_append": function (_0x1977bd) {
+        if ("string" == typeof _0x1977bd) {
+          _0x1977bd = _0x2cf4ae.parse(_0x1977bd);
+        }
+        this._data.concat(_0x1977bd);
+        this._nDataBytes += _0x1977bd.sigBytes;
+      },
+      "_process": function (_0x33e7cc) {
+        {
+          var _0x5a2e8a = this._data,
+            _0x4a2739 = _0x5a2e8a.words,
+            _0x3e0988 = _0x5a2e8a.sigBytes,
+            _0x5aca44 = this.blockSize,
+            _0x31dffe = _0x3e0988 / (4 * _0x5aca44);
+          _0x31dffe = _0x33e7cc ? _0x121a87.ceil(_0x31dffe) : _0x121a87.max((_0x31dffe | 0) - this._minBufferSize, 0);
+          _0x33e7cc = _0x31dffe * _0x5aca44;
+          _0x3e0988 = _0x121a87.min(4 * _0x33e7cc, _0x3e0988);
+          if (_0x33e7cc) {
+            {
+              var _0x8a8bc9 = 0;
+              for (; _0x8a8bc9 < _0x33e7cc; _0x8a8bc9 += _0x5aca44) {
+                this._doProcessBlock(_0x4a2739, _0x8a8bc9);
+              }
+              _0x8a8bc9 = _0x4a2739.splice(0, _0x33e7cc);
+              _0x5a2e8a.sigBytes -= _0x3e0988;
+            }
+          }
+          return new _0x433fc9.init(_0x8a8bc9, _0x3e0988);
+        }
+      },
+      "clone": function () {
+        {
+          var _0x18c06b = _0xf285b5.clone.call(this);
+          _0x18c06b._data = this._data.clone();
+          return _0x18c06b;
+        }
+      },
+      "_minBufferSize": 0
+    });
+  _0x51b11c.Hasher = _0x58fe5b.extend({
+    "cfg": _0xf285b5.extend(),
+    "init": function (_0x11a878) {
+      this.cfg = this.cfg.extend(_0x11a878);
+      this.reset();
+    },
+    "reset": function () {
+      _0x58fe5b.reset.call(this);
+      this._doReset();
+    },
+    "update": function (_0x3e59f0) {
+      this._append(_0x3e59f0);
+      this._process();
+      return this;
+    },
+    "finalize": function (_0x43e335) {
+      _0x43e335 && this._append(_0x43e335);
+      return this._doFinalize();
+    },
+    "blockSize": 16,
+    "_createHelper": function (_0x31e8fc) {
+      return function (_0x5d4edf, _0x33b4bb) {
+        return new _0x31e8fc.init(_0x33b4bb).finalize(_0x5d4edf);
+      };
+    },
+    "_createHmacHelper": function (_0x3c4796) {
+      return function (_0x345426, _0x483e14) {
+        return new _0x1fc8a7.HMAC.init(_0x3c4796, _0x483e14).finalize(_0x345426);
+      };
+    }
+  });
+  var _0x1fc8a7 = _0x5cb2f7.algo = {};
+  return _0x5cb2f7;
+}(Math);
 (function () {
-  const K = {
-    GpvQv: function (Y4, Y5) {
-      return Y4 === Y5;
-    },
-    eSjol: "未在周三的对战列表中找到您的军团。",
-    YLqGZ: function (Y4, Y5) {
-      return Y4 === Y5;
-    },
-    ExrBa: "LJNAH",
-    CXgOR: "bzIgK",
-    xmiNf: function (Y4, Y5) {
-      return Y4 !== Y5;
-    },
-    BPFxH: "lHXlT",
-    vVlXa: function (Y4, Y5) {
-      return Y4 === Y5;
-    },
-    XEqnP: "aYYYT",
-    xGwOM: "内部错误：无法访问GVG模块。",
-    CmAzN: function (Y4, Y5) {
-      return Y4 === Y5;
-    },
-    HDUQn: "CAKqB",
-    wQPZk: "clnDf",
-    IgVCp: "[咸鱼助手][排位预测] 创建按钮时发生错误:",
-    rYUCk: function (Y4, Y5) {
-      return Y4 !== Y5;
-    },
-    TWiZC: "wJexC",
-    EqUHZ: "WVfZk",
-    dXwKs: "(((.+)+)+)+$",
-    ewbMK: "[咸鱼助手][排位预测]克隆数据失败:",
-    USdVP: "VEpEZ",
-    XcmAp: "wuIaL",
-    JefhE: "LwiOy",
-    tAteG: "jciam",
-    AZfCC: "错误：无法加载游戏弹窗组件！",
-    dRKmc: function (Y4, Y5) {
-      return Y4 === Y5;
-    },
-    Juiti: "bWdAT",
-    OWiNs: "TipsManager",
-    CTHYb: "ModuleManager",
-    DpuDx: "Configs",
-    aSeST: function (Y4, Y5) {
-      return Y4 === Y5;
-    },
-    smGsD: "未找到有效的战报数据！",
-    ybbwy: "正在生成Excel报表...",
-    DeDtO: "玩家汇总",
-    pogFm: "战斗详情",
-    rfxsK: "[咸鱼助手][盐场战报] 生成Excel报表时发生错误:",
-    dZNRE: "生成报表失败，请查看控制台！",
-    NSAPL: "[咸鱼助手][淬炼增强] 创建自定义UI时出错",
-    fpjSE: "qsRLa",
-    Nzfqj: "gIzrj",
-    tezVD: "function *\\( *\\)",
-    ISDlV: "\\+\\+ *(?:[a-zA-Z_$][0-9a-zA-Z_$]*)",
-    tUJRH: function (Y4, Y5) {
-      return Y4(Y5);
-    },
-    aqCkb: "init",
-    XDuDh: function (Y4, Y5) {
-      return Y4 + Y5;
-    },
-    nmnrD: "chain",
-    mOqdf: "input",
-    eXVTV: "MTCAQ",
-    NYaxw: "VAqcD",
-    Uckpy: function (Y4, Y5) {
-      return Y4 !== Y5;
-    },
-    PxjGJ: "UusCs",
-    vjIGw: "fjhrU",
-    dscGn: function (Y4) {
-      return Y4();
-    },
-    CVLyh: "kTciS",
-    yccYN: function (Y4, Y5, Y6) {
-      return Y4(Y5, Y6);
-    },
-    vzBWq: "LegionWarReportDialog",
-    EoVar: function (Y4, Y5) {
-      return Y4 === Y5;
-    },
-    pibyi: "tpQzY",
-    SBnoc: "Jicsj",
-    XRxdK: "vvFnW",
-    CRAnn: "index-ui",
-    SjAHu: "NormalDialog",
-    weEEB: "确定关闭红色淬炼提醒弹窗吗?自动淬炼过程中如果遇到红色淬炼将不再出现确认弹窗，并会自动继续洗炼",
-    bCaQg: "QYFxj",
-    yPTpf: "ZFkaG",
-    jVJgb: function (Y4, Y5) {
-      return Y4 === Y5;
-    },
-    gcalo: "NGxEK",
-    jcjeq: "[咸鱼助手][排位预测] 注入数据模块时出错:",
-    CzpcJ: function (Y4, Y5) {
-      return Y4 === Y5;
-    },
-    xbWoe: "geiPz",
-    FLkvb: "oMrMC",
-    aCQsK: function (Y4, Y5) {
-      return Y4 === Y5;
-    },
-    kJkGp: "JwmrU",
-    KBUKe: function (Y4, Y5) {
-      return Y4(Y5);
-    },
-    RKNEy: function (Y4, Y5) {
-      return Y4 + Y5;
-    },
-    MFuSR: "return (function() ",
-    WmKTx: "{}.constructor(\"return this\")( )",
-    LtnPu: function (Y4) {
-      return Y4();
-    },
-    eanvp: function (Y4, Y5) {
-      return Y4 !== Y5;
-    },
-    bWRcV: "gWuao",
-    FsEkz: "log",
-    HGAna: "warn",
-    WRQcq: "info",
-    PMrZi: "error",
-    hGprd: "exception",
-    AEtXx: "table",
-    PNyJa: "trace",
-    XfuWx: function (Y4, Y5) {
-      return Y4 < Y5;
-    },
-    fNjZy: "EgJeK",
-    jELCi: "qQuol",
-    gNZvg: function (Y4, Y5) {
-      return Y4(Y5);
-    },
-    keXLG: function (Y4, Y5) {
-      return Y4(Y5);
-    },
-    vuGbC: "GVGRecordDialogNew",
-    VVvGC: "BoxPanel",
-    RQbPT: function (Y4, Y5) {
-      return Y4 + Y5;
-    },
-    MTrAT: function (Y4, Y5) {
-      return Y4 + Y5;
-    },
-    ryMbI: function (Y4, Y5) {
-      return Y4 * Y5;
-    },
-    FyOsW: function (Y4, Y5) {
-      return Y4 * Y5;
-    },
-    Otshm: function (Y4, Y5) {
-      return Y4 + Y5;
-    },
-    KBpYz: function (Y4, Y5) {
-      return Y4 * Y5;
-    },
-    lWyud: function (Y4, Y5) {
-      return Y4 * Y5;
-    },
-    HSSpx: "HelpTextDialog",
-    rvjpX: function (Y4, Y5) {
-      return Y4 !== Y5;
-    },
-    naljq: "gXLZR",
-    rzeEF: "jWxzh",
-    bxwJo: "qEsnB",
-    pgleC: "感谢您的同意，助手核心功能现已启用。",
-    CPdug: function (Y4, Y5) {
-      return Y4 !== Y5;
-    },
-    bvpoN: "KiYoP",
-    cTXcy: "您已拒绝协议，核心功能将不会启用。",
-    QwmWV: function (Y4, Y5) {
-      return Y4 === Y5;
-    },
-    DoZEt: "ZrQQD",
-    UcJRc: "GqmIE",
-    xjDoe: "yzJRd",
-    KwQkS: "luIDK",
-    ywtdj: function (Y4, Y5) {
-      return Y4 || Y5;
-    },
-    PpMfL: function (Y4, Y5) {
-      return Y4 === Y5;
-    },
-    HkqRM: "gPcAL",
-    mCvgb: "aWJzp",
-    bjLtl: "咸鱼助手 用户协议",
-    rvqpD: "请在使用前仔细阅读并同意以下条款：\n1.本脚本仅供学习和技术交流，禁止用于任何商业用途或游戏作弊行为\n2.使用本脚本所产生的任何风险（包括但不限于账号安全风险）均由用户自行承担，作者不承担任何责任\n3.不得利用本脚本侵犯游戏厂商的合法权益\n4.作者不对因使用或无法使用本脚本所造成的任何直接或间接损害负责。\n点击“同意”即表示您已阅读、理解并接受以上所有条款。",
-    cXbSM: "ntJnh",
-    YvvYN: "FJABR",
-    ubITN: "[咸鱼助手] 调用协议弹窗时发生错误:",
-    IBPHn: "aMeoI",
-    FHTLH: function (Y4, Y5) {
-      return Y4 || Y5;
-    },
-    XXZoJ: "[咸鱼助手][宝箱计算器] 创建按钮时发生错误:",
-    ppXxf: function (Y4, Y5) {
-      return Y4 - Y5;
-    },
-    jxMkj: function (Y4, Y5) {
-      return Y4 === Y5;
-    },
-    mkcHb: "vACot",
-    FxZtr: "debu",
-    bggor: "gger",
-    tMMlu: "stateObject",
-    fzoQH: function (Y4, Y5) {
-      return Y4 !== Y5;
-    },
-    SBEdO: "tQGkU",
-    avhhZ: "SAnPH",
-    KRuIW: "ebszY",
-    qnxTE: function (Y4, Y5) {
-      return Y4 * Y5;
-    },
-    fspIv: function (Y4, Y5) {
-      return Y4 * Y5;
-    },
-    IQqfs: function (Y4, Y5) {
-      return Y4 * Y5;
-    },
-    YTBwX: function (Y4, Y5) {
-      return Y4 !== Y5;
-    },
-    ILIAA: "VxeGS",
-    CDNoL: "KbvGc",
-    FNiYo: "[咸鱼助手][罐子计算器] 计算或显示时出错:",
-    xuVlp: function (Y4, Y5) {
-      return Y4(Y5);
-    },
-    NQfmU: function (Y4, Y5) {
-      return Y4 === Y5;
-    },
-    tuCRF: "ydVtx",
-    vhuqT: function (Y4, Y5) {
-      return Y4 !== Y5;
-    },
-    hsIBZ: "sJFwZ",
-    zHOwf: "ui_common",
-    jVsuw: "BtnInfo2",
-    ussLB: function (Y4, Y5) {
-      return Y4 !== Y5;
-    },
-    nORpf: "PdIvT",
-    wbbSy: function (Y4, Y5) {
-      return Y4 + Y5;
-    },
-    GIiMN: function (Y4, Y5) {
-      return Y4 + Y5;
-    },
-    CifGP: function (Y4, Y5) {
-      return Y4 === Y5;
-    },
-    fbbHZ: "inIJz",
-    MsRGW: function (Y4, Y5) {
-      return Y4 / Y5;
-    },
-    nngqA: function (Y4, Y5) {
-      return Y4 - Y5;
-    },
-    aXOvI: function (Y4, Y5) {
-      return Y4 - Y5;
-    },
-    BVybn: function (Y4, Y5) {
-      return Y4 !== Y5;
-    },
-    eNOeW: "QYIOm",
-    AfFIF: "lThyz",
-    IroQV: "[咸鱼助手][罐子计算器] 创建按钮时发生错误:",
-    hKHlA: function (Y4, Y5) {
-      return Y4 === Y5;
-    },
-    FZbMv: "rETTW",
-    SMUFq: "MnJAf",
-    uqoXW: "rTekO",
-    KKMSE: "BottleRobotDialog",
-    PdHJz: "fBekX",
-    sAxsK: "cIHmR",
-    AsEWa: "预测规则匹配失败，请检查脚本。",
-    SjZtv: "FTEcJ",
-    DHcXp: "档位错误",
-    LeQtC: function (Y4, Y5) {
-      return Y4 < Y5;
-    },
-    dQCpY: function (Y4, Y5) {
-      return Y4 >= Y5;
-    },
-    OTvWE: "lRpTe",
-    vbQLj: function (Y4, Y5) {
-      return Y4 % Y5;
-    },
-    pkEYo: function (Y4, Y5) {
-      return Y4 + Y5;
-    },
-    QOLQm: function (Y4, Y5) {
-      return Y4 + Y5;
-    },
-    OONor: "青铜宝箱",
-    PBDbx: function (Y4, Y5) {
-      return Y4 * Y5;
-    },
-    IYjCj: "黄金宝箱",
-    hMHEb: "铂金宝箱",
-    DSbSd: function (Y4, Y5) {
-      return Y4 + Y5;
-    },
-    ZWbME: function (Y4, Y5) {
-      return Y4 + Y5;
-    },
-    WZNqe: "钻石宝箱",
-    XfiyF: function (Y4, Y5) {
-      return Y4(Y5);
-    },
-    BgHfD: function (Y4, Y5) {
-      return Y4 + Y5;
-    },
-    VOYcr: function (Y4, Y5) {
-      return Y4 === Y5;
-    },
-    MQOCu: "dTfsK",
-    bZzqY: function (Y4, Y5) {
-      return Y4 + Y5;
-    },
-    XTMTZ: function (Y4, Y5) {
-      return Y4 * Y5;
-    },
-    ABdOC: function (Y4, Y5) {
-      return Y4 * Y5;
-    },
-    tqeBH: function (Y4, Y5) {
-      return Y4 + Y5;
-    },
-    gcHfv: function (Y4, Y5) {
-      return Y4 * Y5;
-    },
-    tiluk: function (Y4, Y5) {
-      return Y4 + Y5;
-    },
-    jFneM: function (Y4, Y5) {
-      return Y4 + Y5;
-    },
-    KuEHw: function (Y4, Y5) {
-      return Y4 * Y5;
-    },
-    HdgBd: function (Y4, Y5) {
-      return Y4 === Y5;
-    },
-    XpkSO: "HXfvr",
-    EclHp: function (Y4, Y5) {
-      return Y4 + Y5;
-    },
-    Gszaf: function (Y4, Y5) {
-      return Y4 / Y5;
-    },
-    pRNQJ: "function",
-    QFbBX: function (Y4) {
-      return Y4();
-    },
-    NeLIC: "qewCs",
-    FCEro: "YppiF",
-    vmwjd: "===== 宝箱计算结果 =====",
-    plOfK: function (Y4, Y5, Y6, Y7) {
-      return Y4(Y5, Y6, Y7);
-    },
-    zyQlN: "【全开】",
-    bUOXl: "---------------------",
-    vKUou: function (Y4, Y5, Y6, Y7) {
-      return Y4(Y5, Y6, Y7);
-    },
-    LFEOM: "【不开木质】",
-    Uvwyl: "【不开铂金】",
-    uKdkQ: "=========@苏御=========",
-    uMpav: "未知军团A",
-    RHeaU: "未知军团B",
-    ZMRwm: function (Y4, Y5) {
-      return Y4 !== Y5;
-    },
-    iPPVv: "YZqhT",
-    EFwPK: "LeoMe",
-    UzxxV: "PStna",
-    aJNtT: "QSNql",
-    WyarW: "xsxPu",
-    cqCCg: "BOX",
-    wumfA: "LanguageExt",
-    JZNtV: "未知宝箱",
-    UOSWT: "[咸鱼助手][淬炼增强] 找不到帮助按钮作为定位锚点。",
-    hNgZC: function (Y4, Y5) {
-      return Y4 || Y5;
-    },
-    bmzdQ: function (Y4, Y5) {
-      return Y4 + Y5;
-    },
-    KtyIf: "请先在左侧切换到[周三]的战报以缓存原始数据！",
-    fwpkZ: function (Y4, Y5) {
-      return Y4 === Y5;
-    },
-    bbMlP: function (Y4, Y5) {
-      return Y4 !== Y5;
-    },
-    osFfn: "RPgGq",
-    wBgey: "wRKdx",
-    UkNsp: "TSAPZ",
-    VGoiT: "luuOM",
-    JvoYc: "DUrlB",
-    xlkZh: "IIRYA",
-    qsqhJ: "[咸鱼助手][宝箱计算器] 计算或显示时出错:",
-    efYro: "CCwro",
-    VkArq: "PqkJj",
-    YrgZI: "OdZHP",
-    SFXAm: "YHOkk",
-    OdevP: "joaCd",
-    rSHus: "fKCmK",
-    bZlWB: function (Y4, Y5) {
-      return Y4 + Y5;
-    },
-    xlXAs: "AhcNg",
-    oOpjY: "TXzNj",
-    HIXtH: function (Y4, Y5) {
-      return Y4 - Y5;
-    },
-    nwdKY: "tUvHA",
-    LaGbg: "ygKER",
-    PwBkq: "ZXYFz",
-    NHSNW: "pFlIj",
-    UmjXm: function (Y4, Y5) {
-      return Y4 + Y5;
-    },
-    YfcdH: function (Y4, Y5, Y6, Y7) {
-      return Y4(Y5, Y6, Y7);
-    },
-    sdzXE: function (Y4, Y5) {
-      return Y4(Y5);
-    },
-    ayRxx: "[咸鱼助手] 所有模块已成功注入。脚本运行中...",
-    xuJGq: function (Y4, Y5) {
-      return Y4 || Y5;
-    },
-    evJiC: "ONabI",
-    pOBGG: "gAvEF",
-    JKKpy: "YZfih",
-    ogcWf: "YYcqp",
-    uTojD: "KPebk",
-    SIpVH: function (Y4, Y5) {
-      return Y4 + Y5;
-    },
-    hLdfi: function (Y4, Y5) {
-      return Y4 === Y5;
-    },
-    ENrAh: "gZyQn",
-    TTnde: "tyEAj",
-    vhrNq: "OqpJN",
-    gnQMQ: "GVGRecordData",
-    NPMuc: function (Y4, Y5) {
-      return Y4 !== Y5;
-    },
-    osbel: "xiEhG",
-    ygVRQ: "ZpmlL",
-    ROpfK: "[咸鱼助手][排位预测] 预测时出错:",
-    NeUCc: function (Y4, Y5) {
-      return Y4 || Y5;
-    },
-    iOmTl: "导出Excel",
-    SUYlC: function (Y4, Y5) {
-      return Y4 - Y5;
-    },
-    CVfsy: function (Y4, Y5) {
-      return Y4 - Y5;
-    },
-    VHWgO: "while (true) {}",
-    sTmek: "counter",
-    aKwMc: function (Y4, Y5) {
-      return Y4(Y5);
-    },
-    gTNXT: function (Y4, Y5) {
-      return Y4 + Y5;
-    },
-    QeyJF: function (Y4) {
-      return Y4();
-    },
-    XWVwj: function (Y4, Y5) {
-      return Y4 !== Y5;
-    },
-    WDycm: "NiXUk",
-    ljkgn: "dUjPq",
-    nTVTI: "dvuXF",
-    LoVAI: "zKECG",
-    ZlzEs: function (Y4, Y5) {
-      return Y4 / Y5;
-    },
-    SrxKU: function (Y4, Y5) {
-      return Y4 - Y5;
-    },
-    yhqjI: "TXCAW",
-    KDxhr: "YGpFG",
-    olceL: "CoZgM",
-    VbFtH: "mUkNt",
-    YTWtu: "Pefqn",
-    MlEBB: function (Y4, Y5) {
-      return Y4(Y5);
-    },
-    AVTvU: "4|5|3|2|1|0",
-    CywHu: "[咸鱼助手] 所有目标弹窗拦截器已部署完毕。",
-    jbQKX: "[咸鱼助手] 当前拦截列表:",
-    pMhJc: function (Y4, Y5) {
-      return Y4 !== Y5;
-    },
-    RXMJu: "[咸鱼助手] 开始批量部署无感弹窗拦截...",
-    HwIHM: function (Y4) {
-      return Y4();
-    },
-    oumoa: function (Y4, Y5) {
-      return Y4 === Y5;
-    },
-    ccXqw: "psOVr",
-    yAGcU: "[咸鱼助手][盐场战报] 添加按钮时出错:",
-    DWwfO: "loNdg",
-    OVtZo: function (Y4, Y5) {
-      return Y4 === Y5;
-    },
-    eNCYC: "lSFBK",
-    pdeWV: "GLWqb",
-    kOGWK: function (Y4, Y5) {
-      return Y4 !== Y5;
-    },
-    gxkBN: "eToBw",
-    cJpZJ: function (Y4, Y5) {
-      return Y4 !== Y5;
-    },
-    CtWEO: "wEqxm",
-    URwCM: function (Y4, Y5) {
-      return Y4 + Y5;
-    },
-    GtWHP: "pcdoK",
-    XdLQl: "UWWLb",
-    mLepz: "xOFdb",
-    ZQGYR: function (Y4, Y5) {
-      return Y4 === Y5;
-    },
-    MvccX: "nvvGe",
-    cdTKf: "LKaek",
-    lsQBK: "uEplE",
-    eaxCf: "lReJq",
-    lzMXY: "HcKwc",
-    Xeqbr: "MQnUZ",
-    Lwwjz: function (Y4, Y5) {
-      return Y4 !== Y5;
-    },
-    CPYJg: "mSDoW",
-    ARwUN: "NIzfZ",
-    luuJd: "WzYBE",
-    vrGIE: function (Y4, Y5) {
-      return Y4 !== Y5;
-    },
-    YzoKy: "kTsfW",
-    DyfwP: "dHCIc",
-    ESTUQ: "cjCFV",
-    EFXSb: function (Y4, Y5) {
-      return Y4 === Y5;
-    },
-    YbIau: function (Y4, Y5) {
-      return Y4 !== Y5;
-    },
-    aKkBD: "CkBOy",
-    zqhOO: function (Y4, Y5) {
-      return Y4 !== Y5;
-    },
-    znPPy: "JwEEW",
-    YZRuy: function (Y4, Y5) {
-      return Y4 / Y5;
-    },
-    zslQt: function (Y4, Y5) {
-      return Y4 > Y5;
-    },
-    oVzcp: function (Y4, Y5) {
-      return Y4 - Y5;
-    },
-    MrHGp: "0.00",
-    vnXHi: "0.00%",
-    dYqxc: "玩家名称",
-    xOzXc: "战力(亿)",
-    LWUii: "摧毁建筑",
-    MVwDn: "复活丹(估)",
-    QpYkK: "!cols",
-    jTNrD: function (Y4, Y5) {
-      return Y4 === Y5;
-    },
-    xydag: "NhsbV",
-    QWxar: "kmebO",
-    NwYlk: function (Y4, Y5) {
-      return Y4 > Y5;
-    },
-    vePZk: function (Y4, Y5) {
-      return Y4 / Y5;
-    },
-    AecUN: function (Y4, Y5) {
-      return Y4 - Y5;
-    },
-    UjaDe: "JzTfC",
-    zYcms: "moWnI",
-    YkjDj: "xNwiW",
-    QZgeC: function (Y4, Y5) {
-      return Y4 + Y5;
-    },
-    VHpcm: "sv-SE",
-    vKJVE: "无效时间",
-    QPbBw: function (Y4, Y5) {
-      return Y4 + Y5;
-    },
-    dMZAj: function (Y4, Y5) {
-      return Y4 !== Y5;
-    },
-    lvLEj: "KGKwP",
-    Idtse: "jYHxY",
-    zftOA: function (Y4, Y5) {
-      return Y4 === Y5;
-    },
-    cupVe: "SWVVq",
-    Rtmfa: function (Y4, Y5) {
-      return Y4 || Y5;
-    },
-    gxJev: "foEQT",
-    FklfB: "SCFuS",
-    cOdXq: "cWpDV",
-    qwJwE: "undefined",
-    KErei: function (Y4, Y5, Y6) {
-      return Y4(Y5, Y6);
-    },
-    HLMwp: "Pfwef",
-    vgYPB: "mgTRf",
-    dGQMt: function (Y4, Y5) {
-      return Y4 + Y5;
-    },
-    BCZUE: function (Y4, Y5) {
-      return Y4 + Y5;
-    },
-    Wzarv: function (Y4, Y5) {
-      return Y4 * Y5;
-    },
-    dUgbu: function (Y4, Y5) {
-      return Y4 + Y5;
-    },
-    WHSCf: function (Y4, Y5) {
-      return Y4 / Y5;
-    },
-    twCPc: function (Y4, Y5) {
-      return Y4 === Y5;
-    },
-    BowlT: "yOqaG",
-    ESJQF: "SKVKi",
-    aIFkv: "QZbzJ",
-    EgcqG: function (Y4, Y5) {
-      return Y4 < Y5;
-    },
-    QDdVG: "QqDlp",
-    ppyof: "rpKWh",
-    LsIli: "jaKee",
-    xEOAz: "玩家ID",
-    uIgKe: "对手ID",
-    TPtgd: "对手名称",
-    RKbaJ: "战斗结果",
-    PzIsb: "战斗时间",
-    bxJXb: "PspQl",
-    LfZXV: "JBkcH",
-    BxqWH: "MainPanel",
-    aARaD: function (Y4, Y5) {
-      return Y4 === Y5;
-    },
-    NQzob: "ZoCfR",
-    wxDyb: "aAXTC",
-    WqDBl: function (Y4, Y5) {
-      return Y4 === Y5;
-    },
-    uCTsU: "FtaEy",
-    DfSNR: "sisjY",
-    wThNF: function (Y4, Y5) {
-      return Y4(Y5);
-    },
-    XImHT: "MPpeZ",
-    DMbqm: "bCQpV",
-    FsOJV: function (Y4, Y5) {
-      return Y4 === Y5;
-    },
-    ZjRxY: "rOgCc",
-    yzJqc: "dNxhZ",
-    QDDpi: function (Y4, Y5) {
-      return Y4 === Y5;
-    },
-    ZtTUD: function (Y4, Y5) {
-      return Y4 === Y5;
-    },
-    rUKBj: "vsclC",
-    XpqpD: "fbLoH",
-    BQNyE: "Tsbvv",
-    zypPd: "qvUiI",
-    UxVmY: "data-index",
-    QvRtb: "[咸鱼助手] 成功注入宝箱增强模块 (无CD/跳过所有动画)！",
-    rtFzZ: "Cannot find module",
-    paWKd: "Vlypg",
-    uNGcU: "fhIEe",
-    xZlpF: "jlhHQ",
-    yUKll: "JhiAw",
-    RLuyR: "CIAOW",
-    NhypB: "QuenchStageUpDialog",
-    ccWFd: function (Y4, Y5) {
-      return Y4 === Y5;
-    },
-    EamUI: function (Y4, Y5) {
-      return Y4 < Y5;
-    },
-    ceNAv: function (Y4, Y5) {
-      return Y4 >= Y5;
-    },
-    sZKNx: function (Y4, Y5) {
-      return Y4 === Y5;
-    },
-    ldlox: "QZoNx",
-    kzYTL: "TThQH",
-    jLREy: "hwOkY",
-    HIXqn: "VvqhV",
-    pZASC: "CoGSO",
-    KeZKu: "XeeZH",
-    RehIP: "TOOdE",
-    UiyxB: function (Y4, Y5) {
-      return Y4 || Y5;
-    },
-    LpSvk: function (Y4, Y5) {
-      return Y4 - Y5;
-    },
-    XUAPD: function (Y4, Y5) {
-      return Y4 !== Y5;
-    },
-    NSEix: "oxwUt",
-    BFErM: "QadRq",
-    QPNkS: "kXuar",
-    YsPxS: function (Y4, Y5) {
-      return Y4 + Y5;
-    },
-    GhTzi: function (Y4, Y5) {
-      return Y4 + Y5;
-    },
-    cXDOG: function (Y4, Y5, Y6) {
-      return Y4(Y5, Y6);
-    },
-    smaYc: function (Y4, Y5) {
-      return Y4 === Y5;
-    },
-    VOuLh: "fkRqc",
-    XuAtQ: "qIhSA",
-    Pyili: "tXzjK",
-    wQEzm: "OGJDE",
-    DjbrD: "action",
-    waunv: function (Y4, Y5) {
-      return Y4 * Y5;
-    },
-    HBChD: function (Y4, Y5) {
-      return Y4 / Y5;
-    },
-    EpOEw: "cxtCc",
-    WcCMd: "kBYwQ",
-    OSDoq: "PwTRp",
-    ozLwJ: function (Y4, Y5) {
-      return Y4 !== Y5;
-    },
-    TIeKu: "CnEQs",
-    XXRRb: "wKwqH",
-    ZldLv: "ljhvx",
-    XTlxf: function (Y4, Y5) {
-      return Y4 === Y5;
-    },
-    NugoT: "wuVAp",
-    ARufQ: "pDNep",
-    HfHxp: "ipDrY",
-    GVyPU: "KxVDo",
-    kPjbu: "BtnCheckBox",
-    TpujO: "TextArea",
-    FnQBv: "跳过红色",
-    HGqZe: function (Y4, Y5) {
-      return Y4 + Y5;
-    },
-    mjAvx: function (Y4, Y5) {
-      return Y4 + Y5;
-    },
-    XSfWo: function (Y4, Y5) {
-      return Y4 - Y5;
-    },
-    FCxxL: "OFDNb",
-    VEefN: "bOOOR",
-    vyhNT: "tnNfr",
-    hRraN: "IfsPY",
-    XAVPJ: "rOsHU",
-    CDjla: "ytnbC",
-    RJYBA: function (Y4, Y5) {
-      return Y4 === Y5;
-    },
-    tkPYV: "BYwIe",
-    GWJHI: "VoeIR",
-    fUTMZ: function (Y4, Y5) {
-      return Y4 * Y5;
-    },
-    kxMOq: "nhcoY",
-    uxPmW: "bwKtR",
-    SCScY: "Diwgf",
-    LgyPm: function (Y4, Y5) {
-      return Y4 === Y5;
-    },
-    SdnCq: "MBrXK",
-    wvhHt: "aqReY",
-    gUVWr: "QrsKX",
-    donlS: "qRfmj",
-    rLYyj: function (Y4, Y5) {
-      return Y4 !== Y5;
-    },
-    FHIRJ: "rIRin",
-    kLDbb: "BhXPM",
-    OzcVg: function (Y4, Y5) {
-      return Y4 === Y5;
-    },
-    SCELS: "tvoXL",
-    TCqQs: "HitSy",
-    RTSaE: function (Y4, Y5) {
-      return Y4 !== Y5;
-    },
-    kRCSK: "kfobS",
-    LyfwM: "UjfRR",
-    CsnLB: "UxqCI",
-    dMvpv: "1|3|2|4|0|5",
-    AYaCH: "[咸鱼助手] 核心依赖 XLSX 库加载失败！战报导出功能将无法使用。",
-    FYtrb: function (Y4, Y5) {
-      return Y4 - Y5;
-    },
-    lUUCq: function (Y4, Y5) {
-      return Y4 === Y5;
-    },
-    wqAjp: "OjVtW",
-    SLMZf: function (Y4, Y5) {
-      return Y4 !== Y5;
-    },
-    MhBHc: "VjlWO",
-    Nzzho: "cdyKp",
-    xxSyb: function (Y4, Y5) {
-      return Y4 === Y5;
-    },
-    VQMGR: "uIjUV",
-    oqtYI: "yYpaF",
-    OkMez: "JgiEL",
-    dogVe: function (Y4, Y5) {
-      return Y4 === Y5;
-    },
-    wcIRh: "nZXRY",
-    SqsQA: "lotmX",
-    lgbVg: "siuXB",
-    OKrEa: "lqctu",
-    rvRtq: "LiYJy",
-    jQDWx: function (Y4, Y5) {
-      return Y4 === Y5;
-    },
-    AYYrq: "tBbhT",
-    rKxtr: "txpzD",
-    wucak: function (Y4, Y5) {
-      return Y4 !== Y5;
-    },
-    FDnRB: "object",
-    tHFpn: function (Y4, Y5) {
-      return Y4 !== Y5;
-    },
-    OVLCW: "rivAY",
-    sfiKc: function (Y4, Y5) {
-      return Y4 && Y5;
-    },
-    wJdso: function (Y4, Y5) {
-      return Y4 !== Y5;
-    },
-    rRDKi: "CxkGn",
-    Zqxeb: "IiIIc",
-    HIHMg: function (Y4, Y5) {
-      return Y4(Y5);
-    },
-    TBQqu: "CLAtm",
-    HPWVf: "mTEqI",
-    yKdqT: function (Y4, Y5, Y6) {
-      return Y4(Y5, Y6);
-    },
-    PhISA: "[咸鱼助手] 脚本 v2.0 已启动，正在等待游戏环境...",
-    JrXXP: function (Y4, Y5) {
-      return Y4 === Y5;
-    },
-    lSLge: function (Y4, Y5) {
-      return Y4 === Y5;
-    },
-    Emuga: "uFSFm",
-    zIFjL: function (Y4, Y5) {
-      return Y4 === Y5;
-    },
-    fmhcB: "ZldXv",
-    NneHq: "Vvsij",
-    SduLb: "木质宝箱",
-    tPTHb: "TimeGiftDialog",
-    JkiXe: "ActivityFestivalSpringFaceDialog24",
-    VLRwr: "ActivityFestivalSpringFaceLongAnimationDialog24"
+  var _0x3cb4f2 = cdn,
+    _0x252360 = _0x3cb4f2.lib.WordArray;
+  _0x3cb4f2.enc.Base64 = {
+    "stringify": function (_0x3c768e) {
+      {
+        var _0x55e02b = _0x3c768e.words;
+        var _0x58e7f4 = _0x3c768e.sigBytes;
+        var _0x4a02c7 = this._map;
+        _0x3c768e.clamp();
+        _0x3c768e = [];
+        var _0x12a3e5 = 0;
+        for (; _0x12a3e5 < _0x58e7f4; _0x12a3e5 += 3) {
+          var _0xf1b8a0 = (_0x55e02b[_0x12a3e5 >>> 2] >>> 24 - 8 * (_0x12a3e5 % 4) & 255) << 16 | (_0x55e02b[_0x12a3e5 + 1 >>> 2] >>> 24 - 8 * ((_0x12a3e5 + 1) % 4) & 255) << 8 | _0x55e02b[_0x12a3e5 + 2 >>> 2] >>> 24 - 8 * ((_0x12a3e5 + 2) % 4) & 255,
+            _0x365126 = 0;
+          for (; 4 > _0x365126 && _0x12a3e5 + 0.75 * _0x365126 < _0x58e7f4; _0x365126++) {
+            _0x3c768e.push(_0x4a02c7.charAt(_0xf1b8a0 >>> 6 * (3 - _0x365126) & 63));
+          }
+        }
+        if (_0x55e02b = _0x4a02c7.charAt(64)) for (; _0x3c768e.length % 4;) {
+          _0x3c768e.push(_0x55e02b);
+        }
+        return _0x3c768e.join("");
+      }
+    },
+    "parse": function (_0x5744ef) {
+      {
+        var _0x24715c = _0x5744ef.length;
+        var _0x1f0408 = this._map;
+        var _0x3c29bb = _0x1f0408.charAt(64);
+        _0x3c29bb && (_0x3c29bb = _0x5744ef.indexOf(_0x3c29bb), -1 != _0x3c29bb && (_0x24715c = _0x3c29bb));
+        _0x3c29bb = [];
+        var _0x569c34 = 0;
+        var _0x9052d4 = 0;
+        for (; _0x9052d4 < _0x24715c; _0x9052d4++) {
+          if (_0x9052d4 % 4) {
+            var _0x8dcfe3 = _0x1f0408.indexOf(_0x5744ef.charAt(_0x9052d4 - 1)) << 2 * (_0x9052d4 % 4),
+              _0x4af5c1 = _0x1f0408.indexOf(_0x5744ef.charAt(_0x9052d4)) >>> 6 - 2 * (_0x9052d4 % 4);
+            _0x3c29bb[_0x569c34 >>> 2] |= (_0x8dcfe3 | _0x4af5c1) << 24 - 8 * (_0x569c34 % 4);
+            _0x569c34++;
+          }
+        }
+        return _0x252360.create(_0x3c29bb, _0x569c34);
+      }
+    },
+    "_map": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/="
   };
-  "use strict";
-  console.log("[咸鱼助手] 脚本 v2.0 已启动，正在等待游戏环境...");
-  let q = false;
-  let I = false;
-  if (typeof XLSX === "undefined") {
-    {
-      console.error("[咸鱼助手] 核心依赖 XLSX 库加载失败！战报导出功能将无法使用。");
-    }
-  } else {
-    {
-      console.log("[咸鱼助手] XLSX 库已加载，版本: " + XLSX.version);
-    }
+})();
+(function (_0x5be18c) {
+  function _0x3b86ab(_0x497542, _0x166102, _0x14630e, _0xf3ea5d, _0x928630, _0x1b1e5d, _0x5c312e) {
+    _0x497542 = _0x497542 + (_0x166102 & _0x14630e | ~_0x166102 & _0xf3ea5d) + _0x928630 + _0x5c312e;
+    return (_0x497542 << _0x1b1e5d | _0x497542 >>> 32 - _0x1b1e5d) + _0x166102;
   }
-  const n = {
-    showUserAgreementDialog: function () {
+  function _0x13bed2(_0x58d47a, _0x50434f, _0x5c825d, _0x3747ae, _0x2f1bba, _0x45a338, _0x24d9ea) {
+    _0x58d47a = _0x58d47a + (_0x50434f & _0x3747ae | _0x5c825d & ~_0x3747ae) + _0x2f1bba + _0x24d9ea;
+    return (_0x58d47a << _0x45a338 | _0x58d47a >>> 32 - _0x45a338) + _0x50434f;
+  }
+  function _0x41c906(_0x495f9e, _0x1bb86d, _0x1cf6dc, _0x33de8e, _0x451b85, _0x50522e, _0x2accf4) {
+    _0x495f9e = _0x495f9e + (_0x1bb86d ^ _0x1cf6dc ^ _0x33de8e) + _0x451b85 + _0x2accf4;
+    return (_0x495f9e << _0x50522e | _0x495f9e >>> 32 - _0x50522e) + _0x1bb86d;
+  }
+  function _0x1eada4(_0x174722, _0x562258, _0x1062a0, _0x361898, _0x5bb7e2, _0x542f47, _0x321bf8) {
+    _0x174722 = _0x174722 + (_0x1062a0 ^ (_0x562258 | ~_0x361898)) + _0x5bb7e2 + _0x321bf8;
+    return (_0x174722 << _0x542f47 | _0x174722 >>> 32 - _0x542f47) + _0x562258;
+  }
+  var _0x42ea34 = cdn,
+    _0x331f1d = _0x42ea34.lib,
+    _0x1e9a58 = _0x331f1d.WordArray,
+    _0x57d4d8 = _0x331f1d.Hasher;
+  _0x331f1d = _0x42ea34.algo;
+  var _0x10bbb6 = [],
+    _0x36d820 = 0;
+  for (; 64 > _0x36d820; _0x36d820++) {
+    _0x10bbb6[_0x36d820] = 4294967296 * _0x5be18c.abs(_0x5be18c.sin(_0x36d820 + 1)) | 0;
+  }
+  _0x331f1d = _0x331f1d.MD5 = _0x57d4d8.extend({
+    "_doReset": function () {
+      this._hash = new _0x1e9a58.init([1732584193, 4023233417, 2562383102, 271733878]);
+    },
+    "_doProcessBlock": function (_0xd25c70, _0x4d4fa7) {
       {
-        try {
-          {
-            const Y8 = unsafeWindow.__require("index-ui").SHOW_SIMPLE_DIALOG;
-            const Y9 = unsafeWindow.__require("NormalDialog");
-            const YY = unsafeWindow.__require("TipsManager");
-            if (!Y8 || !Y9) {
-              {
-                YY.SHOW_TIP("错误：无法加载游戏弹窗组件！");
-                return;
-              }
-            }
-            const Yj = {
-              title: "咸鱼助手 用户协议",
-              content: "请在使用前仔细阅读并同意以下条款：\n1.本脚本仅供学习和技术交流，禁止用于任何商业用途或游戏作弊行为\n2.使用本脚本所产生的任何风险（包括但不限于账号安全风险）均由用户自行承担，作者不承担任何责任\n3.不得利用本脚本侵犯游戏厂商的合法权益\n4.作者不对因使用或无法使用本脚本所造成的任何直接或间接损害负责。\n点击“同意”即表示您已阅读、理解并接受以上所有条款。",
-              [Y9.NormalDialog.OP_BUTTON_MODE]: Y9.NormalButtonMode.TwoButton,
-              [Y9.NormalDialog.OP_BTN_YES_TITLE]: "同意",
-              [Y9.NormalDialog.OP_BTN_NO_TITLE]: "拒绝",
-              hook: function (YL) {
-                {
-                  if (YL) {
-                    {
-                      q = true;
-                      YY.SHOW_TIP("感谢您的同意，助手核心功能现已启用。");
-                    }
-                  } else {
-                    {
-                      YY.SHOW_TIP("您已拒绝协议，核心功能将不会启用。");
-                    }
-                  }
-                }
-              }
-            };
-            Y8(Y9.NormalDialog, Yj);
-          }
-        } catch (Ys) {
-          console.error("[咸鱼助手] 调用协议弹窗时发生错误:", Ys);
+        var _0x286fa7 = 0;
+        for (; 16 > _0x286fa7; _0x286fa7++) {
+          var _0x34becb = _0x4d4fa7 + _0x286fa7,
+            _0x4cd47d = _0xd25c70[_0x34becb];
+          _0xd25c70[_0x34becb] = (_0x4cd47d << 8 | _0x4cd47d >>> 24) & 16711935 | (_0x4cd47d << 24 | _0x4cd47d >>> 8) & 4278255360;
         }
+        _0x286fa7 = this._hash.words;
+        _0x34becb = _0xd25c70[_0x4d4fa7 + 0];
+        _0x4cd47d = _0xd25c70[_0x4d4fa7 + 1];
+        var _0x21d944 = _0xd25c70[_0x4d4fa7 + 2];
+        var _0x1c22d8 = _0xd25c70[_0x4d4fa7 + 3];
+        var _0x4793ac = _0xd25c70[_0x4d4fa7 + 4];
+        var _0x4e107d = _0xd25c70[_0x4d4fa7 + 5];
+        var _0x3620f4 = _0xd25c70[_0x4d4fa7 + 6];
+        var _0x263bcc = _0xd25c70[_0x4d4fa7 + 7];
+        var _0x41dea9 = _0xd25c70[_0x4d4fa7 + 8];
+        var _0x433807 = _0xd25c70[_0x4d4fa7 + 9];
+        var _0x17712e = _0xd25c70[_0x4d4fa7 + 10];
+        var _0x22139d = _0xd25c70[_0x4d4fa7 + 11];
+        var _0x5b7b21 = _0xd25c70[_0x4d4fa7 + 12];
+        var _0x54029d = _0xd25c70[_0x4d4fa7 + 13];
+        var _0x279ba2 = _0xd25c70[_0x4d4fa7 + 14];
+        var _0x4703d4 = _0xd25c70[_0x4d4fa7 + 15];
+        var _0x42bd46 = _0x286fa7[0];
+        var _0x21f8c0 = _0x286fa7[1];
+        var _0x2dda2d = _0x286fa7[2];
+        var _0x4c001d = _0x286fa7[3];
+        _0x42bd46 = _0x3b86ab(_0x42bd46, _0x21f8c0, _0x2dda2d, _0x4c001d, _0x34becb, 7, _0x10bbb6[0]);
+        _0x4c001d = _0x3b86ab(_0x4c001d, _0x42bd46, _0x21f8c0, _0x2dda2d, _0x4cd47d, 12, _0x10bbb6[1]);
+        _0x2dda2d = _0x3b86ab(_0x2dda2d, _0x4c001d, _0x42bd46, _0x21f8c0, _0x21d944, 17, _0x10bbb6[2]);
+        _0x21f8c0 = _0x3b86ab(_0x21f8c0, _0x2dda2d, _0x4c001d, _0x42bd46, _0x1c22d8, 22, _0x10bbb6[3]);
+        _0x42bd46 = _0x3b86ab(_0x42bd46, _0x21f8c0, _0x2dda2d, _0x4c001d, _0x4793ac, 7, _0x10bbb6[4]);
+        _0x4c001d = _0x3b86ab(_0x4c001d, _0x42bd46, _0x21f8c0, _0x2dda2d, _0x4e107d, 12, _0x10bbb6[5]);
+        _0x2dda2d = _0x3b86ab(_0x2dda2d, _0x4c001d, _0x42bd46, _0x21f8c0, _0x3620f4, 17, _0x10bbb6[6]);
+        _0x21f8c0 = _0x3b86ab(_0x21f8c0, _0x2dda2d, _0x4c001d, _0x42bd46, _0x263bcc, 22, _0x10bbb6[7]);
+        _0x42bd46 = _0x3b86ab(_0x42bd46, _0x21f8c0, _0x2dda2d, _0x4c001d, _0x41dea9, 7, _0x10bbb6[8]);
+        _0x4c001d = _0x3b86ab(_0x4c001d, _0x42bd46, _0x21f8c0, _0x2dda2d, _0x433807, 12, _0x10bbb6[9]);
+        _0x2dda2d = _0x3b86ab(_0x2dda2d, _0x4c001d, _0x42bd46, _0x21f8c0, _0x17712e, 17, _0x10bbb6[10]);
+        _0x21f8c0 = _0x3b86ab(_0x21f8c0, _0x2dda2d, _0x4c001d, _0x42bd46, _0x22139d, 22, _0x10bbb6[11]);
+        _0x42bd46 = _0x3b86ab(_0x42bd46, _0x21f8c0, _0x2dda2d, _0x4c001d, _0x5b7b21, 7, _0x10bbb6[12]);
+        _0x4c001d = _0x3b86ab(_0x4c001d, _0x42bd46, _0x21f8c0, _0x2dda2d, _0x54029d, 12, _0x10bbb6[13]);
+        _0x2dda2d = _0x3b86ab(_0x2dda2d, _0x4c001d, _0x42bd46, _0x21f8c0, _0x279ba2, 17, _0x10bbb6[14]);
+        _0x21f8c0 = _0x3b86ab(_0x21f8c0, _0x2dda2d, _0x4c001d, _0x42bd46, _0x4703d4, 22, _0x10bbb6[15]);
+        _0x42bd46 = _0x13bed2(_0x42bd46, _0x21f8c0, _0x2dda2d, _0x4c001d, _0x4cd47d, 5, _0x10bbb6[16]);
+        _0x4c001d = _0x13bed2(_0x4c001d, _0x42bd46, _0x21f8c0, _0x2dda2d, _0x3620f4, 9, _0x10bbb6[17]);
+        _0x2dda2d = _0x13bed2(_0x2dda2d, _0x4c001d, _0x42bd46, _0x21f8c0, _0x22139d, 14, _0x10bbb6[18]);
+        _0x21f8c0 = _0x13bed2(_0x21f8c0, _0x2dda2d, _0x4c001d, _0x42bd46, _0x34becb, 20, _0x10bbb6[19]);
+        _0x42bd46 = _0x13bed2(_0x42bd46, _0x21f8c0, _0x2dda2d, _0x4c001d, _0x4e107d, 5, _0x10bbb6[20]);
+        _0x4c001d = _0x13bed2(_0x4c001d, _0x42bd46, _0x21f8c0, _0x2dda2d, _0x17712e, 9, _0x10bbb6[21]);
+        _0x2dda2d = _0x13bed2(_0x2dda2d, _0x4c001d, _0x42bd46, _0x21f8c0, _0x4703d4, 14, _0x10bbb6[22]);
+        _0x21f8c0 = _0x13bed2(_0x21f8c0, _0x2dda2d, _0x4c001d, _0x42bd46, _0x4793ac, 20, _0x10bbb6[23]);
+        _0x42bd46 = _0x13bed2(_0x42bd46, _0x21f8c0, _0x2dda2d, _0x4c001d, _0x433807, 5, _0x10bbb6[24]);
+        _0x4c001d = _0x13bed2(_0x4c001d, _0x42bd46, _0x21f8c0, _0x2dda2d, _0x279ba2, 9, _0x10bbb6[25]);
+        _0x2dda2d = _0x13bed2(_0x2dda2d, _0x4c001d, _0x42bd46, _0x21f8c0, _0x1c22d8, 14, _0x10bbb6[26]);
+        _0x21f8c0 = _0x13bed2(_0x21f8c0, _0x2dda2d, _0x4c001d, _0x42bd46, _0x41dea9, 20, _0x10bbb6[27]);
+        _0x42bd46 = _0x13bed2(_0x42bd46, _0x21f8c0, _0x2dda2d, _0x4c001d, _0x54029d, 5, _0x10bbb6[28]);
+        _0x4c001d = _0x13bed2(_0x4c001d, _0x42bd46, _0x21f8c0, _0x2dda2d, _0x21d944, 9, _0x10bbb6[29]);
+        _0x2dda2d = _0x13bed2(_0x2dda2d, _0x4c001d, _0x42bd46, _0x21f8c0, _0x263bcc, 14, _0x10bbb6[30]);
+        _0x21f8c0 = _0x13bed2(_0x21f8c0, _0x2dda2d, _0x4c001d, _0x42bd46, _0x5b7b21, 20, _0x10bbb6[31]);
+        _0x42bd46 = _0x41c906(_0x42bd46, _0x21f8c0, _0x2dda2d, _0x4c001d, _0x4e107d, 4, _0x10bbb6[32]);
+        _0x4c001d = _0x41c906(_0x4c001d, _0x42bd46, _0x21f8c0, _0x2dda2d, _0x41dea9, 11, _0x10bbb6[33]);
+        _0x2dda2d = _0x41c906(_0x2dda2d, _0x4c001d, _0x42bd46, _0x21f8c0, _0x22139d, 16, _0x10bbb6[34]);
+        _0x21f8c0 = _0x41c906(_0x21f8c0, _0x2dda2d, _0x4c001d, _0x42bd46, _0x279ba2, 23, _0x10bbb6[35]);
+        _0x42bd46 = _0x41c906(_0x42bd46, _0x21f8c0, _0x2dda2d, _0x4c001d, _0x4cd47d, 4, _0x10bbb6[36]);
+        _0x4c001d = _0x41c906(_0x4c001d, _0x42bd46, _0x21f8c0, _0x2dda2d, _0x4793ac, 11, _0x10bbb6[37]);
+        _0x2dda2d = _0x41c906(_0x2dda2d, _0x4c001d, _0x42bd46, _0x21f8c0, _0x263bcc, 16, _0x10bbb6[38]);
+        _0x21f8c0 = _0x41c906(_0x21f8c0, _0x2dda2d, _0x4c001d, _0x42bd46, _0x17712e, 23, _0x10bbb6[39]);
+        _0x42bd46 = _0x41c906(_0x42bd46, _0x21f8c0, _0x2dda2d, _0x4c001d, _0x54029d, 4, _0x10bbb6[40]);
+        _0x4c001d = _0x41c906(_0x4c001d, _0x42bd46, _0x21f8c0, _0x2dda2d, _0x34becb, 11, _0x10bbb6[41]);
+        _0x2dda2d = _0x41c906(_0x2dda2d, _0x4c001d, _0x42bd46, _0x21f8c0, _0x1c22d8, 16, _0x10bbb6[42]);
+        _0x21f8c0 = _0x41c906(_0x21f8c0, _0x2dda2d, _0x4c001d, _0x42bd46, _0x3620f4, 23, _0x10bbb6[43]);
+        _0x42bd46 = _0x41c906(_0x42bd46, _0x21f8c0, _0x2dda2d, _0x4c001d, _0x433807, 4, _0x10bbb6[44]);
+        _0x4c001d = _0x41c906(_0x4c001d, _0x42bd46, _0x21f8c0, _0x2dda2d, _0x5b7b21, 11, _0x10bbb6[45]);
+        _0x2dda2d = _0x41c906(_0x2dda2d, _0x4c001d, _0x42bd46, _0x21f8c0, _0x4703d4, 16, _0x10bbb6[46]);
+        _0x21f8c0 = _0x41c906(_0x21f8c0, _0x2dda2d, _0x4c001d, _0x42bd46, _0x21d944, 23, _0x10bbb6[47]);
+        _0x42bd46 = _0x1eada4(_0x42bd46, _0x21f8c0, _0x2dda2d, _0x4c001d, _0x34becb, 6, _0x10bbb6[48]);
+        _0x4c001d = _0x1eada4(_0x4c001d, _0x42bd46, _0x21f8c0, _0x2dda2d, _0x263bcc, 10, _0x10bbb6[49]);
+        _0x2dda2d = _0x1eada4(_0x2dda2d, _0x4c001d, _0x42bd46, _0x21f8c0, _0x279ba2, 15, _0x10bbb6[50]);
+        _0x21f8c0 = _0x1eada4(_0x21f8c0, _0x2dda2d, _0x4c001d, _0x42bd46, _0x4e107d, 21, _0x10bbb6[51]);
+        _0x42bd46 = _0x1eada4(_0x42bd46, _0x21f8c0, _0x2dda2d, _0x4c001d, _0x5b7b21, 6, _0x10bbb6[52]);
+        _0x4c001d = _0x1eada4(_0x4c001d, _0x42bd46, _0x21f8c0, _0x2dda2d, _0x1c22d8, 10, _0x10bbb6[53]);
+        _0x2dda2d = _0x1eada4(_0x2dda2d, _0x4c001d, _0x42bd46, _0x21f8c0, _0x17712e, 15, _0x10bbb6[54]);
+        _0x21f8c0 = _0x1eada4(_0x21f8c0, _0x2dda2d, _0x4c001d, _0x42bd46, _0x4cd47d, 21, _0x10bbb6[55]);
+        _0x42bd46 = _0x1eada4(_0x42bd46, _0x21f8c0, _0x2dda2d, _0x4c001d, _0x41dea9, 6, _0x10bbb6[56]);
+        _0x4c001d = _0x1eada4(_0x4c001d, _0x42bd46, _0x21f8c0, _0x2dda2d, _0x4703d4, 10, _0x10bbb6[57]);
+        _0x2dda2d = _0x1eada4(_0x2dda2d, _0x4c001d, _0x42bd46, _0x21f8c0, _0x3620f4, 15, _0x10bbb6[58]);
+        _0x21f8c0 = _0x1eada4(_0x21f8c0, _0x2dda2d, _0x4c001d, _0x42bd46, _0x54029d, 21, _0x10bbb6[59]);
+        _0x42bd46 = _0x1eada4(_0x42bd46, _0x21f8c0, _0x2dda2d, _0x4c001d, _0x4793ac, 6, _0x10bbb6[60]);
+        _0x4c001d = _0x1eada4(_0x4c001d, _0x42bd46, _0x21f8c0, _0x2dda2d, _0x22139d, 10, _0x10bbb6[61]);
+        _0x2dda2d = _0x1eada4(_0x2dda2d, _0x4c001d, _0x42bd46, _0x21f8c0, _0x21d944, 15, _0x10bbb6[62]);
+        _0x21f8c0 = _0x1eada4(_0x21f8c0, _0x2dda2d, _0x4c001d, _0x42bd46, _0x433807, 21, _0x10bbb6[63]);
+        _0x286fa7[0] = _0x286fa7[0] + _0x42bd46 | 0;
+        _0x286fa7[1] = _0x286fa7[1] + _0x21f8c0 | 0;
+        _0x286fa7[2] = _0x286fa7[2] + _0x2dda2d | 0;
+        _0x286fa7[3] = _0x286fa7[3] + _0x4c001d | 0;
       }
     },
-    patchPanel: function (Y6) {
+    "_doFinalize": function () {
+      var _0x5ed941 = this._data,
+        _0x2ad35a = _0x5ed941.words,
+        _0x2bcae1 = 8 * this._nDataBytes,
+        _0x6dc8c7 = 8 * _0x5ed941.sigBytes;
+      _0x2ad35a[_0x6dc8c7 >>> 5] |= 128 << 24 - _0x6dc8c7 % 32;
+      var _0x1bf6ac = _0x5be18c.floor(_0x2bcae1 / 4294967296);
+      _0x2ad35a[(_0x6dc8c7 + 64 >>> 9 << 4) + 15] = (_0x1bf6ac << 8 | _0x1bf6ac >>> 24) & 16711935 | (_0x1bf6ac << 24 | _0x1bf6ac >>> 8) & 4278255360;
+      _0x2ad35a[(_0x6dc8c7 + 64 >>> 9 << 4) + 14] = (_0x2bcae1 << 8 | _0x2bcae1 >>> 24) & 16711935 | (_0x2bcae1 << 24 | _0x2bcae1 >>> 8) & 4278255360;
+      _0x5ed941.sigBytes = 4 * (_0x2ad35a.length + 1);
+      this._process();
+      _0x5ed941 = this._hash;
+      _0x2ad35a = _0x5ed941.words;
+      _0x2bcae1 = 0;
+      for (; 4 > _0x2bcae1; _0x2bcae1++) {
+        _0x6dc8c7 = _0x2ad35a[_0x2bcae1];
+        _0x2ad35a[_0x2bcae1] = (_0x6dc8c7 << 8 | _0x6dc8c7 >>> 24) & 16711935 | (_0x6dc8c7 << 24 | _0x6dc8c7 >>> 8) & 4278255360;
+      }
+      return _0x5ed941;
+    },
+    "clone": function () {
+      var _0x371405 = _0x57d4d8.clone.call(this);
+      _0x371405._hash = this._hash.clone();
+      return _0x371405;
+    }
+  });
+  _0x42ea34.MD5 = _0x57d4d8._createHelper(_0x331f1d);
+  _0x42ea34.HmacMD5 = _0x57d4d8._createHmacHelper(_0x331f1d);
+})(Math);
+(function () {
+  var _0x10490e = cdn,
+    _0x55baed = _0x10490e.lib,
+    _0xd1386 = _0x55baed.Base,
+    _0x33151f = _0x55baed.WordArray;
+  _0x55baed = _0x10490e.algo;
+  var _0x2eaf98 = _0x55baed.EvpKDF = _0xd1386.extend({
+    "cfg": _0xd1386.extend({
+      "keySize": 4,
+      "hasher": _0x55baed.MD5,
+      "iterations": 1
+    }),
+    "init": function (_0x277daa) {
+      this.cfg = this.cfg.extend(_0x277daa);
+    },
+    "compute": function (_0x11591e, _0x230532) {
       {
-        const Y8 = Y6.prototype.onShow;
-        Y6.prototype.onShow = function () {
-          {
-            Y8.apply(this, arguments);
-            if (I || q) {
-              return;
-            }
-            I = true;
-            n.showUserAgreementDialog();
+        var _0x16c21b = this.cfg,
+          _0x247e66 = _0x16c21b.hasher.create(),
+          _0x4ee477 = _0x33151f.create(),
+          _0x142174 = _0x4ee477.words,
+          _0x2c26ef = _0x16c21b.keySize;
+        _0x16c21b = _0x16c21b.iterations;
+        for (; _0x142174.length < _0x2c26ef;) {
+          if (_0x4abd05) {
+            _0x247e66.update(_0x4abd05);
           }
-        };
-        console.log("[咸鱼助手] 成功注入到 <" + Y6.name + ">，协议弹窗已准备就绪。");
+          var _0x4abd05 = _0x247e66.update(_0x11591e).finalize(_0x230532);
+          _0x247e66.reset();
+          var _0x46cc78 = 1;
+          for (; _0x46cc78 < _0x16c21b; _0x46cc78++) {
+            _0x4abd05 = _0x247e66.finalize(_0x4abd05);
+            _0x247e66.reset();
+          }
+          _0x4ee477.concat(_0x4abd05);
+        }
+        _0x4ee477.sigBytes = 4 * _0x2c26ef;
+        return _0x4ee477;
       }
     }
+  });
+  _0x10490e.EvpKDF = function (_0x5af158, _0x1d7e0e, _0x5c210d) {
+    return _0x2eaf98.create(_0x5c210d).compute(_0x5af158, _0x1d7e0e);
   };
-  const k = {
-    GOLD: 160,
-    SILVER: 100,
-    COPPER: 40
-  };
-  const E = {
-    GOLD: 190,
-    SILVER: 110,
-    COPPER: 48
-  };
-  const M = {
-    GUARANTEED: k,
-    ESTIMATED: E
-  };
-  const i = {
-    BOTTLE_VALUES: M,
-    patchPanel: function (Y6) {
-      {
-        const Y9 = Y6.prototype.onShow;
-        Y6.prototype.onShow = function () {
-          {
-            Y9.apply(this, arguments);
-            if (!q) {
-              return;
-            }
-            if (this._calculateButton_bottle) {
-              return;
-            }
-            try {
-              {
-                const YL = unsafeWindow.fgui.UIPackage.createObject("ui_common", "BtnInfo2").asButton;
-                const Ys = this.ui;
-                const Yd = this.ui.m_btnHelp;
-                Yd ? YL.setPosition(Yd.x, Yd.y + Yd.height + 10) : YL.setXY((Ys.width - YL.width) / 2, (Ys.height - YL.height) / 2);
-                YL.onClick(() => {
-                  {
-                    try {
-                      {
-                        let Yz = this.bottleComps[0].obtainCnt || 0;
-                        let YB = this.bottleComps[1].obtainCnt || 0;
-                        let YW = this.bottleComps[2].obtainCnt || 0;
-                        const YS = Yz * i.BOTTLE_VALUES.GUARANTEED.GOLD + YB * i.BOTTLE_VALUES.GUARANTEED.SILVER + YW * i.BOTTLE_VALUES.GUARANTEED.COPPER;
-                        const YR = Yz * i.BOTTLE_VALUES.ESTIMATED.GOLD + YB * i.BOTTLE_VALUES.ESTIMATED.SILVER + YW * i.BOTTLE_VALUES.ESTIMATED.COPPER;
-                        const YX = "=====罐子计算结果=====\n\n金罐子: " + Yz + " 个\n银罐子: " + YB + " 个\n铜罐子: " + YW + " 个\n\n平均预估: " + YR.toLocaleString() + " 金砖\n保底金砖: " + YS.toLocaleString() + " 金砖\n\n========@苏御=========";
-                        const Yx = unsafeWindow.__require("index-ui");
-                        const YH = unsafeWindow.__require("HelpTextDialog");
-                        const Yc = YH.HelpTextDialog;
-                        const YF = {
-                          [Yc.OP_OBJ]: this._calculateButton_bottle,
-                          [Yc.OP_CONTENT]: YX
-                        };
-                        const YK = YF;
-                        Yx.SHOW_PROXY_OVER(Yc, YK);
-                      }
-                    } catch (Ye) {
-                      console.error("[咸鱼助手][罐子计算器] 计算或显示时出错:", Ye);
-                      unsafeWindow.__require("TipsManager").SHOW_TIP("计算出错");
-                    }
-                  }
-                });
-                Ys.addChild(YL);
-                this._calculateButton_bottle = YL;
-              }
-            } catch (Yl) {
-              {
-                console.error("[咸鱼助手][罐子计算器] 创建按钮时发生错误:", Yl);
-              }
-            }
+})();
+!cdn.lib.Cipher && function (_0x1b9df5) {
+  var _0x44f4d2 = cdn,
+    _0x5ba91b = _0x44f4d2.lib,
+    _0x18643d = _0x5ba91b.Base,
+    _0x299cb9 = _0x5ba91b.WordArray,
+    _0x3f0190 = _0x5ba91b.BufferedBlockAlgorithm,
+    _0x43a277 = _0x44f4d2.enc.Base64,
+    _0x4cd07c = _0x44f4d2.algo.EvpKDF,
+    _0x42f37e = _0x5ba91b.Cipher = _0x3f0190.extend({
+      "cfg": _0x18643d.extend(),
+      "createEncryptor": function (_0x199ba8, _0x610c55) {
+        return this.create(this._ENC_XFORM_MODE, _0x199ba8, _0x610c55);
+      },
+      "createDecryptor": function (_0x66e7d2, _0x29d693) {
+        return this.create(this._DEC_XFORM_MODE, _0x66e7d2, _0x29d693);
+      },
+      "init": function (_0x4e4c88, _0x5a5e19, _0x1dd6cc) {
+        this.cfg = this.cfg.extend(_0x1dd6cc);
+        this._xformMode = _0x4e4c88;
+        this._key = _0x5a5e19;
+        this.reset();
+      },
+      "reset": function () {
+        _0x3f0190.reset.call(this);
+        this._doReset();
+      },
+      "process": function (_0x407fc1) {
+        this._append(_0x407fc1);
+        return this._process();
+      },
+      "finalize": function (_0x353eda) {
+        _0x353eda && this._append(_0x353eda);
+        return this._doFinalize();
+      },
+      "keySize": 4,
+      "ivSize": 4,
+      "_ENC_XFORM_MODE": 1,
+      "_DEC_XFORM_MODE": 2,
+      "_createHelper": function (_0x360f89) {
+        return {
+          "encrypt": function (_0x4ac15e, _0x113209, _0x12f69a) {
+            return ("string" == typeof _0x113209 ? _0x54b672 : _0x38343a).encrypt(_0x360f89, _0x4ac15e, _0x113209, _0x12f69a);
+          },
+          "decrypt": function (_0x3619f5, _0x1bb01d, _0x1c48f3) {
+            return ("string" == typeof _0x1bb01d ? _0x54b672 : _0x38343a).decrypt(_0x360f89, _0x3619f5, _0x1bb01d, _0x1c48f3);
           }
         };
-        const YY = Y6.prototype.onHide;
-        Y6.prototype.onHide = function () {
-          {
-            if (this._calculateButton_bottle) {
-              {
-                this._calculateButton_bottle.dispose();
-                this._calculateButton_bottle = null;
-              }
-            }
-            YY.apply(this, arguments);
-          }
-        };
-        console.log("[咸鱼助手] 成功注入罐子计算器到 <" + Y6.name + ">！");
       }
-    }
-  };
-  const Q = {
-    name: "木质宝箱",
-    points: 1
-  };
-  const v = {
-    name: "青铜宝箱",
-    points: 10
-  };
-  const h = {
-    name: "黄金宝箱",
-    points: 20
-  };
-  const P = {
-    name: "铂金宝箱",
-    points: 50
-  };
-  const p = {
-    name: "钻石宝箱",
-    points: 0
-  };
-  const N = {
-    "2001": Q,
-    "2002": v,
-    "2003": h,
-    "2004": P,
-    "2005": p
-  };
-  const u = {
-    values: [10, 20, 30, 40, 80, 100, 70, 50, 100],
-    boxes: ["青铜宝箱", "青铜宝箱", "黄金宝箱", "铂金宝箱", "铂金宝箱", "铂金宝箱", "黄金宝箱", "铂金宝箱", "钻石宝箱"]
-  };
-  const V = {
-    BOX_CONFIG: N,
-    STAGES_CONFIG: u,
-    calculateRecursive: function (Y6, Y7, Y8, Y9, YY = 0, Yj = 0) {
-      {
-        const {
-          values: Yd,
-          boxes: Yy
-        } = this.STAGES_CONFIG;
-        let Ym = Yy.findIndex((YS, YR) => YS === Y8 && Yd[YR] === Y7);
-        if (Ym === -1) {
-          return {
-            error: "档位错误"
-          };
-        }
-        if (Y6 < Y7) {
-          return {
-            total_point_value: Yj,
-            total_diamond_boxes: YY,
-            final_stage_info: "积分值：" + Y6 + "/" + Y7 + " (" + Y8 + ")"
-          };
-        }
-        let Yz = {
-          "青铜宝箱": 0,
-          "黄金宝箱": 0,
-          "铂金宝箱": 0,
-          "钻石宝箱": 0
-        };
-        let YB = Y6;
-        while (YB >= Yd[Ym]) {
-          YB -= Yd[Ym];
-          Yz[Yy[Ym]]++;
-          Ym = (Ym + 1) % Yd.length;
-        }
-        let YW = Yz["青铜宝箱"] * this.getPointsByName("青铜宝箱") + Yz["黄金宝箱"] * this.getPointsByName("黄金宝箱") + (Y9 ? 0 : Yz["铂金宝箱"] * this.getPointsByName("铂金宝箱"));
-        return this.calculateRecursive(YB + YW, Yd[Ym], Yy[Ym], Y9, YY + Yz["钻石宝箱"], Yj + YW);
+    });
+  _0x5ba91b.StreamCipher = _0x42f37e.extend({
+    "_doFinalize": function () {
+      return this._process(true);
+    },
+    "blockSize": 1
+  });
+  var _0xb48ef3 = _0x44f4d2.mode = {},
+    _0x581b00 = function (_0x4e5b20, _0x54f8f6, _0x31af3d) {
+      var _0x12ace8 = this._iv;
+      _0x12ace8 ? this._iv = _0x1b9df5 : _0x12ace8 = this._prevBlock;
+      var _0x5e7b7f = 0;
+      for (; _0x5e7b7f < _0x31af3d; _0x5e7b7f++) {
+        _0x4e5b20[_0x54f8f6 + _0x5e7b7f] ^= _0x12ace8[_0x5e7b7f];
       }
     },
-    calculate: function (Y6) {
+    _0x2eab00 = (_0x5ba91b.BlockCipherMode = _0x18643d.extend({
+      "createEncryptor": function (_0x545620, _0x443cd9) {
+        return this.Encryptor.create(_0x545620, _0x443cd9);
+      },
+      "createDecryptor": function (_0x585ca7, _0x2a0af5) {
+        return this.Decryptor.create(_0x585ca7, _0x2a0af5);
+      },
+      "init": function (_0x52c32a, _0x12e266) {
+        this._cipher = _0x52c32a;
+        this._iv = _0x12e266;
+      }
+    })).extend();
+  _0x2eab00.Encryptor = _0x2eab00.extend({
+    "processBlock": function (_0x563aa3, _0x492653) {
+      var _0x2fbc63 = this._cipher;
+      var _0x40c0d1 = _0x2fbc63.blockSize;
+      _0x581b00.call(this, _0x563aa3, _0x492653, _0x40c0d1);
+      _0x2fbc63.encryptBlock(_0x563aa3, _0x492653);
+      this._prevBlock = _0x563aa3.slice(_0x492653, _0x492653 + _0x40c0d1);
+    }
+  });
+  _0x2eab00.Decryptor = _0x2eab00.extend({
+    "processBlock": function (_0x587950, _0x58ba9e) {
+      var _0x34d804 = this._cipher;
+      var _0x57880b = _0x34d804.blockSize;
+      var _0x1549cb = _0x587950.slice(_0x58ba9e, _0x58ba9e + _0x57880b);
+      _0x34d804.decryptBlock(_0x587950, _0x58ba9e);
+      _0x581b00.call(this, _0x587950, _0x58ba9e, _0x57880b);
+      this._prevBlock = _0x1549cb;
+    }
+  });
+  _0xb48ef3 = _0xb48ef3.CBC = _0x2eab00;
+  _0x2eab00 = (_0x44f4d2.pad = {}).Pkcs7 = {
+    "pad": function (_0x48d221, _0x26657b) {
       {
-        const {
-          wood_chest: Y7,
-          bronze_chest: Y8,
-          gold_chest: Y9,
-          platinum_chest: YY,
-          current_points: Yj,
-          required_points: YG,
-          chest_type: YL
-        } = Y6;
-        const Ys = Y7 * 1 + Y8 * 10 + Y9 * 20 + YY * 50 + Yj;
-        const Yd = Y8 * 10 + Y9 * 20 + YY * 50 + Yj;
-        const Yy = Y7 * 1 + Y8 * 10 + Y9 * 20 + Yj;
-        const Ym = this.calculateRecursive(Ys, YG, YL, false);
-        const Yl = this.calculateRecursive(Yd, YG, YL, false);
-        const Yz = this.calculateRecursive(Yy, YG, YL, true);
-        const YB = {
-          res1: Ym,
-          res2: Yl,
-          res3: Yz,
-          p_all: Ys,
-          p_no_wood: Yd,
-          p_no_plat: Yy
-        };
-        return this.formatResult(YB);
+        var _0x5c7fca = 4 * _0x26657b;
+        _0x5c7fca = _0x5c7fca - _0x48d221.sigBytes % _0x5c7fca;
+        var _0x38314b = _0x5c7fca << 24 | _0x5c7fca << 16 | _0x5c7fca << 8 | _0x5c7fca,
+          _0x338445 = [],
+          _0x12444a = 0;
+        for (; _0x12444a < _0x5c7fca; _0x12444a += 4) {
+          _0x338445.push(_0x38314b);
+        }
+        _0x5c7fca = _0x299cb9.create(_0x338445, _0x5c7fca);
+        _0x48d221.concat(_0x5c7fca);
       }
     },
-    formatResult: function (Y6) {
+    "unpad": function (_0x167c8d) {
+      _0x167c8d.sigBytes -= _0x167c8d.words[_0x167c8d.sigBytes - 1 >>> 2] & 255;
+    }
+  };
+  _0x5ba91b.BlockCipher = _0x42f37e.extend({
+    "cfg": _0x42f37e.cfg.extend({
+      "mode": _0xb48ef3,
+      "padding": _0x2eab00
+    }),
+    "reset": function () {
+      _0x42f37e.reset.call(this);
+      var _0x7a5df0 = this.cfg,
+        _0x5bbd47 = _0x7a5df0.iv;
+      _0x7a5df0 = _0x7a5df0.mode;
+      if (this._xformMode == this._ENC_XFORM_MODE) var _0xb9e3e8 = _0x7a5df0.createEncryptor;else {
+        _0xb9e3e8 = _0x7a5df0.createDecryptor;
+        this._minBufferSize = 1;
+      }
+      this._mode = _0xb9e3e8.call(_0x7a5df0, this, _0x5bbd47 && _0x5bbd47.words);
+    },
+    "_doProcessBlock": function (_0x21f0ad, _0x391193) {
+      this._mode.processBlock(_0x21f0ad, _0x391193);
+    },
+    "_doFinalize": function () {
       {
-        const Y8 = (Y9, YY, Yj) => {
+        var _0x4b70fb = this.cfg.padding;
+        if (this._xformMode == this._ENC_XFORM_MODE) {
           {
-            if (Yj.error) {
-              return Y9 + "\n计算出错: " + Yj.error;
-            }
-            const YG = YY + Yj.total_point_value;
-            return ["" + Y9, "宝箱裸分: " + YY.toLocaleString(), "宝箱总分: " + YG.toLocaleString() + "分", "宝箱轮数: " + (YG / 8000).toFixed(2) + "轮 (下轮需: " + (8000 - YG % 8000).toLocaleString() + "分)", Yj.final_stage_info, "奖励钻石宝箱: " + Yj.total_diamond_boxes + "个"].join("\n");
+            _0x4b70fb.pad(this._data, this.blockSize);
+            var _0x2ef2fe = this._process(true);
           }
-        };
-        return ["===== 宝箱计算结果 =====", Y8("【全开】", Y6.p_all, Y6.res1), "---------------------", Y8("【不开木质】", Y6.p_no_wood, Y6.res2), "---------------------", Y8("【不开铂金】", Y6.p_no_plat, Y6.res3), "=========@苏御========="].join("\n\n");
+        } else {
+          _0x2ef2fe = this._process(true);
+          _0x4b70fb.unpad(_0x2ef2fe);
+        }
+        return _0x2ef2fe;
       }
     },
-    getPointsByName: function (Y6) {
-      {
-        for (const Y8 in this.BOX_CONFIG) if (this.BOX_CONFIG[Y8].name === Y6) {
-          return this.BOX_CONFIG[Y8].points;
+    "blockSize": 4
+  });
+  var _0x517ecd = _0x5ba91b.CipherParams = _0x18643d.extend({
+    "init": function (_0x1402ac) {
+      this.mixIn(_0x1402ac);
+    },
+    "toString": function (_0x7bd4a5) {
+      return (_0x7bd4a5 || this.formatter).stringify(this);
+    }
+  });
+  _0xb48ef3 = (_0x44f4d2.format = {}).OpenSSL = {
+    "stringify": function (_0x662207) {
+      var _0x305eff = _0x662207.ciphertext;
+      _0x662207 = _0x662207.salt;
+      return (_0x662207 ? _0x299cb9.create([1398893684, 1701076831]).concat(_0x662207).concat(_0x305eff) : _0x305eff).toString(_0x43a277);
+    },
+    "parse": function (_0x570a03) {
+      _0x570a03 = _0x43a277.parse(_0x570a03);
+      var _0x2adee4 = _0x570a03.words;
+      if (1398893684 == _0x2adee4[0] && 1701076831 == _0x2adee4[1]) {
+        {
+          var _0x28dd15 = _0x299cb9.create(_0x2adee4.slice(2, 4));
+          _0x2adee4.splice(0, 4);
+          _0x570a03.sigBytes -= 16;
         }
-        return 0;
+      }
+      return _0x517ecd.create({
+        "ciphertext": _0x570a03,
+        "salt": _0x28dd15
+      });
+    }
+  };
+  var _0x38343a = _0x5ba91b.SerializableCipher = _0x18643d.extend({
+    "cfg": _0x18643d.extend({
+      "format": _0xb48ef3
+    }),
+    "encrypt": function (_0x103ee3, _0x1c7d1e, _0x2c1025, _0x2ecc8b) {
+      _0x2ecc8b = this.cfg.extend(_0x2ecc8b);
+      var _0x2a0513 = _0x103ee3.createEncryptor(_0x2c1025, _0x2ecc8b);
+      _0x1c7d1e = _0x2a0513.finalize(_0x1c7d1e);
+      _0x2a0513 = _0x2a0513.cfg;
+      return _0x517ecd.create({
+        "ciphertext": _0x1c7d1e,
+        "key": _0x2c1025,
+        "iv": _0x2a0513.iv,
+        "algorithm": _0x103ee3,
+        "mode": _0x2a0513.mode,
+        "padding": _0x2a0513.padding,
+        "blockSize": _0x103ee3.blockSize,
+        "formatter": _0x2ecc8b.format
+      });
+    },
+    "decrypt": function (_0x13572f, _0x110748, _0x5591ed, _0x4b8e19) {
+      _0x4b8e19 = this.cfg.extend(_0x4b8e19);
+      _0x110748 = this._parse(_0x110748, _0x4b8e19.format);
+      return _0x13572f.createDecryptor(_0x5591ed, _0x4b8e19).finalize(_0x110748.ciphertext);
+    },
+    "_parse": function (_0x10dd0a, _0x5e4323) {
+      return "string" == typeof _0x10dd0a ? _0x5e4323.parse(_0x10dd0a, this) : _0x10dd0a;
+    }
+  });
+  _0x44f4d2 = (_0x44f4d2.kdf = {}).OpenSSL = {
+    "execute": function (_0x5a428e, _0x46aabb, _0x27ebbb, _0xdd47ac) {
+      !_0xdd47ac && (_0xdd47ac = _0x299cb9.random(8));
+      _0x5a428e = _0x4cd07c.create({
+        "keySize": _0x46aabb + _0x27ebbb
+      }).compute(_0x5a428e, _0xdd47ac);
+      _0x27ebbb = _0x299cb9.create(_0x5a428e.words.slice(_0x46aabb), 4 * _0x27ebbb);
+      _0x5a428e.sigBytes = 4 * _0x46aabb;
+      return _0x517ecd.create({
+        "key": _0x5a428e,
+        "iv": _0x27ebbb,
+        "salt": _0xdd47ac
+      });
+    }
+  };
+  var _0x54b672 = _0x5ba91b.PasswordBasedCipher = _0x38343a.extend({
+    "cfg": _0x38343a.cfg.extend({
+      "kdf": _0x44f4d2
+    }),
+    "encrypt": function (_0x2213b6, _0x3be621, _0x1e41aa, _0x5be7d6) {
+      _0x5be7d6 = this.cfg.extend(_0x5be7d6);
+      _0x1e41aa = _0x5be7d6.kdf.execute(_0x1e41aa, _0x2213b6.keySize, _0x2213b6.ivSize);
+      _0x5be7d6.iv = _0x1e41aa.iv;
+      _0x2213b6 = _0x38343a.encrypt.call(this, _0x2213b6, _0x3be621, _0x1e41aa.key, _0x5be7d6);
+      _0x2213b6.mixIn(_0x1e41aa);
+      return _0x2213b6;
+    },
+    "decrypt": function (_0x4bd97c, _0x46646f, _0x47866a, _0x2d6b58) {
+      _0x2d6b58 = this.cfg.extend(_0x2d6b58);
+      _0x46646f = this._parse(_0x46646f, _0x2d6b58.format);
+      _0x47866a = _0x2d6b58.kdf.execute(_0x47866a, _0x4bd97c.keySize, _0x4bd97c.ivSize, _0x46646f.salt);
+      _0x2d6b58.iv = _0x47866a.iv;
+      return _0x38343a.decrypt.call(this, _0x4bd97c, _0x46646f, _0x47866a.key, _0x2d6b58);
+    }
+  });
+}();
+(function () {
+  var _0x57fd1d = cdn,
+    _0x28d4ba = _0x57fd1d.lib.BlockCipher,
+    _0x40ed07 = _0x57fd1d.algo,
+    _0xf2e92d = [],
+    _0x14ef47 = [],
+    _0x40d5f8 = [],
+    _0x56af80 = [],
+    _0x85d4d6 = [],
+    _0x1d1553 = [],
+    _0x3301ae = [],
+    _0x462da5 = [],
+    _0x40f686 = [],
+    _0x1a6204 = [],
+    _0x3f67f8 = [],
+    _0x58e7fb = 0;
+  for (; 256 > _0x58e7fb; _0x58e7fb++) {
+    _0x3f67f8[_0x58e7fb] = 128 > _0x58e7fb ? _0x58e7fb << 1 : _0x58e7fb << 1 ^ 283;
+  }
+  var _0x3c681a = 0,
+    _0x3c2a3e = 0;
+  _0x58e7fb = 0;
+  for (; 256 > _0x58e7fb; _0x58e7fb++) {
+    var _0x1499cb = _0x3c2a3e ^ _0x3c2a3e << 1 ^ _0x3c2a3e << 2 ^ _0x3c2a3e << 3 ^ _0x3c2a3e << 4;
+    _0x1499cb = _0x1499cb >>> 8 ^ _0x1499cb & 255 ^ 99;
+    _0xf2e92d[_0x3c681a] = _0x1499cb;
+    _0x14ef47[_0x1499cb] = _0x3c681a;
+    var _0x46672b = _0x3f67f8[_0x3c681a],
+      _0x327ee5 = _0x3f67f8[_0x46672b],
+      _0x6fe513 = _0x3f67f8[_0x327ee5],
+      _0x24df3c = 257 * _0x3f67f8[_0x1499cb] ^ 16843008 * _0x1499cb;
+    _0x40d5f8[_0x3c681a] = _0x24df3c << 24 | _0x24df3c >>> 8;
+    _0x56af80[_0x3c681a] = _0x24df3c << 16 | _0x24df3c >>> 16;
+    _0x85d4d6[_0x3c681a] = _0x24df3c << 8 | _0x24df3c >>> 24;
+    _0x1d1553[_0x3c681a] = _0x24df3c;
+    _0x24df3c = 16843009 * _0x6fe513 ^ 65537 * _0x327ee5 ^ 257 * _0x46672b ^ 16843008 * _0x3c681a;
+    _0x3301ae[_0x1499cb] = _0x24df3c << 24 | _0x24df3c >>> 8;
+    _0x462da5[_0x1499cb] = _0x24df3c << 16 | _0x24df3c >>> 16;
+    _0x40f686[_0x1499cb] = _0x24df3c << 8 | _0x24df3c >>> 24;
+    _0x1a6204[_0x1499cb] = _0x24df3c;
+    if (_0x3c681a) {
+      _0x3c681a = _0x46672b ^ _0x3f67f8[_0x3f67f8[_0x3f67f8[_0x6fe513 ^ _0x46672b]]];
+      _0x3c2a3e ^= _0x3f67f8[_0x3f67f8[_0x3c2a3e]];
+    } else _0x3c681a = _0x3c2a3e = 1;
+  }
+  var _0x354560 = [0, 1, 2, 4, 8, 16, 32, 64, 128, 27, 54];
+  _0x40ed07 = _0x40ed07.centos = _0x28d4ba.extend({
+    "_doReset": function () {
+      var _0x4807a8 = this._key,
+        _0x3cb8f1 = _0x4807a8.words,
+        _0xf56c37 = _0x4807a8.sigBytes / 4;
+      _0x4807a8 = 4 * ((this._nRounds = _0xf56c37 + 6) + 1);
+      var _0x424755 = this._keySchedule = [],
+        _0x1c0f2c = 0;
+      for (; _0x1c0f2c < _0x4807a8; _0x1c0f2c++) {
+        if (_0x1c0f2c < _0xf56c37) {
+          _0x424755[_0x1c0f2c] = _0x3cb8f1[_0x1c0f2c];
+        } else {
+          {
+            var _0x12deba = _0x424755[_0x1c0f2c - 1];
+            if (_0x1c0f2c % _0xf56c37) {
+              6 < _0xf56c37 && 4 == _0x1c0f2c % _0xf56c37 && (_0x12deba = _0xf2e92d[_0x12deba >>> 24] << 24 | _0xf2e92d[_0x12deba >>> 16 & 255] << 16 | _0xf2e92d[_0x12deba >>> 8 & 255] << 8 | _0xf2e92d[_0x12deba & 255]);
+            } else _0x12deba = _0x12deba << 8 | _0x12deba >>> 24, _0x12deba = _0xf2e92d[_0x12deba >>> 24] << 24 | _0xf2e92d[_0x12deba >>> 16 & 255] << 16 | _0xf2e92d[_0x12deba >>> 8 & 255] << 8 | _0xf2e92d[_0x12deba & 255], _0x12deba ^= _0x354560[_0x1c0f2c / _0xf56c37 | 0] << 24;
+            _0x424755[_0x1c0f2c] = _0x424755[_0x1c0f2c - _0xf56c37] ^ _0x12deba;
+          }
+        }
+      }
+      _0x3cb8f1 = this._invKeySchedule = [];
+      _0xf56c37 = 0;
+      for (; _0xf56c37 < _0x4807a8; _0xf56c37++) {
+        _0x1c0f2c = _0x4807a8 - _0xf56c37;
+        _0x12deba = _0xf56c37 % 4 ? _0x424755[_0x1c0f2c] : _0x424755[_0x1c0f2c - 4];
+        _0x3cb8f1[_0xf56c37] = 4 > _0xf56c37 || 4 >= _0x1c0f2c ? _0x12deba : _0x3301ae[_0xf2e92d[_0x12deba >>> 24]] ^ _0x462da5[_0xf2e92d[_0x12deba >>> 16 & 255]] ^ _0x40f686[_0xf2e92d[_0x12deba >>> 8 & 255]] ^ _0x1a6204[_0xf2e92d[_0x12deba & 255]];
       }
     },
-    patchPanel: function (Y6) {
-      {
-        const Y9 = Y6.prototype.onShow;
-        Y6.prototype.onShow = function () {
-          {
-            Y9.apply(this, arguments);
-            if (!q) {
-              return;
-            }
-            if (this._calculateButton_box) {
-              return;
-            }
-            try {
-              {
-                const YL = unsafeWindow.fgui.UIPackage.createObject("ui_common", "BtnInfo2").asButton;
-                const Ys = this.ui;
-                const Yd = this.ui.m_quesHelp;
-                if (Yd) {
-                  {
-                    YL.setPosition(Yd.x + Yd.width + 10, Yd.y);
-                  }
-                } else {
-                  {
-                    YL.setPosition(20, Ys.height - YL.height - 20);
-                  }
-                }
-                YL.onClick(() => {
-                  {
-                    try {
-                      {
-                        const Yz = unsafeWindow.__require("ModuleManager").GET_MODULE(unsafeWindow.__require("Configs").ModuleType.BOX);
-                        Yz.syncRewardConf();
-                        const YB = Yz.curBoxPointLastRewardConf;
-                        const YW = {
-                          wood_chest: unsafeWindow.ROLE.getItemQuantity(2001),
-                          bronze_chest: unsafeWindow.ROLE.getItemQuantity(2002),
-                          gold_chest: unsafeWindow.ROLE.getItemQuantity(2003),
-                          platinum_chest: unsafeWindow.ROLE.getItemQuantity(2004),
-                          current_points: Yz.boxRenderPoint,
-                          required_points: YB ? YB.limit : 0,
-                          chest_type: YB ? unsafeWindow.__require("LanguageExt").GET_CONTENT(YB.description) || "未知宝箱" : "无"
-                        };
-                        const YS = V.calculate(YW);
-                        const YR = unsafeWindow.__require("index-ui");
-                        const YX = unsafeWindow.__require("HelpTextDialog");
-                        const Yx = YX.HelpTextDialog;
-                        const YH = {
-                          [Yx.OP_OBJ]: this._calculateButton_box,
-                          [Yx.OP_CONTENT]: YS
-                        };
-                        const Yc = YH;
-                        YR.SHOW_PROXY_OVER(Yx, Yc);
-                      }
-                    } catch (YK) {
-                      console.error("[咸鱼助手][宝箱计算器] 计算或显示时出错:", YK);
-                      unsafeWindow.__require("TipsManager").SHOW_TIP("计算出错");
-                    }
-                  }
-                });
-                Ys.addChild(YL);
-                this._calculateButton_box = YL;
-              }
-            } catch (Yz) {
-              {
-                console.error("[咸鱼助手][宝箱计算器] 创建按钮时发生错误:", Yz);
-              }
-            }
-          }
-        };
-        const YY = Y6.prototype.onHide;
-        Y6.prototype.onHide = function () {
-          {
-            if (this._calculateButton_box) {
-              {
-                this._calculateButton_box.dispose();
-                this._calculateButton_box = null;
-              }
-            }
-            YY.apply(this, arguments);
-          }
-        };
-        console.log("[咸鱼助手] 成功注入宝箱计算器到 <" + Y6.name + ">！");
-      }
-    }
-  };
-  const Z = {
-    rawMatchDataCache: {},
-    dataModulePatched: false,
-    patchDataModule: function () {
-      {
-        if (this.dataModulePatched) {
-          return;
-        }
-        try {
-          {
-            const Y8 = unsafeWindow.__require("GVGRecordData");
-            if (!Y8 || !Y8.GVGRecordData) {
-              return;
-            }
-            const Y9 = Y8.GVGRecordData;
-            const YY = Y9.prototype.unpackMatchDetails;
-            if (!YY) {
-              return;
-            }
-            Y9.prototype.unpackMatchDetails = function (Yj, YG) {
-              {
-                try {
-                  {
-                    const Yd = JSON.parse(JSON.stringify(YG));
-                    Z.rawMatchDataCache[Yj] = Yd;
-                  }
-                } catch (Yy) {
-                  {
-                    console.error("[咸鱼助手][排位预测]克隆数据失败:", Yy);
-                    Z.rawMatchDataCache[Yj] = YG;
-                  }
-                }
-                return YY.apply(this, arguments);
-              }
-            };
-            this.dataModulePatched = true;
-          }
-        } catch (YG) {
-          console.error("[咸鱼助手][排位预测] 注入数据模块时出错:", YG);
-        }
-      }
+    "encryptBlock": function (_0x494646, _0x9345bd) {
+      this._doCryptBlock(_0x494646, _0x9345bd, this._keySchedule, _0x40d5f8, _0x56af80, _0x85d4d6, _0x1d1553, _0xf2e92d);
     },
-    patchPanel: function (Y6) {
-      {
-        const Y8 = Y6.prototype.onShown;
-        Y6.prototype.onShown = function () {
-          {
-            Y8.apply(this, arguments);
-            if (!q) {
-              return;
-            }
-            Z.patchDataModule();
-            if (this._predictButton_gvg) {
-              return;
-            }
-            try {
-              {
-                const YL = unsafeWindow.fgui.UIPackage.createObject("ui_common", "BtnInfo2").asButton;
-                const Ys = this.ui;
-                const Yd = this.ui.m_score;
-                const Yy = 20;
-                if (Yd) {
-                  YL.setPosition(Yy, Yd.y - (YL.height - Yd.height) / 2);
-                } else {
-                  {
-                    YL.setPosition(Yy, 80);
-                  }
-                }
-                YL.onClick(this.predictGVGMatches.bind(this, YL));
-                Ys.addChild(YL);
-                this._predictButton_gvg = YL;
-              }
-            } catch (Yz) {
-              {
-                console.error("[咸鱼助手][排位预测] 创建按钮时发生错误:", Yz);
-              }
-            }
-          }
-        };
-        Y6.prototype.predictGVGMatches = function (YY) {
-          {
-            const YG = unsafeWindow.__require("TipsManager");
-            try {
-              {
-                const YL = this._module;
-                if (!YL) {
-                  {
-                    YG.SHOW_TIP("内部错误：无法访问GVG模块。");
-                    return;
-                  }
-                }
-                const Ys = Z.rawMatchDataCache[3];
-                if (!Ys || !Ys.matchList || Ys.matchList.length === 0) {
-                  {
-                    YG.SHOW_TIP("请先在左侧切换到[周三]的战报以缓存原始数据！");
-                    return;
-                  }
-                }
-                const Yd = YL.arenaData.selfLegion.name;
-                const Yy = Ys.matchList;
-                const Ym = [];
-                const Yl = [];
-                Yy.forEach(Yn => {
-                  {
-                    Ym.push(Yn.leftLegion.legionName);
-                    Yl.push(Yn.rightLegion.legionName);
-                  }
-                });
-                let Yz = null;
-                let YB = Ym.indexOf(Yd);
-                if (YB !== -1) {
-                  Yz = "A" + (YB + 1);
-                } else {
-                  {
-                    YB = Yl.indexOf(Yd);
-                    if (YB !== -1) {
-                      Yz = "B" + (YB + 1);
-                    }
-                  }
-                }
-                if (!Yz) {
-                  {
-                    YG.SHOW_TIP("未在周三的对战列表中找到您的军团。");
-                    return;
-                  }
-                }
-                const YS = {
-                  A1: "B3",
-                  A2: "B1",
-                  A3: "B2",
-                  A4: "B5",
-                  A5: "B4",
-                  B1: "A2",
-                  B2: "A3",
-                  B3: "A1",
-                  B4: "A5",
-                  B5: "A4"
-                };
-                const YX = {
-                  A1: "B2",
-                  A2: "B3",
-                  A3: "B1",
-                  A4: "A5",
-                  A5: "A4",
-                  B1: "A3",
-                  B2: "A1",
-                  B3: "A2",
-                  B4: "B5",
-                  B5: "B4"
-                };
-                const Yx = YS[Yz];
-                const YH = YX[Yz];
-                if (!Yx || !YH) {
-                  {
-                    YG.SHOW_TIP("预测规则匹配失败，请检查脚本。");
-                    return;
-                  }
-                }
-                const Yc = YM => {
-                  {
-                    const Yv = parseInt(YM.substring(1)) - 1;
-                    if (YM.startsWith("A")) {
-                      return Ym[Yv] || "未知军团A";
-                    }
-                    return Yl[Yv] || "未知军团B";
-                  }
-                };
-                const YF = Yc(Yx);
-                const YK = Yc(YH);
-                const Ye = "=====排位预测=====\n\n当前俱乐部: " + Yd + "\n---------------------\n\n周四对手预测:\n" + Yd + " VS " + YF + "\n---------------------\n周五对手预测:\n" + Yd + " VS " + YK + "\n\n=========@苏御=========";
-                const Yf = unsafeWindow.__require("index-ui");
-                const Yo = unsafeWindow.__require("HelpTextDialog");
-                const YC = {
-                  [Yo.HelpTextDialog.OP_OBJ]: YY,
-                  [Yo.HelpTextDialog.OP_CONTENT]: Ye
-                };
-                const Yg = YC;
-                Yf.SHOW_PROXY_OVER(Yo.HelpTextDialog, Yg);
-              }
-            } catch (Yi) {
-              console.error("[咸鱼助手][排位预测] 预测时出错:", Yi);
-              YG.SHOW_TIP("预测出错，请查看控制台");
-            }
-          }
-        };
-        const Y9 = Y6.prototype.onHide;
-        Y6.prototype.onHide = function () {
-          {
-            if (this._predictButton_gvg) {
-              {
-                this._predictButton_gvg.dispose();
-                this._predictButton_gvg = null;
-              }
-            }
-            Y9.apply(this, arguments);
-          }
-        };
-        console.log("[咸鱼助手] 成功注入排位预测器到 <" + Y6.name + ">！");
-      }
-    }
-  };
-  const a = {
-    patchDialog: function (Y6) {
-      {
-        const Y9 = Y6.prototype.onShown;
-        Y6.prototype.onShown = function () {
-          {
-            Y9.apply(this, arguments);
-            if (!q || typeof XLSX === "undefined") {
-              return;
-            }
-            setTimeout(() => {
-              {
-                if (this._customExportButton) {
-                  return;
-                }
-                try {
-                  {
-                    const YL = this.ui;
-                    const Ys = YL.m_btnBest;
-                    if (!YL || !Ys || !Ys.node.active) {
-                      return;
-                    }
-                    const Yd = Ys.packageItem.owner;
-                    const Yy = Ys.packageItem.name;
-                    const Ym = Yd.createObject(Yy);
-                    if (!Ym) {
-                      return;
-                    }
-                    const Yl = Ym.asButton;
-                    Yl.setSize(Ys.width, Ys.height);
-                    Yl.title = "导出Excel";
-                    const Yz = 20;
-                    Yl.setPosition(Ys.x - Yl.width - Yz, Ys.y);
-                    Yl.onClick(this.handleExportToExcel.bind(this));
-                    Ys.parent.addChild(Yl);
-                    this._customExportButton = Yl;
-                  }
-                } catch (YW) {
-                  {
-                    console.error("[咸鱼助手][盐场战报] 添加按钮时出错:", YW);
-                  }
-                }
-              }
-            }, 100);
-          }
-        };
-        const YY = Y6.prototype.onHide;
-        Y6.prototype.onHide = function () {
-          {
-            if (this._customExportButton) {
-              {
-                this._customExportButton.dispose();
-                this._customExportButton = null;
-              }
-            }
-            YY.apply(this, arguments);
-          }
-        };
-        Y6.prototype.handleExportToExcel = function () {
-          {
-            const Ys = unsafeWindow.__require("TipsManager");
-            try {
-              {
-                const Yd = unsafeWindow.__require("ModuleManager");
-                const Yy = unsafeWindow.__require("Configs");
-                const Ym = Yd.GET_MODULE(Yy.ModuleType.LEGION_WAR);
-                const Yl = Ym?.["reportData"]?.["details"]?.["roleDetailsList"];
-                if (!Yl || Yl.length === 0) {
-                  {
-                    Ys.SHOW_TIP("未找到有效的战报数据！");
-                    return;
-                  }
-                }
-                Ys.SHOW_TIP("正在生成Excel报表...");
-                const Yz = XLSX.utils.book_new();
-                const YB = this.createPlayerSummarySheet(Yl);
-                const YW = this.createBattleDetailsSheet(Yl, Ym);
-                XLSX.utils.book_append_sheet(Yz, YB, "玩家汇总");
-                XLSX.utils.book_append_sheet(Yz, YW, "战斗详情");
-                const YS = this.gameDate.replace(/\s+/g, "").replace(/\//g, "-");
-                const YR = "军团战报_" + YS + ".xlsx";
-                XLSX.writeFile(Yz, YR);
-              }
-            } catch (YH) {
-              console.error("[咸鱼助手][盐场战报] 生成Excel报表时发生错误:", YH);
-              Ys.SHOW_TIP("生成报表失败，请查看控制台！");
-            }
-          }
-        };
-        Y6.prototype.createPlayerSummarySheet = function (Yj) {
-          {
-            const YL = ["ID", "玩家名称", "战力(亿)", "胜场", "负场", "胜率", "摧毁建筑", "复活丹(估)"];
-            const Ys = [...Yj].sort((Yc, YF) => (YF.winCnt || 0) - (Yc.winCnt || 0) || (Yc.loseCnt || 0) - (YF.loseCnt || 0));
-            const Yd = Ys.map(Yc => {
-              {
-                const Ye = Yc.winCnt || 0;
-                const Yf = Yc.loseCnt || 0;
-                const Yo = Ye + Yf;
-                return [Yc.roleId, Yc.name, (Yc.power || 0) / 100000000, Ye, Yf, Yo > 0 ? Ye / Yo : 0, Yc.buildingCnt || 0, Math.max(0, Yf - 6)];
-              }
-            });
-            const Yy = ["总计", null, null, 0, 0, 0, 0, 0];
-            Yd.forEach(Yc => {
-              Yy[3] += Yc[3];
-              Yy[4] += Yc[4];
-              Yy[6] += Yc[6];
-              Yy[7] += Yc[7];
-            });
-            const Ym = Yy[3] + Yy[4];
-            Yy[5] = Ym > 0 ? Yy[3] / Ym : 0;
-            Yd.push(Yy);
-            const Yl = XLSX.utils.aoa_to_sheet([YL, ...Yd]);
-            const Yz = {
-              wch: 15
-            };
-            const YB = {
-              wch: 20
-            };
-            const YW = {
-              wch: 15
-            };
-            const YS = {
-              wch: 10
-            };
-            const YR = {
-              wch: 10
-            };
-            const YX = {
-              wch: 10
-            };
-            const Yx = {
-              wch: 12
-            };
-            const YH = {
-              wch: 12
-            };
-            Yl["!cols"] = [Yz, YB, YW, YS, YR, YX, Yx, YH];
-            Yd.forEach((Yc, YF) => {
-              {
-                const Ye = YF + 2;
-                if (Yl["C" + Ye]) {
-                  Yl["C" + Ye].z = "0.00";
-                }
-                if (Yl["F" + Ye]) {
-                  Yl["F" + Ye].z = "0.00%";
-                }
-              }
-            });
-            return Yl;
-          }
-        };
-        Y6.prototype.createBattleDetailsSheet = function (Yj, YG) {
-          {
-            const Yd = ["玩家ID", "玩家名称", "对手ID", "对手名称", "战斗结果", "战斗时间"];
-            let Yy = [];
-            Yj.forEach(Yx => {
-              {
-                (Yx.targetRoleList || []).forEach(YF => {
-                  {
-                    const Ye = YF.targetRoleInfo || {};
-                    let Yf = "未知";
-                    if (YF.timestamp) {
-                      try {
-                        {
-                          Yf = new Date(YF.timestamp * 1000).toLocaleString("sv-SE");
-                        }
-                      } catch (YC) {
-                        Yf = "无效时间";
-                      }
-                    }
-                    Yy.push({
-                      rid: Yx.roleId,
-                      rname: Yx.name || YG.getAnonymousRoleName(Yx.roleId),
-                      tid: Ye.roleId,
-                      tname: Ye.name || YG.getAnonymousRoleName(Ye.roleId),
-                      res: YF.winFlag ? "胜利" : "失败",
-                      ts: YF.timestamp || 0,
-                      time: Yf
-                    });
-                  }
-                });
-              }
-            });
-            Yy.sort((Yx, YH) => YH.ts - Yx.ts);
-            const Ym = Yy.map(Yx => [Yx.rid, Yx.rname, Yx.tid, Yx.tname, Yx.res, Yx.time]);
-            const Yl = XLSX.utils.aoa_to_sheet([Yd, ...Ym]);
-            const Yz = {
-              wch: 15
-            };
-            const YB = {
-              wch: 20
-            };
-            const YW = {
-              wch: 15
-            };
-            const YS = {
-              wch: 20
-            };
-            const YR = {
-              wch: 10
-            };
-            const YX = {
-              wch: 20
-            };
-            Yl["!cols"] = [Yz, YB, YW, YS, YR, YX];
-            return Yl;
-          }
-        };
-        console.log("[咸鱼助手] 成功注入盐场战报导出器到 <" + Y6.name + ">！");
-      }
-    }
-  };
-  const O = {
-    patched: false,
-    patchModule: function () {
-      {
-        if (this.patched || !q) {
-          return;
-        }
-        try {
-          {
-            const Y9 = unsafeWindow.__require("ModuleManager");
-            const YY = unsafeWindow.__require("Configs");
-            const Yj = unsafeWindow.__require("data-index");
-            const YG = unsafeWindow.__require("TipsManager");
-            const YL = unsafeWindow.__require("Configs").ItemConf;
-            const Ys = unsafeWindow.__require("LanguageExt");
-            const Yd = Y9.GET_MODULE(YY.ModuleType.BOX);
-            if (!Yd) {
-              return;
-            }
-            Yd.sendOpenBox = function (Yy, Ym) {
-              {
-                const YB = this;
-                return new Promise(function (YW) {
-                  {
-                    const YX = {
-                      itemId: Yy,
-                      number: Ym
-                    };
-                    Yj.ItemService.openBox(YX).then(function (Yx) {
-                      {
-                        if (Yx.code) {
-                          {
-                            YW(null);
-                          }
-                        } else {
-                          {
-                            YB.syncBoxPoint();
-                            const Yf = YL.getById(Yy);
-                            const Yo = Yf ? Ys.GET_CONTENT(Yf.name) : "宝箱";
-                            YG.SHOW_TIP("成功开启 " + Ym + " 个" + Yo);
-                            YW(null);
-                          }
-                        }
-                      }
-                    });
-                  }
-                });
-              }
-            };
-            this.patched = true;
-            console.log("[咸鱼助手] 成功注入宝箱增强模块 (无CD/跳过所有动画)！");
-          }
-        } catch (Yy) {}
-      }
-    }
-  };
-  const w = {
-    patchDialog: function (Y6) {
-      {
-        Y6.prototype._isSkipRed = false;
-        Y6.prototype._skipRedCheckbox = null;
-        Y6.prototype._skipRedLabel = null;
-        const Y9 = Y6.prototype._changeAutoState;
-        Y6.prototype._changeAutoState = function () {
-          {
-            Y9.apply(this, arguments);
-            if (this._isOpenAuto) {
-              {
-                if (!this._skipRedCheckbox) {
-                  {
-                    try {
-                      {
-                        const Ym = this.ui.m_btnHelp;
-                        if (!Ym) {
-                          {
-                            console.error("[咸鱼助手][淬炼增强] 找不到帮助按钮作为定位锚点。");
-                            return;
-                          }
-                        }
-                        const Yl = unsafeWindow.fgui.UIPackage.createObject("ui_common", "BtnCheckBox").asButton;
-                        Yl.selected = this._isSkipRed;
-                        const Yz = unsafeWindow.fgui.UIPackage.createObject("ui_common", "TextArea").asButton;
-                        Yz.text = "跳过红色";
-                        Yz.fontSize = 24;
-                        Yz.color = new unsafeWindow.cc.Color(155, 92, 46);
-                        const YB = 30;
-                        const YW = 0;
-                        Yl.setPosition(YB, Ym.y + (Ym.height - Yl.height) / 2);
-                        Yz.setPosition(Yl.x + Yl.width + YW, Ym.y + 12 + (Ym.height - Yl.height) / 2);
-                        Yl.onClick(() => {
-                          {
-                            if (Yl.selected) {
-                              {
-                                const Yx = unsafeWindow.__require("index-ui");
-                                const YH = unsafeWindow.__require("NormalDialog");
-                                Yx.SHOW_SIMPLE_DIALOG(YH.NormalDialog, {
-                                  content: "确定关闭红色淬炼提醒弹窗吗?自动淬炼过程中如果遇到红色淬炼将不再出现确认弹窗，并会自动继续洗炼",
-                                  hook: Yc => {
-                                    {
-                                      this._isSkipRed = Yc;
-                                      Yl.selected = Yc;
-                                    }
-                                  }
-                                });
-                              }
-                            } else {
-                              this._isSkipRed = false;
-                            }
-                          }
-                        });
-                        this.ui.addChild(Yl);
-                        this.ui.addChild(Yz);
-                        this._skipRedCheckbox = Yl;
-                        this._skipRedLabel = Yz;
-                      }
-                    } catch (YR) {
-                      console.error("[咸鱼助手][淬炼增强] 创建自定义UI时出错", YR);
-                    }
-                  }
-                }
-              }
-            } else {
-              this._skipRedCheckbox && (this._skipRedCheckbox.dispose(), this._skipRedCheckbox = null);
-              this._skipRedLabel && (this._skipRedLabel.dispose(), this._skipRedLabel = null);
-              this._isSkipRed = false;
-            }
-          }
-        };
-        const YY = Y6.prototype.onHide;
-        Y6.prototype.onHide = function () {
-          {
-            this._skipRedCheckbox && (this._skipRedCheckbox.dispose(), this._skipRedCheckbox = null);
-            if (this._skipRedLabel) {
-              {
-                this._skipRedLabel.dispose();
-                this._skipRedLabel = null;
-              }
-            }
-            this._isSkipRed = false;
-            YY.apply(this, arguments);
-          }
-        };
-        const Yj = Y6.prototype._checkQuenchConfirm;
-        Y6.prototype._checkQuenchConfirm = function () {
-          {
-            if (q) {
-              {
-                const Ys = this._equipInfo.quenches;
-                let Yd = false;
-                this._needConfrimQuenches.length = 0;
-                const Yy = 5;
-                const Ym = 6;
-                Ys.forEach((Yl, Yz) => {
-                  {
-                    if (this._locks.has(Yz)) {
-                      return;
-                    }
-                    let YS = false;
-                    if (Yl.colorId === Yy && !this._isSkipOrange) {
-                      {
-                        YS = true;
-                      }
-                    }
-                    if (Yl.colorId === Ym && !this._isSkipRed) {
-                      {
-                        YS = true;
-                      }
-                    }
-                    YS && (Yd = true, this._needConfrimQuenches.push(Yl));
-                  }
-                });
-                return Yd;
-              }
-            }
-            return Yj.apply(this, arguments);
-          }
-        };
-        console.log("[咸鱼助手] 成功注入淬炼增强模块到 <" + Y6.name + ">！");
-      }
-    }
-  };
-  const b = {
-    DIALOGS_TO_BLOCK: ["TimeGiftDialog", "ActivityFestivalSpringFaceDialog24", "ActivityFestivalSpringFaceLongAnimationDialog24"],
-    isPatched: false,
-    patchDialog: function (Y6) {
-      {
-        try {
-          {
-            const Y9 = unsafeWindow.__require(Y6);
-            if (!Y9 || !Y9[Y6]) {
-              {
-                console.warn("[咸鱼助手][拦截器] 警告：无法找到模块 " + Y6 + "，已跳过。");
-                return;
-              }
-            }
-            const YY = Y9[Y6];
-            const Yj = YY.prototype.show;
-            if (typeof Yj !== "function") {
-              {
-                console.warn("[咸鱼助手][拦截器] 警告：" + Y6 + " 的 show 方法不存在，无法实现无感拦截。");
-                return;
-              }
-            }
-            YY.prototype.show = function () {
-              {
-                console.log("[咸鱼助手][拦截器] " + Y6 + " 尝试显示，已被无感拦截！");
-                if (this.isShow) {
-                  {
-                    setTimeout(() => {
-                      {
-                        if (typeof this.close === "function") {
-                          this.close();
-                        } else {
-                          if (typeof this.hide === "function") {
-                            this.hide();
-                          }
-                        }
-                      }
-                    }, 0);
-                  }
-                }
-                return Promise.resolve();
-              }
-            };
-            console.log("[咸鱼助手][拦截器] 成功修改 " + Y6 + " 的 show 方法，实现无感拦截。");
-          }
-        } catch (Ys) {
-          {
-            Ys.message.includes("Cannot find module") ? console.warn("[咸鱼助手][拦截器] 警告：模块 " + Y6 + " 未找到，已跳过。") : console.error("[咸鱼助手][拦截器] 在修改 " + Y6 + " 过程中发生错误:", Ys);
-          }
-        }
-      }
+    "decryptBlock": function (_0x30b9f6, _0x5a3c0a) {
+      var _0xdbbeea = _0x30b9f6[_0x5a3c0a + 1];
+      _0x30b9f6[_0x5a3c0a + 1] = _0x30b9f6[_0x5a3c0a + 3];
+      _0x30b9f6[_0x5a3c0a + 3] = _0xdbbeea;
+      this._doCryptBlock(_0x30b9f6, _0x5a3c0a, this._invKeySchedule, _0x3301ae, _0x462da5, _0x40f686, _0x1a6204, _0x14ef47);
+      _0xdbbeea = _0x30b9f6[_0x5a3c0a + 1];
+      _0x30b9f6[_0x5a3c0a + 1] = _0x30b9f6[_0x5a3c0a + 3];
+      _0x30b9f6[_0x5a3c0a + 3] = _0xdbbeea;
     },
-    patchAllDialogs: function () {
-      {
-        if (this.isPatched || typeof unsafeWindow.__require !== "function") {
-          return;
+    "_doCryptBlock": function (_0x4d915b, _0x21e299, _0x43a975, _0x23c7ea, _0x30d775, _0x2ad58f, _0x444d8b, _0x1025d7) {
+      var _0x1b6305 = this._nRounds,
+        _0x4d50a5 = _0x4d915b[_0x21e299] ^ _0x43a975[0],
+        _0x43d7aa = _0x4d915b[_0x21e299 + 1] ^ _0x43a975[1],
+        _0x577a7a = _0x4d915b[_0x21e299 + 2] ^ _0x43a975[2],
+        _0x5ac197 = _0x4d915b[_0x21e299 + 3] ^ _0x43a975[3],
+        _0x3ef559 = 4,
+        _0xd9a7f6 = 1;
+      for (; _0xd9a7f6 < _0x1b6305; _0xd9a7f6++) {
+        {
+          var _0x4d9d23 = _0x23c7ea[_0x4d50a5 >>> 24] ^ _0x30d775[_0x43d7aa >>> 16 & 255] ^ _0x2ad58f[_0x577a7a >>> 8 & 255] ^ _0x444d8b[_0x5ac197 & 255] ^ _0x43a975[_0x3ef559++];
+          var _0x5b1efd = _0x23c7ea[_0x43d7aa >>> 24] ^ _0x30d775[_0x577a7a >>> 16 & 255] ^ _0x2ad58f[_0x5ac197 >>> 8 & 255] ^ _0x444d8b[_0x4d50a5 & 255] ^ _0x43a975[_0x3ef559++];
+          var _0x49e7a3 = _0x23c7ea[_0x577a7a >>> 24] ^ _0x30d775[_0x5ac197 >>> 16 & 255] ^ _0x2ad58f[_0x4d50a5 >>> 8 & 255] ^ _0x444d8b[_0x43d7aa & 255] ^ _0x43a975[_0x3ef559++];
+          _0x5ac197 = _0x23c7ea[_0x5ac197 >>> 24] ^ _0x30d775[_0x4d50a5 >>> 16 & 255] ^ _0x2ad58f[_0x43d7aa >>> 8 & 255] ^ _0x444d8b[_0x577a7a & 255] ^ _0x43a975[_0x3ef559++];
+          _0x4d50a5 = _0x4d9d23;
+          _0x43d7aa = _0x5b1efd;
+          _0x577a7a = _0x49e7a3;
         }
-        console.log("[咸鱼助手] 开始批量部署无感弹窗拦截...");
-        console.log("[咸鱼助手] 当前拦截列表:", this.DIALOGS_TO_BLOCK);
-        this.DIALOGS_TO_BLOCK.forEach(this.patchDialog);
-        this.isPatched = true;
-        console.log("[咸鱼助手] 所有目标弹窗拦截器已部署完毕。");
       }
-    }
-  };
-  const r = {
-    patched: false,
-    patchModule: function () {
-      {
-        if (this.patched || !q) {
-          {
-            return;
-          }
-        }
-        try {
-          {
-            if (typeof unsafeWindow.__require !== "function") {
-              {
-                return;
-              }
-            }
-            const YY = unsafeWindow.__require("data-index");
-            const Yj = YY.EMTeamType.nightMare;
-            if (!YY || !YY.TeamService || typeof YY.TeamService.setTeam !== "function" || Yj === undefined) {
-              {
-                return;
-              }
-            }
-            const YG = YY.TeamService.setTeam;
-            console.log("[咸鱼助手][防同步] 已成功定位到原始的 TeamService.setTeam 方法。");
-            YY.TeamService.setTeam = function (Yd) {
-              {
-                if (Yd && Yd.teamType === Yj) {
-                  {
-                    console.warn("[咸鱼助手][防同步] 拦截到“噩梦模式”的布阵同步请求，已阻止发送到服务器。");
-                    console.log("[咸鱼助手][防同步] 拦截到的阵容数据:", Yd.battleTeam);
-                    console.log("[咸鱼助手][防同步] 拦截到的武器ID:", Yd.lordWeaponId);
-                    return Promise.resolve({
-                      code: 0,
-                      rawData: {},
-                      getData: function () {
-                        {
-                          return {};
-                        }
-                      }
-                    });
-                  }
-                }
-                console.log("[咸鱼助手][防同步] 检测到非噩梦模式的布阵请求，已放行。类型: " + Yd.teamType);
-                return YG.apply(this, arguments);
-              }
-            };
-            this.patched = true;
-            console.log("[咸鱼助手][十殿] 成功注入！十殿模式的布阵将不会同步到服务器。");
-          }
-        } catch (Yd) {}
-      }
-    }
-  };
-  let U = false;
-  let A = false;
-  let t = false;
-  let J = false;
-  let T = false;
-  let D = false;
-  let Y0 = false;
-  let Y1 = false;
-  let Y2 = false;
-  const Y3 = setInterval(() => {
-    if (typeof unsafeWindow.__require !== "function" || typeof unsafeWindow.fgui !== "object") {
-      {
-        return;
-      }
-    }
-    const Y6 = U && A && t && J && T && D && Y0 && Y1 && Y2;
-    if (Y6) {
-      {
-        clearInterval(Y3);
-        console.log("[咸鱼助手] 所有模块已成功注入。脚本运行中...");
-        return;
-      }
-    }
-    !Y2 && (b.patchAllDialogs(), Y2 = b.isPatched);
-    if (!U) {
-      try {
-        const YY = unsafeWindow.__require("MainPanel");
-        YY && YY.MainPanel && (n.patchPanel(YY.MainPanel), U = true);
-      } catch (Yj) {}
-    }
-    if (!A) {
-      try {
-        const YG = unsafeWindow.__require("BottleRobotDialog");
-        YG && YG.BottleRobotDialog && (i.patchPanel(YG.BottleRobotDialog), A = true);
-      } catch (YL) {}
-    }
-    if (!t) {
-      try {
-        const Ys = unsafeWindow.__require("BoxPanel");
-        Ys && Ys.BoxPanel && (V.patchPanel(Ys.BoxPanel), t = true);
-      } catch (Yd) {}
-    }
-    if (!J) {
-      try {
-        const Yy = "GVGRecordDialogNew";
-        const Ym = unsafeWindow.__require(Yy);
-        Ym && Ym[Yy] && (Z.patchPanel(Ym[Yy]), J = true);
-      } catch (Yl) {}
-    }
-    if (!T) {
-      try {
-        const Yz = "LegionWarReportDialog";
-        const YB = unsafeWindow.__require(Yz);
-        YB && YB[Yz] && (a.patchDialog(YB[Yz]), T = true);
-      } catch (YW) {}
-    }
-    !D && (O.patchModule(), D = O.patched);
-    if (!Y0) {
-      try {
-        const YS = unsafeWindow.__require("QuenchStageUpDialog");
-        YS && YS.QuenchStageUpDialog && (w.patchDialog(YS.QuenchStageUpDialog), Y0 = true);
-      } catch (YR) {}
-    }
-    !Y1 && (r.patchModule(), Y1 = r.patched);
-  }, 500);
+      _0x4d9d23 = (_0x1025d7[_0x4d50a5 >>> 24] << 24 | _0x1025d7[_0x43d7aa >>> 16 & 255] << 16 | _0x1025d7[_0x577a7a >>> 8 & 255] << 8 | _0x1025d7[_0x5ac197 & 255]) ^ _0x43a975[_0x3ef559++];
+      _0x5b1efd = (_0x1025d7[_0x43d7aa >>> 24] << 24 | _0x1025d7[_0x577a7a >>> 16 & 255] << 16 | _0x1025d7[_0x5ac197 >>> 8 & 255] << 8 | _0x1025d7[_0x4d50a5 & 255]) ^ _0x43a975[_0x3ef559++];
+      _0x49e7a3 = (_0x1025d7[_0x577a7a >>> 24] << 24 | _0x1025d7[_0x5ac197 >>> 16 & 255] << 16 | _0x1025d7[_0x4d50a5 >>> 8 & 255] << 8 | _0x1025d7[_0x43d7aa & 255]) ^ _0x43a975[_0x3ef559++];
+      _0x5ac197 = (_0x1025d7[_0x5ac197 >>> 24] << 24 | _0x1025d7[_0x4d50a5 >>> 16 & 255] << 16 | _0x1025d7[_0x43d7aa >>> 8 & 255] << 8 | _0x1025d7[_0x577a7a & 255]) ^ _0x43a975[_0x3ef559++];
+      _0x4d915b[_0x21e299] = _0x4d9d23;
+      _0x4d915b[_0x21e299 + 1] = _0x5b1efd;
+      _0x4d915b[_0x21e299 + 2] = _0x49e7a3;
+      _0x4d915b[_0x21e299 + 3] = _0x5ac197;
+    },
+    "keySize": 8
+  });
+  _0x57fd1d.centos = _0x28d4ba._createHelper(_0x40ed07);
 })();
