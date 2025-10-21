@@ -1,3479 +1,2050 @@
-//Tue Oct 21 2025 06:03:21 GMT+0000 (Coordinated Universal Time)
+//Tue Oct 21 2025 06:17:09 GMT+0000 (Coordinated Universal Time)
 //Base:<url id="cv1cref6o68qmpt26ol0" type="url" status="parsed" title="GitHub - echo094/decode-js: JS混淆代码的AST分析工具 AST analysis tool for obfuscated JS code" wc="2165">https://github.com/echo094/decode-js</url>
 //Modify:<url id="cv1cref6o68qmpt26olg" type="url" status="parsed" title="GitHub - smallfawn/decode_action: 世界上本来不存在加密，加密的人多了，也便成就了解密" wc="741">https://github.com/smallfawn/decode_action</url>
 (function () {
-  const L = {
-    xfddd: function (c, B) {
-      return c(B);
-    },
-    dEhyz: "发送验证码请求失败",
-    cWneM: "POST",
-    wuRVd: "https://ucenter-app-server.hortorgames.com/ucenter-app-server/api/v1/login/verify/code",
-    RGYUH: "Mozilla/5.0 (Linux; Android 12; 22081212C Build/SKQ1.220303.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.60 Mobile Safari/537.36",
-    nsELy: "application/json; charset=utf-8",
-    vosbF: "ucenter-app-server.hortorgames.com",
-    VvFQE: "Keep-Alive",
-    rsGSD: "gzip",
-    NAXxP: function (c, B) {
-      return c(B);
-    },
-    sLUbf: "发送验证码请求超时",
-    GdhDI: function (c, B) {
-      return c !== B;
-    },
-    qBaJc: "TYeEY",
-    rziKO: "MVnpX",
-    jSOmD: function (c, B) {
-      return c === B;
-    },
-    fbjXg: "hHfNH",
-    wVWlH: "eFbtp",
-    sFwJY: "XYWZ_ToolboxConfig_v10.1",
-    qYdVu: "RgGcl",
-    oITpS: "RaloL",
-    GuxTJ: "rHUQN",
-    rGLNR: "nWrCG",
-    piPTl: "xcJdI",
-    TWNhS: function (c, B) {
-      return c !== B;
-    },
-    qCEWv: "XwYgC",
-    lUrDn: "ibDko",
-    jouBo: function (c, B) {
-      return c(B);
-    },
-    zPTka: function (c, B) {
-      return c !== B;
-    },
-    VRPjl: "tZETp",
-    dKIqE: function (c, B) {
-      return c !== B;
-    },
-    ZRRxw: "SXKPy",
-    Ptcbc: "kXNra",
-    oEBWP: "未知错误",
-    IEBuO: function (c, B) {
-      return c === B;
-    },
-    ECCur: "TURlO",
-    AQhfW: "DrJTm",
-    OhWKc: "XplkO",
-    LaAqG: "RuPyL",
-    yNBKj: "dFPke",
-    UbewS: function (c, B) {
-      return c !== B;
-    },
-    vFKtC: "HYXyh",
-    HCqXh: "当前没有可删除的账号。",
-    qkXkp: function (c, B) {
-      return c + B;
-    },
-    WCpUS: function (c, B) {
-      return c + B;
-    },
-    xYYjL: "return (function() ",
-    AKAXC: "{}.constructor(\"return this\")( )",
-    WMhCn: "JoYtX",
-    WAGsL: "TAUVc",
-    JYHAF: function (c, B) {
-      return c !== B;
-    },
-    DFGdo: "pclVu",
-    ucKzF: "DsclS",
-    uTDWq: "gOdgH",
-    SglBN: "Enter",
-    TMvNw: "send-code-btn",
-    dFais: function (c, B) {
-      return c !== B;
-    },
-    Efcwa: "XEnAJ",
-    OdvsX: function (c, B) {
-      return c !== B;
-    },
-    mmKRB: "qRQJs",
-    oDVas: function (c, B) {
-      return c === B;
-    },
-    dOscC: "ByHNM",
-    NLjVL: function (c, B) {
-      return c === B;
-    },
-    TIMop: "gnBcu",
-    XgGXX: function (c, B) {
-      return c(B);
-    },
-    ReaJd: function (c, B) {
-      return c + B;
-    },
-    JdpxA: "网络请求失败: ",
-    NWtNF: "AIarz",
-    dlVxk: "FooCC",
-    IEdxa: "未知账号",
-    WxmAo: ".bin",
-    cGlVp: function (c, B) {
-      return c !== B;
-    },
-    wNuiC: "bIfGk",
-    NNgTJ: "OWsrZ",
-    UfuqP: ".json",
-    cnKpD: "LgrGg",
-    VQqBn: "phone-login-btn",
-    Ythav: function (c, B) {
-      return c !== B;
-    },
-    algio: "elKNE",
-    wFFCk: "ZiKxf",
-    NpkFl: "DID-0e782e88-2f3b-4f5b-9020-47f5e5a5a026",
-    WyPPo: "while (true) {}",
-    RUcar: "counter",
-    btfbf: function (c, B) {
-      return c === B;
-    },
-    tHaVk: "kuahf",
-    ULKXe: "BSVVH",
-    HLPCq: "SwMfY",
-    EvZJe: "登录请求超时",
-    WiuGn: function (c, B) {
-      return c === B;
-    },
-    XkYAc: "TugKh",
-    strvM: "hortor",
-    NKKhx: "mix",
-    AXcVb: "FwuPu",
-    uEWyM: "MqZyr",
-    fxgdK: function (c, B) {
-      return c(B);
-    },
-    Qabjx: "请先发送验证码",
-    bVVoS: "error",
-    xrmcC: "登录响应格式错误",
-    wjKyu: "UTF-8",
-    Lyxuo: function (c, B) {
-      return c === B;
-    },
-    naGyd: "zxxnd",
-    YbdeC: "yWhIA",
-    OBpOY: "正在发送验证码...",
-    cpdId: "info",
-    juCnT: "xyzwapp",
-    PgYSY: "app",
-    YPfWS: "Android 12",
-    FNNLX: "4.2.1-cn-release",
-    fVahM: "22081212C",
-    TVpLX: "Redmi",
-    NtPKZ: "android",
-    kgCxF: "login",
-    poSsm: "com.hortor.games.xyzw",
-    CkeHg: "E6:F7:FE:A9:EC:8E:24:D0:4F:2A:32:50:28:78:E1:C5:5E:70:81:13",
-    HOnLl: "554e4fb740b853e1",
-    uIEep: function (c, B) {
-      return c !== B;
-    },
-    oZBnk: "CnQyP",
-    mNYke: "mIZCV",
-    jtQtz: function (c, B) {
-      return c === B;
-    },
-    zfUoP: "KxscF",
-    cASMx: "UuDxc",
-    JUnvi: "LDkll",
-    rdXCx: "vHnUb",
-    eHCkW: "success",
-    OQHnD: function (c, B) {
-      return c === B;
-    },
-    cdQbt: "bQrsQ",
-    pskyv: "发送失败",
-    KIeOW: "kAZsH",
-    fVVRE: "active",
-    PCxYL: ".login-method-btn",
-    UjXAx: ".qrcode-login-container",
-    GXgdX: ".phone-login-container",
-    NqqfX: "wechat",
-    FrRYm: "phone",
-    mROQk: "2|4|3|1|0|5",
-    rGPyp: "phone-number",
-    aaabY: "请输入手机号获取验证码",
-    kasld: "verify-code",
-    ihCzc: function (c, B) {
-      return c > B;
-    },
-    jZgon: function (c, B) {
-      return c / B;
-    },
-    JEukE: function (c, B) {
-      return c < B;
-    },
-    bfXwG: function (c, B) {
-      return c * B;
-    },
-    GWhuT: "WnXvh",
-    NGJQV: function (c, B) {
-      return c - B;
-    },
-    HEHdl: function (c, B) {
-      return c - B;
-    },
-    rFqlR: function (c, B) {
-      return c <= B;
-    },
-    AcOAO: "Sqcub",
-    YsFwp: "iyciu",
-    cOnBw: "nygNJ",
-    fzBJT: "BJGSf",
-    zWQTG: "UiTIM",
-    KMMCD: function (c, B) {
-      return c === B;
-    },
-    QpHLq: "hztwf",
-    rwrvR: "oLyEz",
-    sllsi: function (c, B, p) {
-      return c(B, p);
-    },
-    gQeCj: "flex",
-    UetqQ: "none",
-    TIYBT: "RROnh",
-    SfqcZ: "EOhIU",
-    fXXnL: "KgOUf",
-    NqJFZ: "NightmareBattlePanel",
-    yHBHI: function (c, B) {
-      return c(B);
-    },
-    hewQM: function (c, B) {
-      return c + B;
-    },
-    Xqdmw: function (c, B) {
-      return c + B;
-    },
-    KLbAh: function (c) {
-      return c();
-    },
-    ruAKd: function (c, B) {
-      return c === B;
-    },
-    sLErj: "BUTTON",
-    WXnkD: function (c, B) {
-      return c(B);
-    },
-    ZIQUu: function (c) {
-      return c();
-    },
-    LUMrI: function (c, B) {
-      return c(B);
-    },
-    KhUTu: "错误：在配置中找不到要删除的账号。",
-    yLcok: function (c, B) {
-      return c !== B;
-    },
-    IOoal: "bWcDy",
-    DgnAn: "udFLW",
-    rqrvf: "fcqTR",
-    fDOXp: "Zkaut",
-    khogS: "正在验证登录...",
-    IFybu: function (c, B) {
-      return c !== B;
-    },
-    IPwtR: "ozIbY",
-    nvUbC: "QwDnB",
-    tqiQI: "mvRju",
-    diWCW: "QHckv",
-    DJPBL: function (c, B) {
-      return c === B;
-    },
-    hoTOp: "OwmGC",
-    Bbtwd: "zREIK",
-    oMKkR: "block",
-    FxZwu: function (c, B) {
-      return c / B;
-    },
-    MvIRl: function (c, B) {
-      return c - B;
-    },
-    moFcM: function (c, B) {
-      return c(B);
-    },
-    vShpS: function (c, B) {
-      return c(B);
-    },
-    WlEIW: "登录请求失败",
-    nGTzv: "Mozilla/5.0 (Linux; Android 12; 23117RK66C Build/V417IR; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/95.0.4638.74 Mobile Safari/537.36",
-    iFyjm: "*/*",
-    xCOIc: "comb-platform.hortorgames.com",
-    xjzoY: "keep-alive",
-    HIiaq: "text/plain; charset=utf-8",
-    FHTcH: "https://open.weixin.qq.com",
-    ezvJT: "https://open.weixin.qq.com/",
-    vVxcD: "rXTtb",
-    XjECO: function (c, B) {
-      return c(B);
-    },
-    uTvRH: function (c, B) {
-      return c(B);
-    },
-    CfnBa: function (c, B) {
-      return c % B;
-    },
-    xafGh: function (c, B) {
-      return c(B);
-    },
-    byIIj: "aAGKL",
-    KtQjt: "DYHJz",
-    rPGav: function (c, B) {
-      return c !== B;
-    },
-    BGGXc: "QElHn",
-    sjHPL: "ZvPON",
-    XHfUz: function (c, B) {
-      return c >= B;
-    },
-    irQLR: function (c, B) {
-      return c ^ B;
-    },
-    uJsTk: "4|0|2|1|5|3",
-    RZGCl: "HZbSU",
-    XJHKx: function (c, B) {
-      return c !== B;
-    },
-    nKdrX: "XZepr",
-    WRxyE: "app-mobile",
-    GMyIZ: function (c, B) {
-      return c + B;
-    },
-    jzZKe: "https://comb-platform.hortorgames.com/comb-login-server/api/v1/login?gameId=xyzwapp&timestamp=",
-    bxQro: "&version=android-4.2.1-cn-release&cryptVersion=1.1.0&gameTp=app&system=android&deviceUniqueId=6b6c5c4c256562fb90e6f70b97276339&packageName=com.hortor.games.xyzw",
-    SgUtW: function (c, B) {
-      return c !== B;
-    },
-    nihzn: "vdzNF",
-    rCLms: "PWUsz",
-    vBSRY: function (c, B) {
-      return c !== B;
-    },
-    khSlb: "srMvD",
-    NFqwI: "jgxqs",
-    nmskd: function (c, B) {
-      return c === B;
-    },
-    zXSQA: "EMRwV",
-    fWOEa: "Nwxei",
-    Murtk: "function",
-    nDsCW: "pqCOf",
-    XTFlB: "amImz",
-    PWtuo: "ZwXPH",
-    hGPHa: "Otles",
-    dyvBZ: "fDSRp",
-    tyxIB: function (c, B) {
-      return c === B;
-    },
-    INnpY: "wGwJo",
-    ZLazD: function (c, B) {
-      return c !== B;
-    },
-    YbUJp: "omvbY",
-    NuJYD: "TaSqa",
-    PaIIF: "无法访问游戏加密模块，请确保在游戏页面内使用此功能",
-    GwLrC: function (c, B) {
-      return c === B;
-    },
-    NLAvM: "eNuKH",
-    UtuDK: "pqpiK",
-    ylIxX: function (c, B) {
-      return c !== B;
-    },
-    UwaZf: "pNdiH",
-    Tbqus: function (c, B) {
-      return c(B);
-    },
-    XuPdM: function (c, B) {
-      return c !== B;
-    },
-    ywvTh: "SXPuq",
-    dTShF: function (c, B) {
-      return c(B);
-    },
-    zjxfz: function (c, B) {
-      return c(B);
-    },
-    pfTUU: "collapse-btn",
-    HgeFe: "touch",
-    jvEhQ: function (c, B) {
-      return c > B;
-    },
-    pHnkM: "touchmove",
-    bTAwD: "mousemove",
-    LzZvB: "touchend",
-    AiaZP: "mouseup",
-    KeMLQ: "RLMRd",
-    IzLMd: function (c, B) {
-      return c === B;
-    },
-    DwJwW: "lWsxP",
-    JYrOC: "XEzmk",
-    HBqCU: "正在获取二维码...",
-    CmLVc: function (c, B) {
-      return c !== B;
-    },
-    tViPY: "aeemB",
-    QgqYs: "所有获取二维码的方法都失败了",
-    YEedy: "NXDWJ",
-    WWEwg: "WdfEA",
-    HMjxs: "speed-indicator",
-    yZBLi: function (c, B) {
-      return c - B;
-    },
-    lZPpW: function (c, B) {
-      return c <= B;
-    },
-    XRxSV: "lJbim",
-    wUaqU: "NokoD",
-    XIoZb: "CByZR",
-    lOkor: "nPkvG",
-    NKjrl: "请求超时，请检查网络连接",
-    FzVoj: "sYfzo",
-    VWAnn: "kKvzu",
-    vSyCN: "GET",
-    SGeoF: "Mozilla/5.0 (Linux; Android 7.0; Mi-4c Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/53.0.2785.49 Mobile MQQBrowser/6.2 TBS/043632 Safari/537.36 MicroMessenger/6.6.1.1220(0x26060135) NetType/WIFI Language/zh_CN",
-    loyHh: "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
-    BcQqg: function (c, B) {
-      return c !== B;
-    },
-    oZMhn: "xijoT",
-    KEYoI: function (c, B) {
-      return c !== B;
-    },
-    nQhdq: "jCZae",
-    GhgEq: "https://open.weixin.qq.com/connect/app/qrconnect?appid=wxfb0d5667e5cb1c44&bundleid=com.hortor.games.xyzw&scope=snsapi_base,snsapi_userinfo,snsapi_friend,snsapi_message&state=weixin",
-    PZzok: "N/A",
-    LCxrY: function (c, B) {
-      return c !== B;
-    },
-    eIoMd: "ulXzx",
-    DKCqs: "text/html",
-    KpSZb: "img.auth_qrcode",
-    pmudN: "lIpxd",
-    shrDe: function (c, B) {
-      return c === B;
-    },
-    dGABo: "HaiXX",
-    VlQpE: "EzmHK",
-    Cxthy: function (c, B) {
-      return c === B;
-    },
-    uMKWO: "ePPBW",
-    NtQdq: "CnDAY",
-    ptPOb: function (c, B) {
-      return c !== B;
-    },
-    EyWYC: "mbEEa",
-    KOlpf: "TcNHR",
-    tnXvX: "未找到二维码图片",
-    BdUQn: "请使用微信扫描二维码",
-    bgcgo: "hNwpK",
-    bWdvG: "oUztu",
-    JuEGT: function (c, B) {
-      return c(B);
-    },
-    AAzSI: function (c, B) {
-      return c !== B;
-    },
-    KdaOz: "WxcGN",
-    ioIBr: "StCpV",
-    RuAPO: "qr-placeholder",
-    EkhGq: "qr-image",
-    MLPTk: function (c, B) {
-      return c !== B;
-    },
-    HCSiC: "qizzx",
-    etbZZ: "Configs",
-    GTePY: "pvpBattleSpeed",
-    npxuT: function (c, B) {
-      return c === B;
-    },
-    KzshO: "kJkic",
-    AExUA: function (c, B, p) {
-      return c(B, p);
-    },
-    MzRqN: function (c, B) {
-      return c <= B;
-    },
-    jedeH: function (c, B) {
-      return c % B;
-    },
-    DkAeT: function (c, B) {
-      return c + B;
-    },
-    tyFyq: function (c, B) {
-      return c - B;
-    },
-    uSFXn: function (c, B) {
-      return c > B;
-    },
-    ScLlB: function (c, B) {
-      return c - B;
-    },
-    wGtsD: function (c, B) {
-      return c - B;
-    },
-    ucRsN: function (c, B) {
-      return c - B;
-    },
-    dnboL: function (c, B) {
-      return c - B;
-    },
-    ZueKh: function (c, B) {
-      return c - B;
-    },
-    ISXRS: function (c, B) {
-      return c(B);
-    },
-    DeqSU: function (c) {
-      return c();
-    },
-    Yhxza: "nightmare_speed_enabled",
-    BLGqt: "change",
-    ZnyGR: function (c, B) {
-      return c !== B;
-    },
-    lOfeT: "eFkjG",
-    LZBYP: "wJLeH",
-    qlbnK: "XYrtU",
-    IUexf: "NTBSR",
-    LWiuE: "qr-status",
-    vvFqj: function (c, B) {
-      return c === B;
-    },
-    qIhSu: "#f44336",
-    wuWHH: "#4CAF50",
-    YwdWo: "#aaa",
-    TkRiz: "NCaix",
-    heLqP: "bKGBN",
-    ftRrZ: "请输入手机号码",
-    bgKZd: "EMQyo",
-    fDTEr: function (c, B) {
-      return c === B;
-    },
-    ACJng: "mZxMX",
-    rJDdN: "FxUdP",
-    JQYsX: "mXqQg",
-    wIotW: "扫码超时，请重新获取二维码",
-    hBFeC: "BpfGv",
-    BHkgJ: "window.wx_errcode=405",
-    fCjKf: function (c, B) {
-      return c === B;
-    },
-    EBmza: "wOCYB",
-    KGBOV: function (c, B) {
-      return c !== B;
-    },
-    qPfIb: "ETRhm",
-    XSTyN: "扫码成功！正在获取登录数据...",
-    tfaBV: "window.wx_errcode=408",
-    OkcnH: "VPVVV",
-    lnDtj: "二维码已过期，请刷新",
-    sUJqT: function (c, B) {
-      return c === B;
-    },
-    YmqjH: function (c, B) {
-      return c !== B;
-    },
-    ZCtLE: "Kvmgg",
-    GGgac: "GNRkS",
-    UuamS: function (c, B) {
-      return c !== B;
-    },
-    tOCAK: "RLuOs",
-    wpSQP: "qQJMz",
-    gvOqg: function (c, B) {
-      return c(B);
-    },
-    KqZXk: function (c, B) {
-      return c + B;
-    },
-    DmKON: function (c, B) {
-      return c + B;
-    },
-    zvQfc: function (c) {
-      return c();
-    },
-    yhVGz: "xwgLe",
-    lLHzT: "ykZDE",
-    UJMGy: function (c, B) {
-      return c !== B;
-    },
-    cPZBp: "MumGt",
-    RPcqw: function (c, B) {
-      return c(B);
-    },
-    HyytV: function (c, B) {
-      return c === B;
-    },
-    jobda: "jyzIm",
-    AIXzg: "fzApz",
-    Zjiit: function (c, B) {
-      return c === B;
-    },
-    ysWFO: "rbzMp",
-    nkTAn: "OZzux",
-    XpwaM: "YEdtK",
-    mPqJt: "pMbtq",
-    RtShp: function (c, B) {
-      return c !== B;
-    },
-    LOtNg: "aUqmk",
-    TpIkV: "cyLeq",
-    PnqPl: function (c, B) {
-      return c === B;
-    },
-    DiUkn: "PPrLJ",
-    NRzYr: "janEI",
-    omNWu: function (c, B) {
-      return c !== B;
-    },
-    aYDPt: "NyllD",
-    YhHod: "Greme",
-    cpLQI: function (c, B) {
-      return c(B);
-    },
-    FgFMh: function (c) {
-      return c();
-    },
-    iHEPB: function (c, B) {
-      return c(B);
-    },
-    LpVmj: "请输入6位数字验证码",
-    ZNbXP: "function *\\( *\\)",
-    ejtNi: "\\+\\+ *(?:[a-zA-Z_$][0-9a-zA-Z_$]*)",
-    VQPNY: "init",
-    fGKeE: "chain",
-    MZAZT: "input",
-    NjnTF: function (c, B, p) {
-      return c(B, p);
-    },
-    OMDvt: "TimerManager",
-    HoKXQ: function (c, B) {
-      return c(B);
-    },
-    HWXIB: "请先选择一个要登录的账号！",
-    JJLzz: function (c, B) {
-      return c === B;
-    },
-    cxbaQ: "hUYLF",
-    RlGuq: "IBIsV",
-    vPHgl: function (c, B) {
-      return c === B;
-    },
-    YIuBs: "Zxkai",
-    FAuYh: "https://comb-platform.hortorgames.com/comb-login-server/api/v1/login?appid=wxfb0d5667e5cb1c44&bundleid=com.hortor.games.xyzw&scope=snsapi_base,snsapi_userinfo,snsapi_friend,snsapi_message&state=weixin&gameId=xyzwapp&timestamp=1735124463&version=android-4.0.6-cn&cryptVersion=1.1.0&gameTp=app&system=android&deviceUniqueId=6b6c5c4c256562fb90e6f70b97276339&packageName=com.hortor.games.xyzw",
-    ADvbM: function (c, B) {
-      return c + B;
-    },
-    zmEFs: function (c, B) {
-      return c + B;
-    },
-    RzmXE: "&version=android-4.2.1-cn-release&cryptVersion=1.1.0&gameTp=app&system=android&deviceUniqueId=DID-0e782e88-2f3b-4f5b-9020-47f5e5a5a026&packageName=com.hortor.games.xyzw",
-    iUTNK: "MiWjl",
-    KzhWy: function (c, B) {
-      return c !== B;
-    },
-    VHVNi: "UrqUJ",
-    gILyb: "Cymrr",
-    bSsUC: function (c, B) {
-      return c === B;
-    },
-    iGpsK: "XeZHO",
-    LjwIH: "pqmhv",
-    TWTYZ: function (c, B) {
-      return c === B;
-    },
-    UVYUv: "yECJz",
-    jwoeb: function (c, B) {
-      return c !== B;
-    },
-    aGQOa: "iRiah",
-    pSLxm: function (c, B) {
-      return c === B;
-    },
-    UFffl: "lNipT",
-    dvjON: function (c, B) {
-      return c !== B;
-    },
-    uSKSG: "KhdIv",
-    lGFYW: "GNdwi",
-    LYhNO: "oYpIB",
-    hAflK: "BtHLZ",
-    wkNJF: "NqcjI",
-    IDfyN: function (c, B) {
-      return c === B;
-    },
-    tCxPT: "LfxHz",
-    nnqqx: "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",
-    JJLOo: function (c, B) {
-      return c + B;
-    },
-    NrFRZ: "...",
-    JNOwM: function (c, B) {
-      return c(B);
-    },
-    KvSXH: "uTPSG",
-    cqxcP: "uVIje",
-    qDkKc: "yRdgD",
-    RnxZJ: function (c, B) {
-      return c === B;
-    },
-    HvWXE: "Yfrug",
-    RkqSi: "bRhqv",
-    iqbCq: "NWRgI",
-    wzrHU: function (c, B) {
-      return c <= B;
-    },
-    evCIf: function (c, B) {
-      return c !== B;
-    },
-    oPfgq: function (c, B) {
-      return c - B;
-    },
-    PyDDn: function (c, B) {
-      return c - B;
-    },
-    bzwnO: "请输入正确的手机号码",
-    iZMEf: function (c, B) {
-      return c === B;
-    },
-    GNMXB: "zVpWF",
-    mhzwR: "KRdND",
-    GQJYA: function (c, B) {
-      return c !== B;
-    },
-    uuIej: function (c, B) {
-      return c % B;
-    },
-    NNNFD: function (c, B) {
-      return c / B;
-    },
-    EklRj: function (c, B) {
-      return c !== B;
-    },
-    NuEWb: "tuUho",
-    YMfkJ: function (c, B) {
-      return c % B;
-    },
-    OVDkO: function (c, B) {
-      return c || B;
-    },
-    BTCtE: function (c, B) {
-      return c >> B;
-    },
-    rTGsf: function (c, B) {
-      return c < B;
-    },
-    IorWW: function (c, B) {
-      return c >= B;
-    },
-    lbtKK: function (c, B) {
-      return c(B);
-    },
-    YDEOj: "HhQIp",
-    bVAkM: "PhUFX",
-    LHvYS: function (c, B) {
-      return c < B;
-    },
-    eGKpz: function (c, B) {
-      return c !== B;
-    },
-    mkIOk: "bjdsi",
-    nxyHn: "NCBJU",
-    XzsXK: function (c, B) {
-      return c * B;
-    },
-    xsQzI: function (c, B) {
-      return c === B;
-    },
-    vLAvC: function (c, B) {
-      return c === B;
-    },
-    ECjKY: function (c, B) {
-      return c !== B;
-    },
-    JQHiM: "cLLpy",
-    qyvsX: function (c, B) {
-      return c || B;
-    },
-    zyWAY: function (c, B) {
-      return c >> B;
-    },
-    GXJSd: function (c, B) {
-      return c !== B;
-    },
-    CcoSC: "xefKF",
-    yMmcX: "vEBGT",
-    GSvId: function (c, B) {
-      return c >= B;
-    },
-    mMfmJ: function (c, B) {
-      return c !== B;
-    },
-    vveUX: "owJXz",
-    rrujB: "WZZIf",
-    mxzVP: function (c, B) {
-      return c ^ B;
-    },
-    xbiku: function (c, B) {
-      return c(B);
-    },
-    DHDGp: function (c, B) {
-      return c + B;
-    },
-    vLIPl: function (c, B) {
-      return c !== B;
-    },
-    zznXf: "LoYcM",
-    FoxJj: "Squmu",
-    JtFah: "new-account-name",
-    hecAV: function (c, B) {
-      return c === B;
-    },
-    fPyxn: "BuioU",
-    WBCiF: "ygUZg",
-    YvCxk: "请输入账号名称",
-    BPPAj: function (c, B) {
-      return c > B;
-    },
-    Fuctg: "xnRWp",
-    yJklR: function (c, B) {
-      return c !== B;
-    },
-    YeTFA: "KooxV",
-    GTIbM: "vorJf",
-    rNReA: "gjgQN",
-    Qqnie: function (c, B) {
-      return c(B);
-    },
-    wACLd: "QtQfA",
-    mHMzp: function (c, B) {
-      return c === B;
-    },
-    jxYBh: "dOgTd",
-    ZPxae: "AYjOb",
-    mQDLs: function (c, B) {
-      return c(B);
-    },
-    buvSM: function (c, B) {
-      return c(B);
-    },
-    YHJbK: "JyYuY",
-    OTbrN: function (c, B) {
-      return c !== B;
-    },
-    cOcIz: "pvatd",
-    usLvT: "Yezjm",
-    hmCJc: function (c, B) {
-      return c < B;
-    },
-    FKqvs: "WpRlv",
-    JnlzA: "jmsdf",
-    GzdeP: function (c, B, p) {
-      return c(B, p);
-    },
-    UbRSo: "application/octet-stream",
-    GbDbN: function (c, B) {
-      return c === B;
-    },
-    WOojO: "IbDdC",
-    UWKws: "jDkkp",
-    odToa: "ZCKzx",
-    YvxcB: "xiuqn",
-    aeJSA: function (c, B) {
-      return c === B;
-    },
-    pEzod: function (c, B) {
-      return c !== B;
-    },
-    kiSsP: "LTUrA",
-    GSsyt: "eTPEN",
-    vyIrZ: function (c, B) {
-      return c && B;
-    },
-    TGFOE: function (c, B) {
-      return c === B;
-    },
-    ZthzO: "xYLAz",
-    QRdyU: "点击二维码区域获取/刷新",
-    OFHNH: function (c, B) {
-      return c !== B;
-    },
-    aBmjG: "QLHvx",
-    JulPX: "IPJih",
-    CuqFn: function (c, B) {
-      return c(B);
-    },
-    TItPF: "beforeend",
-    JRXDJ: function (c) {
-      return c();
-    },
-    DYOUw: function (c) {
-      return c();
-    },
-    SiySE: function (c, B) {
-      return c === B;
-    },
-    Udrkl: "UrvtJ",
-    jwJNS: "oXbtd",
-    mjLbW: "engine_speed_rate",
-    xwANg: function (c, B) {
-      return c(B);
-    },
-    gdMVM: "quench_speed_enabled",
-    IGYEj: "horse_race_speed_enabled",
-    VFsUh: "accelerator-panel",
-    kmbcv: "accelerator-toggle-btn",
-    DsNZy: function (c, B) {
-      return c === B;
-    },
-    OXUgv: "ZzzKB",
-    txLKu: "account-selector",
-    fIrwR: "delete-account-btn",
-    NUITJ: "请先导入账号文件(.bin或伏羲文件)",
-    DIBcc: "VfLgT",
-    YhzLh: "pQMLL",
-    TopWL: function (c, B) {
-      return c === B;
-    },
-    GyjJt: function (c, B) {
-      return c === B;
-    },
-    pBCmE: "uBPwB",
-    oCoBy: ".panel-tabs button",
-    ImRBY: ".tab-content",
-    PeYgg: "xyKUv",
-    FhsVZ: "pGwJh",
-    mZYFp: function (c) {
-      return c();
-    },
-    xJAQT: function (c, B) {
-      return c === B;
-    },
-    wbglJ: "CoqyG",
-    FcESe: function (c, B) {
-      return c === B;
-    },
-    VVvXx: "OInnV",
-    CPXgN: "FEOwX",
-    RZZPp: function (c, B) {
-      return c === B;
-    },
-    HWmAX: "JyfKR",
-    TTerO: "0|5|3|2|1|4",
-    fqwDI: "JSON/无后缀",
-    KJaEJ: function (c, B) {
-      return c !== B;
-    },
-    QIMsH: "xxAri",
-    demIN: "mAJNK",
-    vgkuf: function (c, B) {
-      return c(B);
-    },
-    ghsoz: "XJSSg",
-    yhEIY: "DqISS",
-    ohtTY: "IyCZe",
-    cBAyt: function (c, B) {
-      return c !== B;
-    },
-    sWZHd: "nNcde",
-    BdqiA: "ApltD",
-    RdlhK: function (c, B) {
-      return c !== B;
-    },
-    zxWEl: "QluRr",
-    MqqjL: "QSXbG",
-    MIVWY: function (c, B) {
-      return c === B;
-    },
-    rBTCC: function (c, B) {
-      return c === B;
-    },
-    GwUTG: "ebmMC",
-    uWwAi: function (c, B) {
-      return c(B);
-    },
-    mFRfr: function (c, B) {
-      return c !== B;
-    },
-    gbBdB: "exZmp",
-    AEMUU: "Xwkdb",
-    BDATu: "qQrWI",
-    FxbSW: function (c, B) {
-      return c(B);
-    },
-    IRjDi: "jxVxy",
-    zjRdr: function (c, B) {
-      return c === B;
-    },
-    sBPGz: function (c, B) {
-      return c !== B;
-    },
-    wuJoh: "eKZdh",
-    MMhhU: "HNLwf",
-    dUmOD: function (c, B) {
-      return c(B);
-    },
-    ivpvz: "LBEZF",
-    eJLDC: "SCJsS",
-    axEbl: "EWfUA",
-    EyxNL: function (c, B) {
-      return c(B);
-    },
-    usCTg: function (c, B) {
-      return c !== B;
-    },
-    AcTIW: "nVSsE",
-    NKWwg: "IVrsg",
-    YChmV: function (c, B) {
-      return c !== B;
-    },
-    RFCWA: "mrjjb",
-    JVGHX: "aiSsY",
-    KKMWb: function (c, B) {
-      return c(B);
-    },
-    CugGI: "gNlCu",
-    CZQNW: function (c, B) {
-      return c(B);
-    },
-    zbXcW: function (c, B) {
-      return c - B;
-    },
-    XLsZP: function (c, B) {
-      return c - B;
-    },
-    xBIJd: function (c, B) {
-      return c !== B;
-    },
-    XtsJm: "vpxmp",
-    ajzXE: function (c, B) {
-      return c !== B;
-    },
-    SQGzb: "RsWmU",
-    zjLbh: function (c, B) {
-      return c / B;
-    },
-    wwhVh: function (c, B) {
-      return c - B;
-    },
-    ZczFA: function (c, B) {
-      return c - B;
-    },
-    YTORP: "(((.+)+)+)+$",
-    dafnv: function (c, B) {
-      return c === B;
-    },
-    FePSK: "wgYkO",
-    kATXB: "hQwIV",
-    mBqpt: "qeyIM",
-    waazi: function (c, B) {
-      return c(B);
-    },
-    tzsLC: function (c, B) {
-      return c !== B;
-    },
-    zQPxk: "aaVWa",
-    KPLmv: "zlUBb",
-    HjfAk: "click",
-    SCdXe: "zUiDb",
-    dyCDA: function (c) {
-      return c();
-    },
-    WcrvF: "cQOnf",
-    OgwPA: "jCEgP",
-    qxYEs: function (c, B) {
-      return c !== B;
-    },
-    IBMyT: "oIcny",
-    NSBfS: "请输入验证码",
-    ZtwAv: "ODJEJ",
-    AnhEN: "Ganxh",
-    rXTDO: function (c, B) {
-      return c(B);
-    },
-    mPNbw: "eYaPI",
-    ILdTv: function (c) {
-      return c();
-    },
-    QaiAp: "BWZBO",
-    nJBZz: "jnSqw",
-    APenl: function (c, B) {
-      return c + B;
-    },
-    soPGa: "debu",
-    EZRGN: "gger",
-    cteQp: "stateObject",
-    FejKA: "vwQix",
-    BMYBO: "vQypq",
-    McRjb: "iPtGu",
-    uakks: "QipBO",
-    JDjSO: function (c, B) {
-      return c(B);
-    },
-    qKlmH: function (c, B) {
-      return c === B;
-    },
-    TGOFS: "gpYUV",
-    fmWPL: ".panel-header",
-    OqBif: ".collapse-btn",
-    QdyZf: ".panel-tabs",
-    vPUUI: "input[type=\"checkbox\"]",
-    HeHfG: "account-file-input",
-    ToWRB: "refresh-page-btn",
-    beuTh: "keypress",
-    jMSRu: function (c, B, p) {
-      return c(B, p);
-    },
-    tXxNR: "标准 .bin",
-    NTPGh: "info-object .bin",
-    lpWGU: "nMiuB",
-    Uqype: "qKFVB",
-    xdSyX: function (c, B) {
-      return c === B;
-    },
-    PobuL: "OluEv",
-    VZjLI: "pvCuy",
-    MrcsV: function (c, B) {
-      return c(B);
-    },
-    XBNqK: function (c, B) {
-      return c(B);
-    },
-    pXPjW: function (c, B) {
-      return c === B;
-    },
-    UKFTa: "kIgNF",
-    SuEIX: function (c, B) {
-      return c !== B;
-    },
-    opBTF: "VKTPb",
-    coREM: function (c, B) {
-      return c === B;
-    },
-    JThSh: "rWHcb",
-    TBqPJ: function (c) {
-      return c();
-    },
-    lxEQX: function (c, B) {
-      return c !== B;
-    },
-    EgKET: "LGGlx",
-    mVKxy: "FzMcc",
-    FOMeq: function (c, B) {
-      return c(B);
-    },
-    NnoTo: function (c, B) {
-      return c(B);
-    },
-    mGbZV: function (c, B) {
-      return c === B;
-    },
-    rTkpH: "lCBjx",
-    tYwWN: "wkmFC",
-    xlWaS: "iSWlM",
-    rkLbZ: "lMxix",
-    wLoUQ: "nPhDR",
-    wCGFU: "pFwtO",
-    NgTIe: "QuBaN",
-    pjUUu: function (c, B) {
-      return c(B);
-    },
-    CwaIm: function (c, B) {
-      return c === B;
-    },
-    qqdLB: "BGWTa",
-    XcIdp: "wFjRp",
-    xPJPz: function (c, B) {
-      return c === B;
-    },
-    uOPEp: "klJsa",
-    SqYBu: "FaWDl",
-    xLZMa: function (c, B) {
-      return c === B;
-    },
-    ADVbu: "xNSri",
-    ijSFQ: function (c, B) {
-      return c === B;
-    },
-    OcWNa: "PNhPK",
-    WwqoW: function (c, B) {
-      return c === B;
-    },
-    URuqa: "qcvww",
-    ZRBuR: "Qfwkd",
-    JvIpR: function (c, B) {
-      return c > B;
-    },
-    WYkbS: "uuXNP",
-    grNNy: "cWHoN",
-    Tuoib: "amRuQ",
-    BZMDB: "HKSfr",
-    SDiMK: function (c, B) {
-      return c + B;
-    },
-    JksGw: function (c, B) {
-      return c(B);
-    },
-    XIKMe: function (c, B) {
-      return c(B);
-    },
-    ordYC: function (c, B) {
-      return c(B);
-    },
-    lZexm: "log",
-    DKITI: "warn",
-    PKgdn: "exception",
-    rvCQc: "table",
-    nggGw: "trace",
-    vmppO: function (c, B) {
-      return c < B;
-    },
-    eDxBM: "Vlvuk",
-    hgkow: function (c, B) {
-      return c === B;
-    },
-    ioQFG: function (c, B) {
-      return c !== B;
-    },
-    UsDgn: "VGzxG",
-    ooZYa: "BicHy",
-    WXLBL: "FQtkx",
-    AGazr: function (c, B) {
-      return c(B);
-    },
-    Zhwfa: function (c, B) {
-      return c(B);
-    },
-    eJrSp: function (c, B) {
-      return c !== B;
-    },
-    gfHmt: "HtLZR",
-    yQiMh: "CeXGu",
-    cFNdQ: function (c) {
-      return c();
-    },
-    leWJE: function (c, B) {
-      return c !== B;
-    },
-    OEwPu: "MyjlK",
-    ohwYu: function (c) {
-      return c();
-    },
-    WIYKY: function (c, B) {
-      return c === B;
-    },
-    RSHgF: "niEBz",
-    zVdZn: "XuNte",
-    eeWiR: function (c) {
-      return c();
-    },
-    zwQjV: function (c, B) {
-      return c(B);
-    },
-    oEBuO: "所有选中的账号文件已成功更新！",
-    UrXRw: "JwbjX",
-    XdLPz: "fCpnH",
-    CLUZN: function (c, B) {
-      return c(B);
-    },
-    eFBZd: function (c) {
-      return c();
-    },
-    CAzdZ: function (c, B) {
-      return c === B;
-    },
-    rbeQD: "putVk",
-    xRGzk: "pbDJS",
-    TzKkE: "Kmnwq",
-    ZWpTt: function (c, B) {
-      return c - B;
-    },
-    zBhTJ: "BzTuH",
-    IUEqw: "JbRbu",
-    szEfi: "JOfeh",
-    dkWPB: function (c, B) {
-      return c - B;
-    },
-    qOOhQ: function (c, B) {
-      return c - B;
-    },
-    IKVos: function (c, B) {
-      return c - B;
-    },
-    nUCLJ: function (c, B) {
-      return c - B;
-    },
-    TZCZA: function (c, B) {
-      return c(B);
-    },
-    IJrdq: "JROUq",
-    IQlDu: "QneUp",
-    SUKMW: "yoiEt",
-    wbqGa: function (c, B) {
-      return c === B;
-    },
-    icBnE: "eNYxv",
-    MJjsr: "hkPFp",
-    djwxP: "mousedown",
-    Xuodg: "touchstart",
-    QUSeq: "QlUaM",
-    avWKJ: "etYRu",
-    TidaN: "MqFbs",
-    cgkzs: "tTvAH",
-    wrSxv: "ERoeW",
-    GgWno: "HgyDe",
-    evWRD: "TMEkv",
-    BcuND: function (c, B) {
-      return c(B);
-    },
-    xPkAE: "zLKnu",
-    KqpBl: function (c, B) {
-      return c === B;
-    },
-    AxOjQ: "PFFYr",
-    xQcyf: function (c, B) {
-      return c === B;
-    },
-    PAafX: function (c, B) {
-      return c(B);
-    },
-    RTYTL: function (c, B) {
-      return c !== B;
-    },
-    ZHEXl: "ibWSn",
-    rFnPC: "MXZTf",
-    tRkUk: function (c, B) {
-      return c !== B;
-    },
-    RJiyK: "mswUy",
-    OAYTl: function (c, B) {
-      return c === B;
-    },
-    kbfpN: "PteOB",
-    hYrIj: function (c, B) {
-      return c !== B;
-    },
-    CwcrA: function (c, B) {
-      return c % B;
-    },
-    CwrWI: "RjcVg",
-    xHTWa: function (c, B) {
-      return c === B;
-    },
-    RsjQG: function (c, B) {
-      return c === B;
-    },
-    KhHMo: "alqMf",
-    NGnzi: "Cwxoq",
-    eaKzV: function (c, B) {
-      return c === B;
-    },
-    Ypnah: "PTfaM",
-    hjtbT: "JwlNL",
-    Ellyk: function (c, B) {
-      return c !== B;
-    },
-    HaURF: "pweZX",
-    HIZjR: "MjDHI",
-    fDOef: function (c, B) {
-      return c !== B;
-    },
-    AMcWJ: "mZzDn",
-    qZNXT: "PpdOC",
-    BFvwe: "nXgCt",
-    WJEsC: function (c, B) {
-      return c !== B;
-    },
-    SdoLB: "ufTmq",
-    QZCpD: "DZTKL",
-    tUcsR: function (c, B) {
-      return c(B);
-    },
-    hYRKe: "yLlZD",
-    jhKrX: "yKqUA",
-    rihSZ: function (c, B) {
-      return c !== B;
-    },
-    etUae: "vIqNo",
-    MUyui: "rRSQn",
-    HPSus: "vWuuJ",
-    UOMrN: function (c, B) {
-      return c === B;
-    },
-    CUfvs: "vYsaX",
-    KyplA: function (c, B) {
-      return c(B);
-    },
-    ZAyFv: function (c, B) {
-      return c(B);
-    },
-    sXPvL: function (c, B) {
-      return c / B;
-    },
-    XrubC: function (c, B) {
-      return c - B;
-    },
-    HiwZI: function (c, B) {
-      return c(B);
-    },
-    ZfaVN: "action",
-    mlcyH: "sGWZh",
-    SrznL: "nKLjb",
-    yPooT: function (c, B) {
-      return c !== B;
-    },
-    vnEvf: "PBLdI",
-    lCwTY: "riSLG",
-    lZxBn: function (c, B) {
-      return c === B;
-    },
-    TTzVM: "MunKe",
-    avfjr: function (c, B) {
-      return c === B;
-    },
-    PGelg: "AHPkt",
-    kHFQO: function (c, B) {
-      return c !== B;
-    },
-    TcKkc: "qvRzC",
-    JBkMc: function (c, B) {
-      return c === B;
-    },
-    IOmtk: function (c, B) {
-      return c === B;
-    },
-    RlhZt: "NLxdd",
-    ZbXOn: "DrvTh",
-    pIWsL: function (c, B) {
-      return c !== B;
-    },
-    BRWse: function (c, B) {
-      return c === B;
-    },
-    viMTx: "buedg",
-    IUaNt: "ehusv",
-    LxTWz: "iWoLY",
-    BcYmt: "WhluR",
-    iUoEk: function (c, B) {
-      return c !== B;
-    },
-    fGSHL: "jfjzI",
-    kGZUK: function (c, B) {
-      return c(B);
-    },
-    MnfWm: "data-index",
-    smxtH: function (c, B) {
-      return c(B);
-    },
-    mlADx: function (c, B) {
-      return c + B;
-    },
-    FvvfS: function (c, B) {
-      return c < B;
-    },
-    QvbAb: function (c, B, p) {
-      return c(B, p);
-    },
-    JOAlc: function (c) {
-      return c();
-    },
-    HAIig: function (c) {
-      return c();
-    },
-    iSzCU: function (c, B, p) {
-      return c(B, p);
-    },
-    EmDJj: function (c, B) {
-      return c || B;
-    },
-    zRikh: "[咸鱼工具箱]:",
-    ivjzN: "10px",
-    uySGK: "accounts",
-    PIXXT: "beforeunload"
+  const K = {
+    GpvQv: function (Y4, Y5) {
+      return Y4 === Y5;
+    },
+    eSjol: "未在周三的对战列表中找到您的军团。",
+    YLqGZ: function (Y4, Y5) {
+      return Y4 === Y5;
+    },
+    ExrBa: "LJNAH",
+    CXgOR: "bzIgK",
+    xmiNf: function (Y4, Y5) {
+      return Y4 !== Y5;
+    },
+    BPFxH: "lHXlT",
+    vVlXa: function (Y4, Y5) {
+      return Y4 === Y5;
+    },
+    XEqnP: "aYYYT",
+    xGwOM: "内部错误：无法访问GVG模块。",
+    CmAzN: function (Y4, Y5) {
+      return Y4 === Y5;
+    },
+    HDUQn: "CAKqB",
+    wQPZk: "clnDf",
+    IgVCp: "[咸鱼助手][排位预测] 创建按钮时发生错误:",
+    rYUCk: function (Y4, Y5) {
+      return Y4 !== Y5;
+    },
+    TWiZC: "wJexC",
+    EqUHZ: "WVfZk",
+    dXwKs: "(((.+)+)+)+$",
+    ewbMK: "[咸鱼助手][排位预测]克隆数据失败:",
+    USdVP: "VEpEZ",
+    XcmAp: "wuIaL",
+    JefhE: "LwiOy",
+    tAteG: "jciam",
+    AZfCC: "错误：无法加载游戏弹窗组件！",
+    dRKmc: function (Y4, Y5) {
+      return Y4 === Y5;
+    },
+    Juiti: "bWdAT",
+    OWiNs: "TipsManager",
+    CTHYb: "ModuleManager",
+    DpuDx: "Configs",
+    aSeST: function (Y4, Y5) {
+      return Y4 === Y5;
+    },
+    smGsD: "未找到有效的战报数据！",
+    ybbwy: "正在生成Excel报表...",
+    DeDtO: "玩家汇总",
+    pogFm: "战斗详情",
+    rfxsK: "[咸鱼助手][盐场战报] 生成Excel报表时发生错误:",
+    dZNRE: "生成报表失败，请查看控制台！",
+    NSAPL: "[咸鱼助手][淬炼增强] 创建自定义UI时出错",
+    fpjSE: "qsRLa",
+    Nzfqj: "gIzrj",
+    tezVD: "function *\\( *\\)",
+    ISDlV: "\\+\\+ *(?:[a-zA-Z_$][0-9a-zA-Z_$]*)",
+    tUJRH: function (Y4, Y5) {
+      return Y4(Y5);
+    },
+    aqCkb: "init",
+    XDuDh: function (Y4, Y5) {
+      return Y4 + Y5;
+    },
+    nmnrD: "chain",
+    mOqdf: "input",
+    eXVTV: "MTCAQ",
+    NYaxw: "VAqcD",
+    Uckpy: function (Y4, Y5) {
+      return Y4 !== Y5;
+    },
+    PxjGJ: "UusCs",
+    vjIGw: "fjhrU",
+    dscGn: function (Y4) {
+      return Y4();
+    },
+    CVLyh: "kTciS",
+    yccYN: function (Y4, Y5, Y6) {
+      return Y4(Y5, Y6);
+    },
+    vzBWq: "LegionWarReportDialog",
+    EoVar: function (Y4, Y5) {
+      return Y4 === Y5;
+    },
+    pibyi: "tpQzY",
+    SBnoc: "Jicsj",
+    XRxdK: "vvFnW",
+    CRAnn: "index-ui",
+    SjAHu: "NormalDialog",
+    weEEB: "确定关闭红色淬炼提醒弹窗吗?自动淬炼过程中如果遇到红色淬炼将不再出现确认弹窗，并会自动继续洗炼",
+    bCaQg: "QYFxj",
+    yPTpf: "ZFkaG",
+    jVJgb: function (Y4, Y5) {
+      return Y4 === Y5;
+    },
+    gcalo: "NGxEK",
+    jcjeq: "[咸鱼助手][排位预测] 注入数据模块时出错:",
+    CzpcJ: function (Y4, Y5) {
+      return Y4 === Y5;
+    },
+    xbWoe: "geiPz",
+    FLkvb: "oMrMC",
+    aCQsK: function (Y4, Y5) {
+      return Y4 === Y5;
+    },
+    kJkGp: "JwmrU",
+    KBUKe: function (Y4, Y5) {
+      return Y4(Y5);
+    },
+    RKNEy: function (Y4, Y5) {
+      return Y4 + Y5;
+    },
+    MFuSR: "return (function() ",
+    WmKTx: "{}.constructor(\"return this\")( )",
+    LtnPu: function (Y4) {
+      return Y4();
+    },
+    eanvp: function (Y4, Y5) {
+      return Y4 !== Y5;
+    },
+    bWRcV: "gWuao",
+    FsEkz: "log",
+    HGAna: "warn",
+    WRQcq: "info",
+    PMrZi: "error",
+    hGprd: "exception",
+    AEtXx: "table",
+    PNyJa: "trace",
+    XfuWx: function (Y4, Y5) {
+      return Y4 < Y5;
+    },
+    fNjZy: "EgJeK",
+    jELCi: "qQuol",
+    gNZvg: function (Y4, Y5) {
+      return Y4(Y5);
+    },
+    keXLG: function (Y4, Y5) {
+      return Y4(Y5);
+    },
+    vuGbC: "GVGRecordDialogNew",
+    VVvGC: "BoxPanel",
+    RQbPT: function (Y4, Y5) {
+      return Y4 + Y5;
+    },
+    MTrAT: function (Y4, Y5) {
+      return Y4 + Y5;
+    },
+    ryMbI: function (Y4, Y5) {
+      return Y4 * Y5;
+    },
+    FyOsW: function (Y4, Y5) {
+      return Y4 * Y5;
+    },
+    Otshm: function (Y4, Y5) {
+      return Y4 + Y5;
+    },
+    KBpYz: function (Y4, Y5) {
+      return Y4 * Y5;
+    },
+    lWyud: function (Y4, Y5) {
+      return Y4 * Y5;
+    },
+    HSSpx: "HelpTextDialog",
+    rvjpX: function (Y4, Y5) {
+      return Y4 !== Y5;
+    },
+    naljq: "gXLZR",
+    rzeEF: "jWxzh",
+    bxwJo: "qEsnB",
+    pgleC: "感谢您的同意，助手核心功能现已启用。",
+    CPdug: function (Y4, Y5) {
+      return Y4 !== Y5;
+    },
+    bvpoN: "KiYoP",
+    cTXcy: "您已拒绝协议，核心功能将不会启用。",
+    QwmWV: function (Y4, Y5) {
+      return Y4 === Y5;
+    },
+    DoZEt: "ZrQQD",
+    UcJRc: "GqmIE",
+    xjDoe: "yzJRd",
+    KwQkS: "luIDK",
+    ywtdj: function (Y4, Y5) {
+      return Y4 || Y5;
+    },
+    PpMfL: function (Y4, Y5) {
+      return Y4 === Y5;
+    },
+    HkqRM: "gPcAL",
+    mCvgb: "aWJzp",
+    bjLtl: "咸鱼助手 用户协议",
+    rvqpD: "请在使用前仔细阅读并同意以下条款：\n1.本脚本仅供学习和技术交流，禁止用于任何商业用途或游戏作弊行为\n2.使用本脚本所产生的任何风险（包括但不限于账号安全风险）均由用户自行承担，作者不承担任何责任\n3.不得利用本脚本侵犯游戏厂商的合法权益\n4.作者不对因使用或无法使用本脚本所造成的任何直接或间接损害负责。\n点击“同意”即表示您已阅读、理解并接受以上所有条款。",
+    cXbSM: "ntJnh",
+    YvvYN: "FJABR",
+    ubITN: "[咸鱼助手] 调用协议弹窗时发生错误:",
+    IBPHn: "aMeoI",
+    FHTLH: function (Y4, Y5) {
+      return Y4 || Y5;
+    },
+    XXZoJ: "[咸鱼助手][宝箱计算器] 创建按钮时发生错误:",
+    ppXxf: function (Y4, Y5) {
+      return Y4 - Y5;
+    },
+    jxMkj: function (Y4, Y5) {
+      return Y4 === Y5;
+    },
+    mkcHb: "vACot",
+    FxZtr: "debu",
+    bggor: "gger",
+    tMMlu: "stateObject",
+    fzoQH: function (Y4, Y5) {
+      return Y4 !== Y5;
+    },
+    SBEdO: "tQGkU",
+    avhhZ: "SAnPH",
+    KRuIW: "ebszY",
+    qnxTE: function (Y4, Y5) {
+      return Y4 * Y5;
+    },
+    fspIv: function (Y4, Y5) {
+      return Y4 * Y5;
+    },
+    IQqfs: function (Y4, Y5) {
+      return Y4 * Y5;
+    },
+    YTBwX: function (Y4, Y5) {
+      return Y4 !== Y5;
+    },
+    ILIAA: "VxeGS",
+    CDNoL: "KbvGc",
+    FNiYo: "[咸鱼助手][罐子计算器] 计算或显示时出错:",
+    xuVlp: function (Y4, Y5) {
+      return Y4(Y5);
+    },
+    NQfmU: function (Y4, Y5) {
+      return Y4 === Y5;
+    },
+    tuCRF: "ydVtx",
+    vhuqT: function (Y4, Y5) {
+      return Y4 !== Y5;
+    },
+    hsIBZ: "sJFwZ",
+    zHOwf: "ui_common",
+    jVsuw: "BtnInfo2",
+    ussLB: function (Y4, Y5) {
+      return Y4 !== Y5;
+    },
+    nORpf: "PdIvT",
+    wbbSy: function (Y4, Y5) {
+      return Y4 + Y5;
+    },
+    GIiMN: function (Y4, Y5) {
+      return Y4 + Y5;
+    },
+    CifGP: function (Y4, Y5) {
+      return Y4 === Y5;
+    },
+    fbbHZ: "inIJz",
+    MsRGW: function (Y4, Y5) {
+      return Y4 / Y5;
+    },
+    nngqA: function (Y4, Y5) {
+      return Y4 - Y5;
+    },
+    aXOvI: function (Y4, Y5) {
+      return Y4 - Y5;
+    },
+    BVybn: function (Y4, Y5) {
+      return Y4 !== Y5;
+    },
+    eNOeW: "QYIOm",
+    AfFIF: "lThyz",
+    IroQV: "[咸鱼助手][罐子计算器] 创建按钮时发生错误:",
+    hKHlA: function (Y4, Y5) {
+      return Y4 === Y5;
+    },
+    FZbMv: "rETTW",
+    SMUFq: "MnJAf",
+    uqoXW: "rTekO",
+    KKMSE: "BottleRobotDialog",
+    PdHJz: "fBekX",
+    sAxsK: "cIHmR",
+    AsEWa: "预测规则匹配失败，请检查脚本。",
+    SjZtv: "FTEcJ",
+    DHcXp: "档位错误",
+    LeQtC: function (Y4, Y5) {
+      return Y4 < Y5;
+    },
+    dQCpY: function (Y4, Y5) {
+      return Y4 >= Y5;
+    },
+    OTvWE: "lRpTe",
+    vbQLj: function (Y4, Y5) {
+      return Y4 % Y5;
+    },
+    pkEYo: function (Y4, Y5) {
+      return Y4 + Y5;
+    },
+    QOLQm: function (Y4, Y5) {
+      return Y4 + Y5;
+    },
+    OONor: "青铜宝箱",
+    PBDbx: function (Y4, Y5) {
+      return Y4 * Y5;
+    },
+    IYjCj: "黄金宝箱",
+    hMHEb: "铂金宝箱",
+    DSbSd: function (Y4, Y5) {
+      return Y4 + Y5;
+    },
+    ZWbME: function (Y4, Y5) {
+      return Y4 + Y5;
+    },
+    WZNqe: "钻石宝箱",
+    XfiyF: function (Y4, Y5) {
+      return Y4(Y5);
+    },
+    BgHfD: function (Y4, Y5) {
+      return Y4 + Y5;
+    },
+    VOYcr: function (Y4, Y5) {
+      return Y4 === Y5;
+    },
+    MQOCu: "dTfsK",
+    bZzqY: function (Y4, Y5) {
+      return Y4 + Y5;
+    },
+    XTMTZ: function (Y4, Y5) {
+      return Y4 * Y5;
+    },
+    ABdOC: function (Y4, Y5) {
+      return Y4 * Y5;
+    },
+    tqeBH: function (Y4, Y5) {
+      return Y4 + Y5;
+    },
+    gcHfv: function (Y4, Y5) {
+      return Y4 * Y5;
+    },
+    tiluk: function (Y4, Y5) {
+      return Y4 + Y5;
+    },
+    jFneM: function (Y4, Y5) {
+      return Y4 + Y5;
+    },
+    KuEHw: function (Y4, Y5) {
+      return Y4 * Y5;
+    },
+    HdgBd: function (Y4, Y5) {
+      return Y4 === Y5;
+    },
+    XpkSO: "HXfvr",
+    EclHp: function (Y4, Y5) {
+      return Y4 + Y5;
+    },
+    Gszaf: function (Y4, Y5) {
+      return Y4 / Y5;
+    },
+    pRNQJ: "function",
+    QFbBX: function (Y4) {
+      return Y4();
+    },
+    NeLIC: "qewCs",
+    FCEro: "YppiF",
+    vmwjd: "===== 宝箱计算结果 =====",
+    plOfK: function (Y4, Y5, Y6, Y7) {
+      return Y4(Y5, Y6, Y7);
+    },
+    zyQlN: "【全开】",
+    bUOXl: "---------------------",
+    vKUou: function (Y4, Y5, Y6, Y7) {
+      return Y4(Y5, Y6, Y7);
+    },
+    LFEOM: "【不开木质】",
+    Uvwyl: "【不开铂金】",
+    uKdkQ: "=========@苏御=========",
+    uMpav: "未知军团A",
+    RHeaU: "未知军团B",
+    ZMRwm: function (Y4, Y5) {
+      return Y4 !== Y5;
+    },
+    iPPVv: "YZqhT",
+    EFwPK: "LeoMe",
+    UzxxV: "PStna",
+    aJNtT: "QSNql",
+    WyarW: "xsxPu",
+    cqCCg: "BOX",
+    wumfA: "LanguageExt",
+    JZNtV: "未知宝箱",
+    UOSWT: "[咸鱼助手][淬炼增强] 找不到帮助按钮作为定位锚点。",
+    hNgZC: function (Y4, Y5) {
+      return Y4 || Y5;
+    },
+    bmzdQ: function (Y4, Y5) {
+      return Y4 + Y5;
+    },
+    KtyIf: "请先在左侧切换到[周三]的战报以缓存原始数据！",
+    fwpkZ: function (Y4, Y5) {
+      return Y4 === Y5;
+    },
+    bbMlP: function (Y4, Y5) {
+      return Y4 !== Y5;
+    },
+    osFfn: "RPgGq",
+    wBgey: "wRKdx",
+    UkNsp: "TSAPZ",
+    VGoiT: "luuOM",
+    JvoYc: "DUrlB",
+    xlkZh: "IIRYA",
+    qsqhJ: "[咸鱼助手][宝箱计算器] 计算或显示时出错:",
+    efYro: "CCwro",
+    VkArq: "PqkJj",
+    YrgZI: "OdZHP",
+    SFXAm: "YHOkk",
+    OdevP: "joaCd",
+    rSHus: "fKCmK",
+    bZlWB: function (Y4, Y5) {
+      return Y4 + Y5;
+    },
+    xlXAs: "AhcNg",
+    oOpjY: "TXzNj",
+    HIXtH: function (Y4, Y5) {
+      return Y4 - Y5;
+    },
+    nwdKY: "tUvHA",
+    LaGbg: "ygKER",
+    PwBkq: "ZXYFz",
+    NHSNW: "pFlIj",
+    UmjXm: function (Y4, Y5) {
+      return Y4 + Y5;
+    },
+    YfcdH: function (Y4, Y5, Y6, Y7) {
+      return Y4(Y5, Y6, Y7);
+    },
+    sdzXE: function (Y4, Y5) {
+      return Y4(Y5);
+    },
+    ayRxx: "[咸鱼助手] 所有模块已成功注入。脚本运行中...",
+    xuJGq: function (Y4, Y5) {
+      return Y4 || Y5;
+    },
+    evJiC: "ONabI",
+    pOBGG: "gAvEF",
+    JKKpy: "YZfih",
+    ogcWf: "YYcqp",
+    uTojD: "KPebk",
+    SIpVH: function (Y4, Y5) {
+      return Y4 + Y5;
+    },
+    hLdfi: function (Y4, Y5) {
+      return Y4 === Y5;
+    },
+    ENrAh: "gZyQn",
+    TTnde: "tyEAj",
+    vhrNq: "OqpJN",
+    gnQMQ: "GVGRecordData",
+    NPMuc: function (Y4, Y5) {
+      return Y4 !== Y5;
+    },
+    osbel: "xiEhG",
+    ygVRQ: "ZpmlL",
+    ROpfK: "[咸鱼助手][排位预测] 预测时出错:",
+    NeUCc: function (Y4, Y5) {
+      return Y4 || Y5;
+    },
+    iOmTl: "导出Excel",
+    SUYlC: function (Y4, Y5) {
+      return Y4 - Y5;
+    },
+    CVfsy: function (Y4, Y5) {
+      return Y4 - Y5;
+    },
+    VHWgO: "while (true) {}",
+    sTmek: "counter",
+    aKwMc: function (Y4, Y5) {
+      return Y4(Y5);
+    },
+    gTNXT: function (Y4, Y5) {
+      return Y4 + Y5;
+    },
+    QeyJF: function (Y4) {
+      return Y4();
+    },
+    XWVwj: function (Y4, Y5) {
+      return Y4 !== Y5;
+    },
+    WDycm: "NiXUk",
+    ljkgn: "dUjPq",
+    nTVTI: "dvuXF",
+    LoVAI: "zKECG",
+    ZlzEs: function (Y4, Y5) {
+      return Y4 / Y5;
+    },
+    SrxKU: function (Y4, Y5) {
+      return Y4 - Y5;
+    },
+    yhqjI: "TXCAW",
+    KDxhr: "YGpFG",
+    olceL: "CoZgM",
+    VbFtH: "mUkNt",
+    YTWtu: "Pefqn",
+    MlEBB: function (Y4, Y5) {
+      return Y4(Y5);
+    },
+    AVTvU: "4|5|3|2|1|0",
+    CywHu: "[咸鱼助手] 所有目标弹窗拦截器已部署完毕。",
+    jbQKX: "[咸鱼助手] 当前拦截列表:",
+    pMhJc: function (Y4, Y5) {
+      return Y4 !== Y5;
+    },
+    RXMJu: "[咸鱼助手] 开始批量部署无感弹窗拦截...",
+    HwIHM: function (Y4) {
+      return Y4();
+    },
+    oumoa: function (Y4, Y5) {
+      return Y4 === Y5;
+    },
+    ccXqw: "psOVr",
+    yAGcU: "[咸鱼助手][盐场战报] 添加按钮时出错:",
+    DWwfO: "loNdg",
+    OVtZo: function (Y4, Y5) {
+      return Y4 === Y5;
+    },
+    eNCYC: "lSFBK",
+    pdeWV: "GLWqb",
+    kOGWK: function (Y4, Y5) {
+      return Y4 !== Y5;
+    },
+    gxkBN: "eToBw",
+    cJpZJ: function (Y4, Y5) {
+      return Y4 !== Y5;
+    },
+    CtWEO: "wEqxm",
+    URwCM: function (Y4, Y5) {
+      return Y4 + Y5;
+    },
+    GtWHP: "pcdoK",
+    XdLQl: "UWWLb",
+    mLepz: "xOFdb",
+    ZQGYR: function (Y4, Y5) {
+      return Y4 === Y5;
+    },
+    MvccX: "nvvGe",
+    cdTKf: "LKaek",
+    lsQBK: "uEplE",
+    eaxCf: "lReJq",
+    lzMXY: "HcKwc",
+    Xeqbr: "MQnUZ",
+    Lwwjz: function (Y4, Y5) {
+      return Y4 !== Y5;
+    },
+    CPYJg: "mSDoW",
+    ARwUN: "NIzfZ",
+    luuJd: "WzYBE",
+    vrGIE: function (Y4, Y5) {
+      return Y4 !== Y5;
+    },
+    YzoKy: "kTsfW",
+    DyfwP: "dHCIc",
+    ESTUQ: "cjCFV",
+    EFXSb: function (Y4, Y5) {
+      return Y4 === Y5;
+    },
+    YbIau: function (Y4, Y5) {
+      return Y4 !== Y5;
+    },
+    aKkBD: "CkBOy",
+    zqhOO: function (Y4, Y5) {
+      return Y4 !== Y5;
+    },
+    znPPy: "JwEEW",
+    YZRuy: function (Y4, Y5) {
+      return Y4 / Y5;
+    },
+    zslQt: function (Y4, Y5) {
+      return Y4 > Y5;
+    },
+    oVzcp: function (Y4, Y5) {
+      return Y4 - Y5;
+    },
+    MrHGp: "0.00",
+    vnXHi: "0.00%",
+    dYqxc: "玩家名称",
+    xOzXc: "战力(亿)",
+    LWUii: "摧毁建筑",
+    MVwDn: "复活丹(估)",
+    QpYkK: "!cols",
+    jTNrD: function (Y4, Y5) {
+      return Y4 === Y5;
+    },
+    xydag: "NhsbV",
+    QWxar: "kmebO",
+    NwYlk: function (Y4, Y5) {
+      return Y4 > Y5;
+    },
+    vePZk: function (Y4, Y5) {
+      return Y4 / Y5;
+    },
+    AecUN: function (Y4, Y5) {
+      return Y4 - Y5;
+    },
+    UjaDe: "JzTfC",
+    zYcms: "moWnI",
+    YkjDj: "xNwiW",
+    QZgeC: function (Y4, Y5) {
+      return Y4 + Y5;
+    },
+    VHpcm: "sv-SE",
+    vKJVE: "无效时间",
+    QPbBw: function (Y4, Y5) {
+      return Y4 + Y5;
+    },
+    dMZAj: function (Y4, Y5) {
+      return Y4 !== Y5;
+    },
+    lvLEj: "KGKwP",
+    Idtse: "jYHxY",
+    zftOA: function (Y4, Y5) {
+      return Y4 === Y5;
+    },
+    cupVe: "SWVVq",
+    Rtmfa: function (Y4, Y5) {
+      return Y4 || Y5;
+    },
+    gxJev: "foEQT",
+    FklfB: "SCFuS",
+    cOdXq: "cWpDV",
+    qwJwE: "undefined",
+    KErei: function (Y4, Y5, Y6) {
+      return Y4(Y5, Y6);
+    },
+    HLMwp: "Pfwef",
+    vgYPB: "mgTRf",
+    dGQMt: function (Y4, Y5) {
+      return Y4 + Y5;
+    },
+    BCZUE: function (Y4, Y5) {
+      return Y4 + Y5;
+    },
+    Wzarv: function (Y4, Y5) {
+      return Y4 * Y5;
+    },
+    dUgbu: function (Y4, Y5) {
+      return Y4 + Y5;
+    },
+    WHSCf: function (Y4, Y5) {
+      return Y4 / Y5;
+    },
+    twCPc: function (Y4, Y5) {
+      return Y4 === Y5;
+    },
+    BowlT: "yOqaG",
+    ESJQF: "SKVKi",
+    aIFkv: "QZbzJ",
+    EgcqG: function (Y4, Y5) {
+      return Y4 < Y5;
+    },
+    QDdVG: "QqDlp",
+    ppyof: "rpKWh",
+    LsIli: "jaKee",
+    xEOAz: "玩家ID",
+    uIgKe: "对手ID",
+    TPtgd: "对手名称",
+    RKbaJ: "战斗结果",
+    PzIsb: "战斗时间",
+    bxJXb: "PspQl",
+    LfZXV: "JBkcH",
+    BxqWH: "MainPanel",
+    aARaD: function (Y4, Y5) {
+      return Y4 === Y5;
+    },
+    NQzob: "ZoCfR",
+    wxDyb: "aAXTC",
+    WqDBl: function (Y4, Y5) {
+      return Y4 === Y5;
+    },
+    uCTsU: "FtaEy",
+    DfSNR: "sisjY",
+    wThNF: function (Y4, Y5) {
+      return Y4(Y5);
+    },
+    XImHT: "MPpeZ",
+    DMbqm: "bCQpV",
+    FsOJV: function (Y4, Y5) {
+      return Y4 === Y5;
+    },
+    ZjRxY: "rOgCc",
+    yzJqc: "dNxhZ",
+    QDDpi: function (Y4, Y5) {
+      return Y4 === Y5;
+    },
+    ZtTUD: function (Y4, Y5) {
+      return Y4 === Y5;
+    },
+    rUKBj: "vsclC",
+    XpqpD: "fbLoH",
+    BQNyE: "Tsbvv",
+    zypPd: "qvUiI",
+    UxVmY: "data-index",
+    QvRtb: "[咸鱼助手] 成功注入宝箱增强模块 (无CD/跳过所有动画)！",
+    rtFzZ: "Cannot find module",
+    paWKd: "Vlypg",
+    uNGcU: "fhIEe",
+    xZlpF: "jlhHQ",
+    yUKll: "JhiAw",
+    RLuyR: "CIAOW",
+    NhypB: "QuenchStageUpDialog",
+    ccWFd: function (Y4, Y5) {
+      return Y4 === Y5;
+    },
+    EamUI: function (Y4, Y5) {
+      return Y4 < Y5;
+    },
+    ceNAv: function (Y4, Y5) {
+      return Y4 >= Y5;
+    },
+    sZKNx: function (Y4, Y5) {
+      return Y4 === Y5;
+    },
+    ldlox: "QZoNx",
+    kzYTL: "TThQH",
+    jLREy: "hwOkY",
+    HIXqn: "VvqhV",
+    pZASC: "CoGSO",
+    KeZKu: "XeeZH",
+    RehIP: "TOOdE",
+    UiyxB: function (Y4, Y5) {
+      return Y4 || Y5;
+    },
+    LpSvk: function (Y4, Y5) {
+      return Y4 - Y5;
+    },
+    XUAPD: function (Y4, Y5) {
+      return Y4 !== Y5;
+    },
+    NSEix: "oxwUt",
+    BFErM: "QadRq",
+    QPNkS: "kXuar",
+    YsPxS: function (Y4, Y5) {
+      return Y4 + Y5;
+    },
+    GhTzi: function (Y4, Y5) {
+      return Y4 + Y5;
+    },
+    cXDOG: function (Y4, Y5, Y6) {
+      return Y4(Y5, Y6);
+    },
+    smaYc: function (Y4, Y5) {
+      return Y4 === Y5;
+    },
+    VOuLh: "fkRqc",
+    XuAtQ: "qIhSA",
+    Pyili: "tXzjK",
+    wQEzm: "OGJDE",
+    DjbrD: "action",
+    waunv: function (Y4, Y5) {
+      return Y4 * Y5;
+    },
+    HBChD: function (Y4, Y5) {
+      return Y4 / Y5;
+    },
+    EpOEw: "cxtCc",
+    WcCMd: "kBYwQ",
+    OSDoq: "PwTRp",
+    ozLwJ: function (Y4, Y5) {
+      return Y4 !== Y5;
+    },
+    TIeKu: "CnEQs",
+    XXRRb: "wKwqH",
+    ZldLv: "ljhvx",
+    XTlxf: function (Y4, Y5) {
+      return Y4 === Y5;
+    },
+    NugoT: "wuVAp",
+    ARufQ: "pDNep",
+    HfHxp: "ipDrY",
+    GVyPU: "KxVDo",
+    kPjbu: "BtnCheckBox",
+    TpujO: "TextArea",
+    FnQBv: "跳过红色",
+    HGqZe: function (Y4, Y5) {
+      return Y4 + Y5;
+    },
+    mjAvx: function (Y4, Y5) {
+      return Y4 + Y5;
+    },
+    XSfWo: function (Y4, Y5) {
+      return Y4 - Y5;
+    },
+    FCxxL: "OFDNb",
+    VEefN: "bOOOR",
+    vyhNT: "tnNfr",
+    hRraN: "IfsPY",
+    XAVPJ: "rOsHU",
+    CDjla: "ytnbC",
+    RJYBA: function (Y4, Y5) {
+      return Y4 === Y5;
+    },
+    tkPYV: "BYwIe",
+    GWJHI: "VoeIR",
+    fUTMZ: function (Y4, Y5) {
+      return Y4 * Y5;
+    },
+    kxMOq: "nhcoY",
+    uxPmW: "bwKtR",
+    SCScY: "Diwgf",
+    LgyPm: function (Y4, Y5) {
+      return Y4 === Y5;
+    },
+    SdnCq: "MBrXK",
+    wvhHt: "aqReY",
+    gUVWr: "QrsKX",
+    donlS: "qRfmj",
+    rLYyj: function (Y4, Y5) {
+      return Y4 !== Y5;
+    },
+    FHIRJ: "rIRin",
+    kLDbb: "BhXPM",
+    OzcVg: function (Y4, Y5) {
+      return Y4 === Y5;
+    },
+    SCELS: "tvoXL",
+    TCqQs: "HitSy",
+    RTSaE: function (Y4, Y5) {
+      return Y4 !== Y5;
+    },
+    kRCSK: "kfobS",
+    LyfwM: "UjfRR",
+    CsnLB: "UxqCI",
+    dMvpv: "1|3|2|4|0|5",
+    AYaCH: "[咸鱼助手] 核心依赖 XLSX 库加载失败！战报导出功能将无法使用。",
+    FYtrb: function (Y4, Y5) {
+      return Y4 - Y5;
+    },
+    lUUCq: function (Y4, Y5) {
+      return Y4 === Y5;
+    },
+    wqAjp: "OjVtW",
+    SLMZf: function (Y4, Y5) {
+      return Y4 !== Y5;
+    },
+    MhBHc: "VjlWO",
+    Nzzho: "cdyKp",
+    xxSyb: function (Y4, Y5) {
+      return Y4 === Y5;
+    },
+    VQMGR: "uIjUV",
+    oqtYI: "yYpaF",
+    OkMez: "JgiEL",
+    dogVe: function (Y4, Y5) {
+      return Y4 === Y5;
+    },
+    wcIRh: "nZXRY",
+    SqsQA: "lotmX",
+    lgbVg: "siuXB",
+    OKrEa: "lqctu",
+    rvRtq: "LiYJy",
+    jQDWx: function (Y4, Y5) {
+      return Y4 === Y5;
+    },
+    AYYrq: "tBbhT",
+    rKxtr: "txpzD",
+    wucak: function (Y4, Y5) {
+      return Y4 !== Y5;
+    },
+    FDnRB: "object",
+    tHFpn: function (Y4, Y5) {
+      return Y4 !== Y5;
+    },
+    OVLCW: "rivAY",
+    sfiKc: function (Y4, Y5) {
+      return Y4 && Y5;
+    },
+    wJdso: function (Y4, Y5) {
+      return Y4 !== Y5;
+    },
+    rRDKi: "CxkGn",
+    Zqxeb: "IiIIc",
+    HIHMg: function (Y4, Y5) {
+      return Y4(Y5);
+    },
+    TBQqu: "CLAtm",
+    HPWVf: "mTEqI",
+    yKdqT: function (Y4, Y5, Y6) {
+      return Y4(Y5, Y6);
+    },
+    PhISA: "[咸鱼助手] 脚本 v2.0 已启动，正在等待游戏环境...",
+    JrXXP: function (Y4, Y5) {
+      return Y4 === Y5;
+    },
+    lSLge: function (Y4, Y5) {
+      return Y4 === Y5;
+    },
+    Emuga: "uFSFm",
+    zIFjL: function (Y4, Y5) {
+      return Y4 === Y5;
+    },
+    fmhcB: "ZldXv",
+    NneHq: "Vvsij",
+    SduLb: "木质宝箱",
+    tPTHb: "TimeGiftDialog",
+    JkiXe: "ActivityFestivalSpringFaceDialog24",
+    VLRwr: "ActivityFestivalSpringFaceLongAnimationDialog24"
   };
   "use strict";
-  const K = unsafeWindow || window;
-  const b = "[咸鱼工具箱]:";
-  const F = {
-    top: "10px",
-    left: "10px"
-  };
-  const z = {
-    engine_speed_rate: 1,
-    quench_speed_enabled: true,
-    nightmare_speed_enabled: true,
-    horse_race_speed_enabled: true,
-    panel_pos: F,
-    panel_collapsed: false,
-    accounts: [],
-    selectedAccountFileName: null,
-    activeTab: "accounts",
-    qrcode_enabled: true,
-    lastUsedAccountFileName: null
-  };
-  const R = z;
-  let S = {};
-  function x() {
+  console.log("[咸鱼助手] 脚本 v2.0 已启动，正在等待游戏环境...");
+  let q = false;
+  let I = false;
+  if (typeof XLSX === "undefined") {
     {
-      try {
-        {
-          const B = {
-            ...S,
-            accounts: S.accounts.map(p => ({
-              fileName: p.fileName,
-              content: p.content
-            }))
-          };
-          localStorage.setItem("XYWZ_ToolboxConfig_v10.1", JSON.stringify(B));
-        }
-      } catch (T) {
-        {
-          console.error(b + " 保存配置失败:", T);
-        }
-      }
+      console.error("[咸鱼助手] 核心依赖 XLSX 库加载失败！战报导出功能将无法使用。");
+    }
+  } else {
+    {
+      console.log("[咸鱼助手] XLSX 库已加载，版本: " + XLSX.version);
     }
   }
-  function g() {
-    {
-      try {
-        {
-          const T = localStorage.getItem("XYWZ_ToolboxConfig_v10.1");
-          const H = JSON.parse(T);
-          H && H.accounts && (H.accounts = H.accounts.map(v => ({
-            fileName: v.fileName,
-            content: v.content || v.hexString
-          })));
-          const Q = {
-            ...R,
-            ...H
-          };
-          S = Q;
-        }
-      } catch (W) {
-        {
-          const P = {
-            ...R
-          };
-          S = P;
-        }
-      }
-    }
-  }
-  function m(c) {
-    {
-      if (!c) {
-        return "未知账号";
-      }
-      if (c.endsWith(".bin")) {
-        {
-          return c.slice(0, -4);
-        }
-      }
-      if (c.endsWith(".json")) {
-        {
-          return c.slice(0, -5);
-        }
-      }
-      return c;
-    }
-  }
-  const V = {
-    activeLoginMatchId: null,
-    isWaitingCode: false,
-    waitInterval: null,
-    waitTimeout: 120000,
-    waitStartTime: null,
-    generateLoginMatchId() {
-      {
-        const B = Date.now();
-        const p = "DID-0e782e88-2f3b-4f5b-9020-47f5e5a5a026";
-        return B + "_" + p;
-      }
-    },
-    async sendVerifyCode(c) {
+  const n = {
+    showUserAgreementDialog: function () {
       {
         try {
           {
-            this.updateStatus("正在发送验证码...", "info");
-            this.activeLoginMatchId = this.generateLoginMatchId();
-            const p = {
-              gameId: "xyzwapp",
-              gameTp: "app",
-              accountNum: c,
-              sysInfo: JSON.stringify({
-                system: "Android 12",
-                hortorSDKVersion: "4.2.1-cn-release",
-                model: "22081212C",
-                brand: "Redmi"
-              }),
-              activeLoginMatchId: this.activeLoginMatchId,
-              channel: "android",
-              verifyCodeTp: "login",
-              distinctId: this.activeLoginMatchId.split("_")[1],
-              oaidThirdSdk: "",
-              ipv6: "",
-              limit: true,
-              packageName: "com.hortor.games.xyzw",
-              signPrint: "E6:F7:FE:A9:EC:8E:24:D0:4F:2A:32:50:28:78:E1:C5:5E:70:81:13",
-              androidId: "554e4fb740b853e1",
-              oaId: "",
-              oaid: ""
-            };
-            const T = await new Promise((Q, v) => {
-              GM_xmlhttpRequest({
-                method: "POST",
-                url: "https://ucenter-app-server.hortorgames.com/ucenter-app-server/api/v1/login/verify/code",
-                headers: {
-                  "User-Agent": "Mozilla/5.0 (Linux; Android 12; 22081212C Build/SKQ1.220303.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.60 Mobile Safari/537.36",
-                  "Content-Type": "application/json; charset=utf-8",
-                  Host: "ucenter-app-server.hortorgames.com",
-                  Connection: "Keep-Alive",
-                  "Accept-Encoding": "gzip"
-                },
-                data: JSON.stringify(p),
-                timeout: 15000,
-                onload: function (P) {
-                  {
-                    Q(P);
-                  }
-                },
-                onerror: function (P) {
-                  v(new Error("发送验证码请求失败"));
-                },
-                ontimeout: function () {
-                  {
-                    v(new Error("发送验证码请求超时"));
-                  }
-                }
-              });
-            });
-            if (T.status !== 200) {
+            const Y8 = unsafeWindow.__require("index-ui").SHOW_SIMPLE_DIALOG;
+            const Y9 = unsafeWindow.__require("NormalDialog");
+            const YY = unsafeWindow.__require("TipsManager");
+            if (!Y8 || !Y9) {
               {
-                throw new Error("请求失败，状态码: " + T.status);
-              }
-            }
-            const H = JSON.parse(T.responseText);
-            if (H.meta?.["errCode"] !== 0) {
-              {
-                throw new Error("发送失败: " + (H.meta?.["errMsg"] || "未知错误"));
-              }
-            }
-            if (H.data?.["sendSuccess"]) {
-              {
-                this.updateStatus("验证码已发送，请在" + H.data.waitSecond + "秒内输入", "success");
-                this.startWaitCountdown(H.data.waitSecond);
-                return true;
-              }
-            } else {
-              {
-                this.updateStatus(H.data?.["msg"] || "发送失败", "error");
-                return false;
-              }
-            }
-          }
-        } catch (X) {
-          {
-            console.error(b + " 发送验证码失败:", X);
-            this.updateStatus("发送验证码失败: " + X.message, "error");
-            return false;
-          }
-        }
-      }
-    },
-    startWaitCountdown(c) {
-      {
-        this.isWaitingCode = true;
-        this.waitStartTime = Date.now();
-        this.waitTimeout = c * 1000;
-        const T = document.getElementById("send-code-btn");
-        if (T) {
-          {
-            T.disabled = true;
-          }
-        }
-        this.waitInterval = setInterval(() => {
-          {
-            const v = Date.now() - this.waitStartTime;
-            const W = Math.ceil((this.waitTimeout - v) / 1000);
-            if (W <= 0) {
-              {
-                this.stopWaitCountdown();
+                YY.SHOW_TIP("错误：无法加载游戏弹窗组件！");
                 return;
               }
             }
-            if (T) {
-              {
-                T.textContent = "(" + W + "s)";
-              }
-            }
-          }
-        }, 1000);
-      }
-    },
-    stopWaitCountdown() {
-      {
-        this.isWaitingCode = false;
-        if (this.waitInterval) {
-          {
-            clearInterval(this.waitInterval);
-            this.waitInterval = null;
-          }
-        }
-        const p = document.getElementById("send-code-btn");
-        p && (p.disabled = false, p.textContent = "获取");
-      }
-    },
-    async loginWithPhone(c, B) {
-      {
-        try {
-          {
-            this.updateStatus("正在验证登录...", "info");
-            if (!this.activeLoginMatchId) {
-              {
-                throw new Error("请先发送验证码");
-              }
-            }
-            const H = await this.getEncryptedDataForPhone(c, B);
-            if (H) {
-              {
-                await this.saveAccount(H);
-              }
-            }
-          }
-        } catch (W) {
-          console.error(b + " 手机号登录失败:", W);
-          this.updateStatus("登录失败: " + W.message, "error");
-        }
-      }
-    },
-    async getEncryptedDataForPhone(c, B) {
-      {
-        try {
-          {
-            const H = JSON.stringify({
-              gameId: "xyzwapp",
-              gameTp: "app",
-              sysInfo: JSON.stringify({
-                system: "Android 12",
-                hortorSDKVersion: "4.2.1-cn-release",
-                model: "22081212C",
-                brand: "Redmi"
-              }),
-              activeLoginMatchId: this.activeLoginMatchId,
-              smsCode: B,
-              mobile: c,
-              channel: "android",
-              distinctId: this.activeLoginMatchId.split("_")[1],
-              oaidThirdSdk: "",
-              ipv6: "",
-              packageName: "com.hortor.games.xyzw",
-              signPrint: "E6:F7:FE:A9:EC:8E:24:D0:4F:2A:32:50:28:78:E1:C5:5E:70:81:13",
-              tp: "app-mobile",
-              androidId: "554e4fb740b853e1",
-              oaId: "",
-              oaid: ""
-            });
-            console.log(b + " 手机号登录数据:", H);
-            const Q = d.encodePayload(H);
-            console.log(b + " 编码后payload:", Q);
-            const v = "https://comb-platform.hortorgames.com/comb-login-server/api/v1/login?gameId=xyzwapp&timestamp=" + Date.now() + "&version=android-4.2.1-cn-release&cryptVersion=1.1.0&gameTp=app&system=android&deviceUniqueId=6b6c5c4c256562fb90e6f70b97276339&packageName=com.hortor.games.xyzw";
-            const W = await new Promise((D1, D2) => {
-              GM_xmlhttpRequest({
-                method: "POST",
-                url: v,
-                headers: {
-                  "User-Agent": "Mozilla/5.0 (Linux; Android 12; 22081212C Build/SKQ1.220303.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.60 Mobile Safari/537.36",
-                  Accept: "*/*",
-                  Host: "comb-platform.hortorgames.com",
-                  Connection: "keep-alive",
-                  "Content-Type": "text/plain; charset=utf-8"
-                },
-                data: Q,
-                timeout: 15000,
-                onload: function (D4) {
-                  {
-                    D1(D4);
-                  }
-                },
-                onerror: function (D4) {
-                  {
-                    D2(new Error("登录请求失败"));
-                  }
-                },
-                ontimeout: function () {
-                  {
-                    D2(new Error("登录请求超时"));
+            const Yj = {
+              title: "咸鱼助手 用户协议",
+              content: "请在使用前仔细阅读并同意以下条款：\n1.本脚本仅供学习和技术交流，禁止用于任何商业用途或游戏作弊行为\n2.使用本脚本所产生的任何风险（包括但不限于账号安全风险）均由用户自行承担，作者不承担任何责任\n3.不得利用本脚本侵犯游戏厂商的合法权益\n4.作者不对因使用或无法使用本脚本所造成的任何直接或间接损害负责。\n点击“同意”即表示您已阅读、理解并接受以上所有条款。",
+              [Y9.NormalDialog.OP_BUTTON_MODE]: Y9.NormalButtonMode.TwoButton,
+              [Y9.NormalDialog.OP_BTN_YES_TITLE]: "同意",
+              [Y9.NormalDialog.OP_BTN_NO_TITLE]: "拒绝",
+              hook: function (YL) {
+                {
+                  if (YL) {
+                    {
+                      q = true;
+                      YY.SHOW_TIP("感谢您的同意，助手核心功能现已启用。");
+                    }
+                  } else {
+                    {
+                      YY.SHOW_TIP("您已拒绝协议，核心功能将不会启用。");
+                    }
                   }
                 }
-              });
-            });
-            if (W.status !== 200) {
-              {
-                throw new Error("登录请求失败，状态码: " + W.status);
               }
-            }
-            const P = JSON.parse(W.responseText);
-            if (P.meta?.["errCode"] !== 0) {
-              {
-                throw new Error("登录失败: " + (P.meta?.["errMsg"] || "未知错误"));
-              }
-            }
-            if (!P.data?.["combUser"]) {
-              {
-                throw new Error("登录响应格式错误");
-              }
-            }
-            const E = P.data.combUser;
-            const D0 = {
-              platform: "hortor",
-              platformExt: "mix",
-              info: E,
-              serverId: null,
-              scene: 0,
-              referrerInfo: ""
             };
-            if (typeof K.__require === "function") {
-              {
-                try {
-                  {
-                    const D5 = K.__require("13");
-                    if (D5 && D5.encMsg && D5.lz4XorEncode) {
-                      {
-                        console.log(b + " 使用游戏内加密模块进行数据加密");
-                        const D7 = D5.encMsg(D0, {
-                          decrypt: D5.lz4XorDecode,
-                          encrypt: D5.lz4XorEncode
-                        });
-                        const D8 = new Uint8Array(D7);
-                        const D9 = Array.from(D8).map(DD => DD.toString(16).padStart(2, "0")).join("");
-                        console.log(b + " 数据加密成功，长度: " + D9.length);
-                        return D9;
-                      }
-                    } else {
-                      {
-                        console.warn(b + " 游戏加密模块未完全加载，dm:", D5);
-                      }
-                    }
-                  }
-                } catch (DN) {
-                  {
-                    console.error(b + " 调用游戏加密模块失败:", DN);
-                  }
-                }
-              }
-            }
-            throw new Error("无法访问游戏加密模块，请确保在游戏页面内使用此功能");
+            Y8(Y9.NormalDialog, Yj);
           }
-        } catch (DA) {
-          {
-            console.error(b + " 获取手机号加密数据失败:", DA);
-            throw DA;
-          }
+        } catch (Ys) {
+          console.error("[咸鱼助手] 调用协议弹窗时发生错误:", Ys);
         }
       }
     },
-    async saveAccount(c) {
+    patchPanel: function (Y6) {
       {
-        return await d.saveAccount(c);
-      }
-    },
-    updateStatus(c, B = "info") {
-      {
-        d.updateStatus(c, B);
+        const Y8 = Y6.prototype.onShow;
+        Y6.prototype.onShow = function () {
+          {
+            Y8.apply(this, arguments);
+            if (I || q) {
+              return;
+            }
+            I = true;
+            n.showUserAgreementDialog();
+          }
+        };
+        console.log("[咸鱼助手] 成功注入到 <" + Y6.name + ">，协议弹窗已准备就绪。");
       }
     }
   };
-  const d = {
-    qrcode: null,
-    isScanning: false,
-    scanInterval: null,
-    timeout: 120000,
-    startTime: null,
-    async getQRCode() {
-      {
-        try {
-          {
-            this.updateStatus("正在获取二维码...", "info");
-            const p = await this.tryGetWeixinQR();
-            if (p) {
-              {
-                return this.qrcode;
-              }
-            }
-            throw new Error("所有获取二维码的方法都失败了");
-          }
-        } catch (H) {
-          {
-            console.error(b + " 获取二维码失败:", H);
-            this.updateStatus("获取二维码失败: " + H.message, "error");
-            this.resetQRCode();
-            return null;
-          }
-        }
-      }
-    },
-    async tryGetWeixinQR() {
-      {
-        console.log(b + " 正在尝试获取微信二维码...");
-        try {
-          {
-            const T = "https://open.weixin.qq.com/connect/app/qrconnect?appid=wxfb0d5667e5cb1c44&bundleid=com.hortor.games.xyzw&scope=snsapi_base,snsapi_userinfo,snsapi_friend,snsapi_message&state=weixin";
-            const H = await new Promise((D0, D1) => {
-              {
-                GM_xmlhttpRequest({
-                  method: "GET",
-                  url: T,
-                  headers: {
-                    "User-Agent": "Mozilla/5.0 (Linux; Android 7.0; Mi-4c Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/53.0.2785.49 Mobile MQQBrowser/6.2 TBS/043632 Safari/537.36 MicroMessenger/6.6.1.1220(0x26060135) NetType/WIFI Language/zh_CN",
-                    Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
-                    Referer: "https://open.weixin.qq.com/"
-                  },
-                  timeout: 15000,
-                  onload: function (D4) {
-                    {
-                      D0(D4);
-                    }
-                  },
-                  onerror: function (D4) {
-                    D1(new Error("网络请求失败: " + (D4.error || "未知错误")));
-                  },
-                  ontimeout: function () {
-                    {
-                      D1(new Error("请求超时，请检查网络连接"));
-                    }
-                  }
-                });
-              }
-            });
-            console.log(b + " 微信API响应状态:", H.status);
-            const Q = {
-              status: H.status,
-              statusText: H.statusText,
-              responseURL: H.finalUrl || "N/A",
-              headers: H.responseHeaders || "N/A"
-            };
-            console.log(b + " 完整响应信息:", Q);
-            if (H.status !== 200) {
-              {
-                throw new Error("HTTP状态码: " + H.status);
-              }
-            }
-            const v = H.responseText;
-            console.log(b + " 响应内容长度:", v.length);
-            let W = null;
-            let P = null;
-            const E = new DOMParser();
-            const X = E.parseFromString(v, "text/html");
-            W = X.querySelector("img.auth_qrcode");
-            if (W && W.src) {
-              P = W.src;
-            } else {
-              {
-                const D3 = /https:\/\/[^"']*qrcode[^"']*/gi;
-                const D4 = v.match(D3);
-                if (D4 && D4.length > 0) {
-                  {
-                    P = D4[0];
-                  }
-                }
-              }
-            }
-            if (!P) {
-              {
-                console.log(b + " 页面内容预览:", v.substring(0, 1000));
-                throw new Error("未找到二维码图片");
-              }
-            }
-            this.qrcode = P.split("/").pop().split("?")[0];
-            this.displayQRCode(P);
-            this.updateStatus("请使用微信扫描二维码", "success");
-            this.startScanMonitoring();
-            return true;
-          }
-        } catch (D7) {
-          {
-            console.error(b + " 微信二维码获取失败:", D7);
-            return false;
-          }
-        }
-      }
-    },
-    displayQRCode(c) {
-      {
-        const p = document.getElementById("qr-placeholder");
-        const T = document.getElementById("qr-image");
-        p.style.display = "none";
-        T.src = c;
-        T.style.display = "block";
-      }
-    },
-    startScanMonitoring() {
-      {
-        if (this.isScanning) {
-          return;
-        }
-        this.isScanning = true;
-        this.startTime = Date.now();
-        this.scanInterval = setInterval(() => {
-          {
-            this.checkScanStatus();
-          }
-        }, 1000);
-      }
-    },
-    async checkScanStatus() {
-      {
-        try {
-          {
-            if (!this.qrcode) {
-              return;
-            }
-            const p = Date.now() - this.startTime;
-            if (p > this.timeout) {
-              {
-                this.stopScanMonitoring();
-                this.updateStatus("扫码超时，请重新获取二维码", "error");
-                this.resetQRCode();
-                return;
-              }
-            }
-            const T = "https://long.open.weixin.qq.com/connect/l/qrconnect?uuid=" + this.qrcode + "&f=url&_=" + Date.now();
-            const H = await new Promise((W, P) => {
-              {
-                GM_xmlhttpRequest({
-                  method: "GET",
-                  url: T,
-                  headers: {
-                    "User-Agent": "Mozilla/5.0 (Linux; Android 7.0; Mi-4c Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/53.0.2785.49 Mobile MQQBrowser/6.2 TBS/043632 Safari/537.36 MicroMessenger/6.6.1.1220(0x26060135) NetType/WIFI Language/zh_CN",
-                    Accept: "*/*",
-                    Referer: "https://open.weixin.qq.com/"
-                  },
-                  timeout: 5000,
-                  onload: function (D0) {
-                    {
-                      W(D0);
-                    }
-                  },
-                  onerror: function (D0) {
-                    {
-                      const D2 = {
-                        status: 0,
-                        responseText: ""
-                      };
-                      W(D2);
-                    }
-                  },
-                  ontimeout: function () {
-                    {
-                      const D1 = {
-                        status: 0,
-                        responseText: ""
-                      };
-                      W(D1);
-                    }
-                  }
-                });
-              }
-            });
-            if (H.status === 200) {
-              {
-                const W = H.responseText;
-                if (W.includes("window.wx_errcode=405")) {
-                  {
-                    const P = W.match(/wx_redirecturl='[^']*code=([a-zA-Z0-9]+)/);
-                    if (P) {
-                      {
-                        const X = P[1];
-                        this.stopScanMonitoring();
-                        this.updateStatus("扫码成功！正在获取登录数据...", "success");
-                        await this.handleScanSuccess(X);
-                        return;
-                      }
-                    }
-                  }
-                }
-                if (W.includes("window.wx_errcode=408")) {
-                  {
-                    this.updateStatus("二维码已过期，请刷新", "error");
-                    this.stopScanMonitoring();
-                    this.resetQRCode();
-                    return;
-                  }
-                }
-              }
-            }
-            const Q = Math.ceil((this.timeout - p) / 1000);
-            if (Q % 30 === 0) {
-              {
-                this.updateStatus("请扫描二维码，剩余时间: " + Q + "秒", "info");
-              }
-            }
-          }
-        } catch (D4) {
-          {
-            console.error(b + " 检查扫码状态失败:", D4);
-          }
-        }
-      }
-    },
-    stopScanMonitoring() {
-      {
-        this.isScanning = false;
-        if (this.scanInterval) {
-          {
-            clearInterval(this.scanInterval);
-            this.scanInterval = null;
-          }
-        }
-      }
-    },
-    async handleScanSuccess(c) {
-      {
-        try {
-          {
-            const T = await this.getEncryptedData(c);
-            T && (await this.saveAccount(T));
-          }
-        } catch (v) {
-          {
-            console.error(b + " 处理扫码成功失败:", v);
-            this.updateStatus("处理登录数据失败: " + v.message, "error");
-          }
-        }
-      }
-    },
-    async getEncryptedData(c) {
-      {
-        try {
-          {
-            const T = "{\"gameId\":\"xyzwapp\",\"code\":\"" + c + "\",\"gameTp\":\"app\",\"sysInfo\":\"{\\\"system\\\":\\\"Android\\\",\\\"hortorSDKVersion\\\":\\\"4.0.6-cn\\\",\\\"model\\\":\\\"22081212C\\\",\\\"brand\\\":\\\"Redmi\\\"}\",\"channel\":\"android\",\"appFrom\":\"com.tencent.mm\",\"noLogin\":\"2\",\"distinctId\":\"DID-a38175b7-14ce-4b36-aa89-3e092ea03ea6\",\"state\":\"hortor\",\"packageName\":\"com.hortor.games.xyzw\",\"tp\":\"app-we\",\"signPrint\":\"E6:F7:FE:A9:EC:8E:24:D0:4F:2A:32:50:28:78:E1:C5:5E:70:81:13\",\"androidId\":\"\",\"oaid\":\"\"}";
-            console.log(b + " 原始登录数据:", T);
-            const H = this.encodePayload(T);
-            console.log(b + " 编码后payload:", H);
-            const v = "https://comb-platform.hortorgames.com/comb-login-server/api/v1/login?gameId=xyzwapp&timestamp=" + Date.now() + "&version=android-4.2.1-cn-release&cryptVersion=1.1.0&gameTp=app&system=android&deviceUniqueId=DID-0e782e88-2f3b-4f5b-9020-47f5e5a5a026&packageName=com.hortor.games.xyzw";
-            const W = await new Promise((D1, D2) => {
-              {
-                GM_xmlhttpRequest({
-                  method: "POST",
-                  url: v,
-                  headers: {
-                    "User-Agent": "Mozilla/5.0 (Linux; Android 12; 23117RK66C Build/V417IR; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/95.0.4638.74 Mobile Safari/537.36",
-                    Accept: "*/*",
-                    Host: "comb-platform.hortorgames.com",
-                    Connection: "keep-alive",
-                    "Content-Type": "text/plain; charset=utf-8",
-                    Origin: "https://open.weixin.qq.com",
-                    Referer: "https://open.weixin.qq.com/"
-                  },
-                  data: H,
-                  timeout: 15000,
-                  onload: function (D4) {
-                    D1(D4);
-                  },
-                  onerror: function (D4) {
-                    {
-                      D2(new Error("登录请求失败"));
-                    }
-                  },
-                  ontimeout: function () {
-                    {
-                      D2(new Error("登录请求超时"));
-                    }
-                  }
-                });
-              }
-            });
-            if (W.status !== 200) {
-              {
-                throw new Error("登录请求失败，状态码: " + W.status);
-              }
-            }
-            const P = JSON.parse(W.responseText);
-            if (P.meta?.["errCode"] !== 0) {
-              {
-                throw new Error("登录失败: " + (P.meta?.["errMsg"] || "未知错误"));
-              }
-            }
-            if (!P.data?.["combUser"]) {
-              {
-                throw new Error("登录响应格式错误");
-              }
-            }
-            const E = P.data.combUser;
-            const D0 = {
-              platform: "hortor",
-              platformExt: "mix",
-              info: E,
-              serverId: null,
-              scene: 0,
-              referrerInfo: ""
-            };
-            if (typeof K.__require === "function") {
-              {
-                try {
-                  {
-                    const D6 = K.__require("13");
-                    if (D6 && D6.encMsg && D6.lz4XorEncode) {
-                      {
-                        console.log(b + " 使用游戏内加密模块进行数据加密");
-                        const D7 = D6.encMsg(D0, {
-                          decrypt: D6.lz4XorDecode,
-                          encrypt: D6.lz4XorEncode
-                        });
-                        const D8 = new Uint8Array(D7);
-                        const D9 = Array.from(D8).map(DD => DD.toString(16).padStart(2, "0")).join("");
-                        console.log(b + " 数据加密成功，长度: " + D9.length);
-                        return D9;
-                      }
-                    } else {
-                      console.warn(b + " 游戏加密模块未完全加载，dm:", D6);
-                    }
-                  }
-                } catch (DN) {
-                  {
-                    console.error(b + " 调用游戏加密模块失败:", DN);
-                  }
-                }
-              }
-            }
-            throw new Error("无法访问游戏加密模块，请确保在游戏页面内使用此功能");
-          }
-        } catch (DO) {
-          {
-            console.error(b + " 获取加密数据失败:", DO);
-            throw DO;
-          }
-        }
-      }
-    },
-    encodePayload(c) {
-      {
-        const p = "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";
-        const T = 1;
-        const H = 6;
-        const Q = 3;
-        console.log(b + " 开始编码，原始文本长度:", c.length);
-        const v = this.codeBase64(c, p, H, Q, T);
-        console.log(b + " _code_base64结果:", v?.["substring"](0, 100) + "...");
-        const W = this.encodeBase64(v);
-        console.log(b + " 最终编码结果长度:", W?.["length"]);
-        return W;
-      }
-    },
-    codeBase64(c, B, p, T, H) {
-      {
-        const Q = this.encodeBase64(c);
-        if (B) {
-          {
-            const v = this.transCode(B, p);
-            const W = this.getCodeKey(v, T);
-            return this.dealWithString(Q, W, H);
-          }
-        }
-        return null;
-      }
-    },
-    encodeBase64(c) {
-      {
-        if (!c) {
-          return null;
-        }
-        return btoa(unescape(encodeURIComponent(c)));
-      }
-    },
-    transCode(c, B) {
-      {
-        if (B <= 0) {
-          return c;
-        }
-        if (c.length % 2 !== 0) {
-          return null;
-        }
-        const T = this.rightSide(c);
-        const H = this.leftSide(c);
-        return this.transCode(T, B - 1) + this.transCode(H, B - 1);
-      }
-    },
-    rightSide(c) {
-      {
-        if (c.length % 2 !== 0) {
-          return null;
-        }
-        return c.substring(Math.floor(c.length / 2));
-      }
-    },
-    leftSide(c) {
-      {
-        if (c.length % 2 !== 0) {
-          return null;
-        }
-        return c.substring(0, Math.floor(c.length / 2));
-      }
-    },
-    getCodeKey(c, B) {
-      {
-        const T = c.split("");
-        const H = [];
-        const Q = Math.floor(c.length / B);
-        for (let v = 0; v < Q; v++) {
-          {
-            H.push(T[v * B]);
-          }
-        }
-        return H.join("");
-      }
-    },
-    dealWithString(c, B, p) {
-      {
-        if (!c || !B) {
-          return null;
-        }
-        const v = c.split("");
-        const W = B.split("");
-        const P = new Array(v.length);
-        let E = W.length >> p;
-        for (let X = 0; X < v.length; X++) {
-          E >= W.length && (E = 0);
-          P[X] = String.fromCharCode(v[X].charCodeAt(0) ^ W[E].charCodeAt(0));
-          E++;
-        }
-        return P.join("");
-      }
-    },
-    async saveAccount(c) {
-      {
-        try {
-          {
-            const T = document.getElementById("new-account-name").value.trim();
-            if (!T) {
-              {
-                throw new Error("请输入账号名称");
-              }
-            }
-            const H = T + ".bin";
-            const Q = S.accounts.findIndex(W => W.fileName === H);
-            if (Q > -1) {
-              {
-                if (!confirm("账号 \"" + T + "\" 已存在，是否覆盖？")) {
-                  {
-                    return;
-                  }
-                }
-                S.accounts[Q].content = c;
-              }
-            } else {
-              {
-                const E = {
-                  fileName: H,
-                  content: c
-                };
-                S.accounts.push(E);
-              }
-            }
-            this.downloadBinFile(H, c);
-            S.selectedAccountFileName = H;
-            x();
-            C();
-            this.updateStatus("账号 \"" + T + "\" 保存成功！", "success");
-            confirm("账号 \"" + T + "\" 已成功保存，是否立即切换并刷新游戏？") && location.reload();
-            this.resetQRCode();
-            document.getElementById("new-account-name").value = "";
-          }
-        } catch (D2) {
-          console.error(b + " 保存账号失败:", D2);
-          this.updateStatus("保存账号失败: " + D2.message, "error");
-        }
-      }
-    },
-    downloadBinFile(c, B) {
-      {
-        try {
-          {
-            const H = [];
-            for (let E = 0; E < B.length; E += 2) {
-              {
-                H.push(parseInt(B.substr(E, 2), 16));
-              }
-            }
-            const Q = {
-              type: "application/octet-stream"
-            };
-            const v = new Blob([new Uint8Array(H)], Q);
-            const W = URL.createObjectURL(v);
-            const P = document.createElement("a");
-            P.href = W;
-            P.download = c;
-            P.style.display = "none";
-            document.body.appendChild(P);
-            P.click();
-            document.body.removeChild(P);
-            URL.revokeObjectURL(W);
-            console.log(b + " 账号文件 " + c + " 已下载");
-          }
-        } catch (D1) {
-          console.error(b + " 下载文件失败:", D1);
-        }
-      }
-    },
-    updateStatus(c, B = "info") {
-      {
-        const T = document.getElementById("qr-status");
-        if (T) {
-          {
-            T.textContent = c;
-            T.style.color = B === "error" ? "#f44336" : B === "success" ? "#4CAF50" : "#aaa";
-          }
-        }
-      }
-    },
-    resetQRCode() {
-      {
-        this.stopScanMonitoring();
-        this.qrcode = null;
-        const c = document.getElementById("qr-placeholder");
-        const B = document.getElementById("qr-image");
-        if (c && B) {
-          {
-            c.style.display = "flex";
-            B.style.display = "none";
-            B.src = "";
-          }
-        }
-        this.updateStatus("点击二维码区域获取/刷新", "info");
-      }
-    }
+  const k = {
+    GOLD: 160,
+    SILVER: 100,
+    COPPER: 40
   };
-  function G() {
-    {
-      GM_addStyle("\n            #accelerator-panel, #accelerator-toggle-btn { font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif; user-select: none; box-sizing: border-box; }\n            #accelerator-panel { position: fixed; z-index: 99999; background: linear-gradient(145deg, #3e3e3e, #2a2a2a); border: 1px solid #555; border-radius: 12px; color: #e0e0e0; font-size: 14px; box-shadow: 0 5px 20px rgba(0,0,0,0.5); display: " + (S.panel_collapsed ? "none" : "block") + "; width: 280px; overflow: hidden; }\n            #accelerator-panel .panel-header { padding: 10px 12px; background: rgba(0,0,0,0.2); cursor: move; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #4a4a4a; }\n            #accelerator-panel .panel-title { font-weight: bold; font-size: 15px; }\n            .panel-tabs { display: flex; border-bottom: 1px solid #4a4a4a; }\n            .panel-tabs button { flex: 1; background: none; border: none; color: #aaa; padding: 12px 0; font-size: 14px; cursor: pointer; transition: background 0.2s, color 0.2s; border-bottom: 3px solid transparent; }\n            .panel-tabs button:hover { background: rgba(255,255,255,0.05); }\n            .panel-tabs button.active { color: #fff; font-weight: bold; border-bottom-color: #4CAF50; }\n            .panel-body { padding: 15px; }\n            .tab-content { display: none; flex-direction: column; gap: 18px; }\n            .tab-content.active { display: flex; }\n            .setting-row { display: flex; align-items: center; justify-content: space-between; }\n            .slider-container { display: flex; flex-direction: column; gap: 8px; }\n            .speed-display { display: flex; justify-content: space-between; align-items: baseline; }\n            #speed-indicator { font-weight: bold; color: #4CAF50; font-size: 16px; }\n            .account-manager { display: flex; flex-direction: column; gap: 12px; }\n            #account-selector { background-color: #333; color: #fff; border: 1px solid #555; border-radius: 4px; padding: 8px; width: 100%; font-size: 14px; }\n            #account-selector:focus { outline: 1px solid #4CAF50; }\n            .button-row { display: flex; gap: 8px; }\n            .custom-file-upload, #refresh-page-btn, #delete-account-btn { flex-grow: 1; text-align: center; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer; font-size: 14px; font-weight: bold; transition: background-color 0.2s; }\n            .custom-file-upload { background-color: #4CAF50; }\n            .custom-file-upload:hover { background-color: #45a049; }\n            #refresh-page-btn { background-color: #2196F3; }\n            #refresh-page-btn:hover { background-color: #1976D2; }\n            #delete-account-btn { background-color: #f44336; }\n            #delete-account-btn:hover { background-color: #d32f2f; }\n            #delete-account-btn:disabled { background-color: #757575; cursor: not-allowed; opacity: 0.7; }\n            .qrcode-container { display: flex; flex-direction: column; gap: 15px; }\n            .qr-display-area { background: rgba(0,0,0,0.2); border-radius: 8px; padding: 15px; }\n            #qr-image-container { text-align: center; margin-bottom: 15px; }\n            #qr-placeholder { width: 200px; height: 200px; border: 2px dashed #555; display: flex; align-items: center; justify-content: center; margin: 0 auto; color: #aaa; font-size: 14px; cursor: pointer; transition: border-color 0.2s; }\n            #qr-placeholder:hover { border-color: #4CAF50; }\n            #qr-image { display: none; max-width: 200px; max-height: 200px; border: 1px solid #555; cursor: pointer; transition: opacity 0.2s; }\n            #qr-image:hover { opacity: 0.8; }\n            #qr-status { text-align: center; margin-bottom: 15px; color: #aaa; font-size: 14px; }\n            .account-name-input { margin-bottom: 20px; }\n            .account-name-input label { display: block; margin-bottom: 5px; color: #e0e0e0; font-size: 14px; font-weight: normal; }\n            .account-name-input input { width: 100%; padding: 10px; background-color: #333; color: #fff; border: 1px solid #555; border-radius: 4px; font-size: 14px; box-sizing: border-box; }\n            .account-name-input input:focus { outline: none; border-color: #4CAF50; }\n            #account-file-input { display: none; }\n            .disclaimer-box { margin-top: 15px; padding-top: 15px; border-top: 1px solid #4a4a4a; font-size: 12px; color: #9e9e9e; line-height: 1.5; text-align: justify; }\n\n            /* 登录方式选择样式 */\n            .login-method-selector { display: flex; flex-direction: column; gap: 15px; margin-top: 15px; }\n            .login-method-buttons { display: flex; gap: 8px; justify-content: center; }\n            .login-method-btn { padding: 8px 12px; border: 2px solid #555; border-radius: 6px; background: rgba(0,0,0,0.2); color: #aaa; cursor: pointer; text-align: center; font-size: 12px; font-weight: bold; transition: all 0.2s; min-width: 80px; }\n            .login-method-btn:hover { border-color: #4CAF50; color: #fff; }\n            .login-method-btn.active { border-color: #4CAF50; background: rgba(76, 175, 80, 0.1); color: #4CAF50; }\n            .login-method-btn .icon { font-size: 14px; margin-bottom: 3px; display: block; }\n\n            /* 手机号登录样式 */\n            .phone-login-container { display: none; flex-direction: column; gap: 15px; }\n            .phone-login-container.active { display: flex; }\n            .phone-input-group { display: flex; flex-direction: column; gap: 12px; }\n            .phone-input-row { display: flex; gap: 8px; align-items: center; }\n            .phone-input-row input { flex: 1; padding: 10px; background-color: #333; color: #fff; border: 1px solid #555; border-radius: 4px; font-size: 14px; }\n            .phone-input-row input:focus { outline: none; border-color: #4CAF50; }\n            .phone-input-row button { padding: 10px 15px; background-color: #4CAF50; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 14px; font-weight: bold; white-space: nowrap; }\n            .phone-input-row button:hover:not(:disabled) { background-color: #45a049; }\n            .phone-input-row button:disabled { background-color: #757575; cursor: not-allowed; opacity: 0.7; }\n            .phone-login-btn { width: 100%; padding: 12px; background-color: #2196F3; color: white; border: none; border-radius: 6px; cursor: pointer; font-size: 16px; font-weight: bold; }\n            .phone-login-btn:hover:not(:disabled) { background-color: #1976D2; }\n            .phone-login-btn:disabled { background-color: #757575; cursor: not-allowed; opacity: 0.7; }\n\n            /* 二维码登录容器样式调整 */\n            .qrcode-login-container { display: none; flex-direction: column; gap: 15px; }\n            .qrcode-login-container.active { display: flex; }\n            .switch-label { position: relative; display: inline-flex; align-items: center; cursor: pointer; }\n            .switch-label input { opacity: 0; width: 0; height: 0; }\n            .switch-slider { width: 38px; height: 20px; background-color: #555; border-radius: 10px; transition: background-color 0.2s ease; position: relative; }\n            .switch-slider::before { content: \"\"; position: absolute; top: 2px; left: 2px; width: 16px; height: 16px; background-color: white; border-radius: 50%; transition: transform 0.2s ease; }\n            .switch-label input:checked + .switch-slider { background-color: #4CAF50; }\n            .switch-label input:checked + .switch-slider::before { transform: translateX(18px); }\n            input[type=\"range\"] { -webkit-appearance: none; appearance: none; width: 100%; height: 6px; background: #555; border-radius: 3px; outline: none; margin: 5px 0; }\n            input[type=\"range\"]::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 18px; height: 18px; background: #4CAF50; border-radius: 50%; cursor: pointer; border: 2px solid #fff; }\n            .collapse-btn { cursor: pointer; font-weight: bold; font-size: 20px; color: #aaa; line-height: 1; transition: color 0.2s; padding: 0 5px; }\n            .collapse-btn:hover { color: #fff; }\n            #accelerator-toggle-btn { position: fixed; z-index: 99998; background: linear-gradient(145deg, #3e3e3e, #2a2a2a); color: #fff; border: 1px solid #555; border-radius: 50%; width: 45px; height: 45px; display: " + (S.panel_collapsed ? "flex" : "none") + "; justify-content: center; align-items: center; cursor: move; font-size: 24px; box-shadow: 0 2px 10px rgba(0,0,0,0.4); }\n        ");
-      const c = "\n            <div id=\"accelerator-panel\">\n                <div class=\"panel-header\">\n                    <span class=\"panel-title\">咸鱼之王工具箱 -苏御 V1.9</span>\n                    <span class=\"collapse-btn\" title=\"折叠\">−</span>\n                </div>\n                <div class=\"panel-tabs\">\n                    <button data-tab=\"accounts\" class=\"active\">账号管理</button>\n                    <button data-tab=\"qrcode\">登录</button>\n                    <button data-tab=\"accelerator\">功能加速</button>\n                </div>\n                <div class=\"panel-body\">\n                    <div class=\"tab-content active\" data-tab=\"accounts\">\n                        <div class=\"account-manager\">\n                            <select id=\"account-selector\"></select>\n                            <div class=\"button-row\">\n                               <label for=\"account-file-input\" class=\"custom-file-upload\">导入</label>\n                               <input type=\"file\" id=\"account-file-input\" accept=\".bin,.json,text/plain\" multiple>\n                               <button id=\"delete-account-btn\" title=\"删除当前选中的账号\">删除</button>\n                               <button id=\"refresh-page-btn\" title=\"使用当前选中账号刷新游戏\">刷新</button>\n                            </div>\n                        </div>\n                        <div class=\"disclaimer-box\">\n                            <strong>免责声明：</strong>\n                            本工具仅供学习与技术交流，所有账号数据均存储于您的本地浏览器。作者不收集、不上传任何信息，亦不承担任何因使用本工具可能导致的风险或后果。\n                        </div>\n                    </div>\n                    <div class=\"tab-content\" data-tab=\"qrcode\">\n                        <div class=\"login-container\">\n                            <!-- 账号名称输入 -->\n                            <div class=\"account-name-input\">\n                                <label for=\"new-account-name\">账号名称:</label>\n                                <input type=\"text\" id=\"new-account-name\" placeholder=\"输入新账号名称\" />\n                            </div>\n\n                            <!-- 微信扫码登录 -->\n                            <div class=\"qrcode-login-container active\">\n                                <div class=\"qr-display-area\">\n                                    <div id=\"qr-image-container\">\n                                        <div id=\"qr-placeholder\">\n                                            点击获取/刷新二维码\n                                        </div>\n                                        <img id=\"qr-image\" />\n                                    </div>\n                                    <div id=\"qr-status\">\n                                        点击二维码区域获取/刷新\n                                    </div>\n                                </div>\n                            </div>\n\n                            <!-- 手机号登录 -->\n                            <div class=\"phone-login-container\">\n                                <div class=\"phone-input-group\">\n                                    <div class=\"phone-input-row\">\n                                        <input type=\"tel\" id=\"phone-number\" placeholder=\"请输入手机号码\" maxlength=\"11\" />\n                                        <button id=\"send-code-btn\">获取</button>\n                                    </div>\n                                    <div class=\"phone-input-row\">\n                                        <input type=\"text\" id=\"verify-code\" placeholder=\"请输入短信验证码\" maxlength=\"6\" />\n                                    </div>\n                                    <button id=\"phone-login-btn\" class=\"phone-login-btn\">登录</button>\n                                </div>\n                            </div>\n\n                            <!-- 登录方式选择 -->\n                            <div class=\"login-method-selector\">\n                                <div class=\"login-method-buttons\">\n                                    <div class=\"login-method-btn active\" data-method=\"wechat\">\n                                        <span class=\"icon\">📱</span>\n                                        微信登录\n                                    </div>\n                                    <div class=\"login-method-btn\" data-method=\"phone\">\n                                        <span class=\"icon\">📞</span>\n                                        手机号登录\n                                    </div>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"tab-content\" data-tab=\"accelerator\">\n                        <div class=\"slider-container\">\n                            <div class=\"speed-display\">\n                                <label>引擎全局加速</label>\n                                <span id=\"speed-indicator\"></span>\n                            </div>\n                            <input type=\"range\" id=\"engine_speed_rate\" min=\"0\" max=\"50\" step=\"0.1\">\n                        </div>\n                        <div class=\"setting-row\">\n                            <span>淬炼加速</span>\n                            <label class=\"switch-label\"><input type=\"checkbox\" id=\"quench_speed_enabled\"><span class=\"switch-slider\"></span></label>\n                        </div>\n                        <div class=\"setting-row\">\n                            <span>十殿加速</span>\n                            <label class=\"switch-label\"><input type=\"checkbox\" id=\"nightmare_speed_enabled\"><span class=\"switch-slider\"></span></label>\n                        </div>\n                        <div class=\"setting-row\">\n                            <span>马/兔加速</span>\n                            <label class=\"switch-label\"><input type=\"checkbox\" id=\"horse_race_speed_enabled\"><span class=\"switch-slider\"></span></label>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            <div id=\"accelerator-toggle-btn\" title=\"展开\">🚀</div>\n        ";
-      document.body.insertAdjacentHTML("beforeend", c);
-      w();
-      l();
-    }
-  }
-  function w() {
-    {
-      document.getElementById("engine_speed_rate").value = S.engine_speed_rate;
-      document.getElementById("speed-indicator").textContent = parseFloat(S.engine_speed_rate).toFixed(1) + "x";
-      document.getElementById("quench_speed_enabled").checked = S.quench_speed_enabled;
-      document.getElementById("nightmare_speed_enabled").checked = S.nightmare_speed_enabled;
-      document.getElementById("horse_race_speed_enabled").checked = S.horse_race_speed_enabled;
-      C();
-      const B = document.getElementById("accelerator-panel");
-      const p = document.getElementById("accelerator-toggle-btn");
-      B.style.top = S.panel_pos.top;
-      B.style.left = S.panel_pos.left;
-      p.style.top = S.panel_pos.top;
-      p.style.left = S.panel_pos.left;
-      i(S.activeTab);
-    }
-  }
-  function i(c) {
-    const B = {
-      ySQRb: "未知错误",
-      HKZmT: function (p, T) {
-        return p === T;
-      },
-      LrhEt: "VfLgT",
-      QWrJw: "pQMLL",
-      OyGwW: "active",
-      esQjv: function (p, T) {
-        return p === T;
-      },
-      RgEtF: function (p, T) {
-        return p === T;
-      },
-      HKhKc: "function",
-      JsRzF: function (p, T) {
-        return p(T);
-      }
-    };
-    {
-      document.querySelectorAll(".panel-tabs button").forEach(p => {
-        {
-          p.classList.toggle("active", p.dataset.tab === c);
-        }
-      });
-      document.querySelectorAll(".tab-content").forEach(p => {
-        p.classList.toggle("active", p.dataset.tab === c);
-      });
-    }
-  }
-  function u(c) {
-    {
-      document.querySelectorAll(".login-method-btn").forEach(Q => {
-        {
-          Q.classList.toggle("active", Q.dataset.method === c);
-        }
-      });
-      const T = document.querySelector(".qrcode-login-container");
-      const H = document.querySelector(".phone-login-container");
-      if (c === "wechat") {
-        {
-          T.classList.add("active");
-          H.classList.remove("active");
-          d.resetQRCode();
-        }
-      } else {
-        if (c === "phone") {
-          {
-            T.classList.remove("active");
-            H.classList.add("active");
-            V.stopWaitCountdown();
-            V.updateStatus("请输入手机号获取验证码", "info");
-            document.getElementById("phone-number").value = "";
-            document.getElementById("verify-code").value = "";
-          }
-        }
-      }
-    }
-  }
-  function C() {
-    {
-      const p = document.getElementById("account-selector");
-      const T = S.accounts.length > 0;
-      document.getElementById("delete-account-btn").disabled = !T;
-      p.innerHTML = "";
-      if (!T) {
-        {
-          const Q = new Option("请先导入账号文件(.bin或伏羲文件)", "", true, true);
-          Q.disabled = true;
-          p.add(Q);
-          return;
-        }
-      }
-      S.accounts.forEach(v => {
-        {
-          const W = m(v.fileName);
-          const P = v.fileName === S.selectedAccountFileName;
-          const E = new Option(W, v.fileName, false, P);
-          p.add(E);
-        }
-      });
-      S.selectedAccountFileName && (p.value = S.selectedAccountFileName);
-    }
-  }
-  function l() {
-    const c = {
-      FMlgm: function (B, p) {
-        return B === p;
-      },
-      lvyYX: "wgYkO",
-      udCil: "hQwIV",
-      YLRqt: function (B) {
-        return B();
-      },
-      WNEaN: function (B, p) {
-        return B === p;
-      },
-      VyBVG: "nightmare_speed_enabled",
-      Erutv: function (B, p) {
-        return B(p);
-      },
-      JXwuq: "登录请求超时",
-      IZlFb: "qeyIM",
-      kTcoB: function (B, p) {
-        return B(p);
-      },
-      ySJSP: "发送验证码请求超时",
-      UsHEl: function (B, p) {
-        return B !== p;
-      },
-      cvMjg: "aaVWa",
-      GJzbu: "zlUBb",
-      fhpvi: "click",
-      KKGyZ: "qr-placeholder",
-      uKhdc: "qr-image",
-      fQzNC: function (B, p) {
-        return B && p;
-      },
-      zuQdQ: "flex",
-      sEMty: "none",
-      WACRs: "点击二维码区域获取/刷新",
-      xSdrd: "info",
-      dyTdO: "XYWZ_ToolboxConfig_v10.1",
-      eUjNj: "zUiDb",
-      hHNpP: "hortor",
-      Mbetv: "mix",
-      REqeU: function (B, p) {
-        return B(p);
-      },
-      tsiHN: "active",
-      KfVcW: function (B) {
-        return B();
-      },
-      uczHL: "NightmareBattlePanel",
-      UGlwk: "error",
-      XoZQT: function (B, p) {
-        return B !== p;
-      },
-      CdPpP: "cQOnf",
-      HYXBO: "phone-number",
-      ILbBs: "verify-code",
-      iWtxw: "jCEgP",
-      tCiqK: function (B, p) {
-        return B(p);
-      },
-      YoqPY: "请输入手机号码",
-      yHKjI: function (B, p) {
-        return B !== p;
-      },
-      bBFVu: "oIcny",
-      HkGvB: "请输入验证码",
-      wRDzE: function (B, p) {
-        return B === p;
-      },
-      QBkpW: "ODJEJ",
-      GyhYH: "Ganxh",
-      rTtCo: function (B, p) {
-        return B(p);
-      },
-      MATMY: "请输入正确的手机号码",
-      roYDV: "eYaPI",
-      wiiOu: "请输入6位数字验证码",
-      fGKKw: "block",
-      uVdLz: "beforeend",
-      jmyCG: function (B) {
-        return B();
-      },
-      zZzQW: function (B) {
-        return B();
-      },
-      EGplq: "BWZBO",
-      Fgsfx: "Enter",
-      YWKZr: "jnSqw",
-      pigYo: "send-code-btn",
-      vtUdM: function (B, p) {
-        return B === p;
-      },
-      IGqsY: ".panel-tabs button",
-      NoFQg: ".tab-content",
-      PILZn: function (B, p) {
-        return B + p;
-      },
-      BwPua: "debu",
-      uNaZo: "gger",
-      JBguN: "stateObject",
-      oAnJQ: "vwQix",
-      OGXUs: "vQypq",
-      bAesM: "iPtGu",
-      AKdcG: "QipBO",
-      eGRUy: "phone-login-btn",
-      QkKlm: function (B, p) {
-        return B(p);
-      },
-      FjNwA: "登录请求失败"
-    };
-    {
-      const B = document.getElementById("accelerator-panel");
-      const p = B.querySelector(".panel-header");
-      const T = document.getElementById("accelerator-toggle-btn");
-      const H = B.querySelector(".collapse-btn");
-      const Q = B.querySelector(".panel-tabs");
-      Q.addEventListener("click", P => {
-        {
-          if (P.target.tagName === "BUTTON") {
-            {
-              const E = P.target.dataset.tab;
-              S.activeTab = E;
-              i(E);
-              x();
-            }
-          }
-        }
-      });
-      B.querySelectorAll("input[type=\"checkbox\"]").forEach(P => {
-        P.addEventListener("change", X => {
-          {
-            S[X.target.id] = X.target.checked;
-            x();
-            if (X.target.id === "nightmare_speed_enabled") {
-              J.accelerator.applyNightmareSpeed();
-            }
-          }
-        });
-      });
-      const v = document.getElementById("engine_speed_rate");
-      v.addEventListener("input", P => {
-        S.engine_speed_rate = parseFloat(P.target.value);
-        document.getElementById("speed-indicator").textContent = S.engine_speed_rate.toFixed(1) + "x";
-        J.accelerator.engine_speed.apply();
-      });
-      v.addEventListener("change", () => x());
-      document.getElementById("account-file-input").addEventListener("change", h);
-      document.getElementById("account-selector").addEventListener("change", P => {
-        S.selectedAccountFileName = P.target.value;
-        x();
-        console.log(b + " 已选择账号: " + P.target.value + "，将自动刷新应用...");
-        location.reload();
-      });
-      document.getElementById("refresh-page-btn").addEventListener("click", () => {
-        {
-          if (!S.selectedAccountFileName) {
-            {
-              alert("请先选择一个要登录的账号！");
-              return;
-            }
-          }
-          console.log(b + " 正在手动刷新页面...");
-          location.reload();
-        }
-      });
-      document.getElementById("delete-account-btn").addEventListener("click", s);
-      document.querySelectorAll(".login-method-btn").forEach(P => {
-        P.addEventListener("click", X => {
-          {
-            const D0 = X.currentTarget.dataset.method;
-            u(D0);
-          }
-        });
-      });
-      document.getElementById("qr-placeholder").addEventListener("click", () => {
-        {
-          d.isScanning && d.resetQRCode();
-          d.getQRCode();
-        }
-      });
-      document.getElementById("qr-image").addEventListener("click", () => {
-        {
-          d.resetQRCode();
-          d.getQRCode();
-        }
-      });
-      document.getElementById("send-code-btn").addEventListener("click", async () => {
-        {
-          const E = document.getElementById("phone-number").value.trim();
-          if (!E) {
-            {
-              alert("请输入手机号码");
-              return;
-            }
-          }
-          if (!/^1[3-9]\d{9}$/.test(E)) {
-            {
-              alert("请输入正确的手机号码");
-              return;
-            }
-          }
-          await V.sendVerifyCode(E);
-        }
-      });
-      document.getElementById("phone-login-btn").addEventListener("click", async () => {
-        {
-          const D0 = document.getElementById("phone-number").value.trim();
-          const D1 = document.getElementById("verify-code").value.trim();
-          if (!D0) {
-            {
-              alert("请输入手机号码");
-              return;
-            }
-          }
-          if (!D1) {
-            {
-              alert("请输入验证码");
-              return;
-            }
-          }
-          if (!/^1[3-9]\d{9}$/.test(D0)) {
-            {
-              alert("请输入正确的手机号码");
-              return;
-            }
-          }
-          if (!/^\d{6}$/.test(D1)) {
-            {
-              alert("请输入6位数字验证码");
-              return;
-            }
-          }
-          await V.loginWithPhone(D0, D1);
-        }
-      });
-      document.getElementById("phone-number").addEventListener("keypress", P => {
-        {
-          if (P.key === "Enter") {
-            {
-              document.getElementById("send-code-btn").click();
-            }
-          }
-        }
-      });
-      document.getElementById("verify-code").addEventListener("keypress", P => {
-        {
-          P.key === "Enter" && document.getElementById("phone-login-btn").click();
-        }
-      });
-      const W = P => {
-        {
-          S.panel_collapsed = P;
-          B.style.display = P ? "none" : "block";
-          T.style.display = P ? "flex" : "none";
-          if (!P) {
-            {
-              const D1 = B.offsetWidth;
-              const D2 = B.offsetHeight;
-              const D3 = window.innerWidth;
-              const D4 = window.innerHeight;
-              const D5 = (D4 - D2) / 2;
-              const D6 = (D3 - D1) / 2;
-              B.style.top = D5 + "px";
-              B.style.left = D6 + "px";
-            }
-          }
-          x();
-        }
-      };
-      H.onclick = () => W(true);
-      T.onclick = () => W(false);
-      n(p, B);
-      n(T, T);
-    }
-  }
-  function s() {
-    {
-      const B = document.getElementById("account-selector");
-      const p = B.value;
-      if (!p || S.accounts.length === 0) {
-        {
-          alert("当前没有可删除的账号。");
-          return;
-        }
-      }
-      const T = m(p);
-      if (confirm("您确定要删除账号 \"" + T + "\" 吗？\n此操作不可撤销！")) {
-        {
-          const Q = S.accounts.findIndex(v => v.fileName === p);
-          if (Q > -1) {
-            {
-              S.accounts.splice(Q, 1);
-              S.lastUsedAccountFileName === p && (S.lastUsedAccountFileName = null);
-              const W = S.selectedAccountFileName === p;
-              S.selectedAccountFileName = S.accounts.length > 0 ? S.accounts[0].fileName : null;
-              x();
-              C();
-              console.log(b + " 账号 \"" + p + "\" 已被删除。");
-              alert("账号 \"" + T + "\" 已成功删除。");
-              if (W && S.selectedAccountFileName) {
-                {
-                  const E = m(S.selectedAccountFileName);
-                  if (confirm("已删除当前活动账号，是否立即使用新选择的账号 \"" + E + "\" 刷新页面?")) {
-                    {
-                      location.reload();
-                    }
-                  }
-                }
-              }
-            }
-          } else {
-            {
-              alert("错误：在配置中找不到要删除的账号。");
-            }
-          }
-        }
-      }
-    }
-  }
-  async function h(c) {
-    {
-      const p = c.target.files;
-      if (!p || p.length === 0) {
-        return;
-      }
-      let T = false;
-      let H = "";
-      const Q = v => new Promise((W, P) => {
-        {
-          const D0 = new FileReader();
-          D0.onerror = D1 => P(D1);
-          if (v.name.endsWith(".bin")) {
-            {
-              D0.onload = D1 => {
-                {
-                  try {
-                    {
-                      const D2 = Array.from(new Uint8Array(D1.target.result)).map(D4 => D4.toString(16).padStart(2, "0")).join("");
-                      const D3 = {
-                        fileName: v.name,
-                        content: D2
-                      };
-                      W(D3);
-                    }
-                  } catch (D5) {
-                    {
-                      P(D5);
-                    }
-                  }
-                }
-              };
-              D0.readAsArrayBuffer(v);
-            }
-          } else {
-            {
-              D0.onload = D2 => {
-                {
-                  const D4 = {
-                    fileName: v.name,
-                    content: D2.target.result
-                  };
-                  W(D4);
-                }
-              };
-              D0.readAsText(v, "UTF-8");
-            }
-          }
-        }
-      });
-      try {
-        {
-          const W = await Promise.all(Array.from(p).map(Q));
-          W.forEach(P => {
-            {
-              const {
-                fileName: X,
-                content: D0
-              } = P;
-              const D1 = S.accounts.findIndex(D2 => D2.fileName === X);
-              if (D1 > -1) {
-                {
-                  S.accounts[D1].content = D0;
-                }
-              } else {
-                {
-                  const D3 = {
-                    fileName: X,
-                    content: D0
-                  };
-                  S.accounts.push(D3);
-                  T = true;
-                }
-              }
-              H = X;
-            }
-          });
-          if (!S.selectedAccountFileName && S.accounts.length > 0) {
-            {
-              S.selectedAccountFileName = S.accounts[0].fileName;
-            }
-          }
-          C();
-          if (T) {
-            {
-              const X = m(H);
-              if (confirm("成功导入新账号\"" + X + "\"，是否立即切换并刷新游戏？")) {
-                {
-                  S.selectedAccountFileName = H;
-                  x();
-                  location.reload();
-                }
-              } else {
-                {
-                  x();
-                }
-              }
-            }
-          } else {
-            {
-              x();
-              alert("所有选中的账号文件已成功更新！");
-            }
-          }
-        }
-      } catch (D3) {
-        {
-          console.error(b + " 处理文件时出错:", D3);
-          alert("处理文件时出错，请检查文件格式或在控制台查看详情。");
-        }
-      }
-      c.target.value = "";
-    }
-  }
-  function n(c, B) {
-    {
-      let H = false;
-      let Q;
-      let v;
-      let W;
-      let P;
-      const E = D2 => {
-        {
-          if (D2.target.classList.contains("collapse-btn")) {
-            return;
-          }
-          const D3 = D2.type.startsWith("touch");
-          if (D3 && D2.touches.length > 1) {
-            return;
-          }
-          const D4 = D3 ? D2.touches[0] : D2;
-          H = false;
-          W = D4.clientX;
-          P = D4.clientY;
-          Q = D4.clientX - B.offsetLeft;
-          v = D4.clientY - B.offsetTop;
-          const D5 = {
-            passive: false
-          };
-          document.addEventListener(D3 ? "touchmove" : "mousemove", X, D5);
-          document.addEventListener(D3 ? "touchend" : "mouseup", D0);
-        }
-      };
-      const X = D2 => {
-        {
-          const D5 = D2.type.startsWith("touch");
-          const D6 = D5 ? D2.touches[0] : D2;
-          if (!H && (Math.abs(D6.clientX - W) > 5 || Math.abs(D6.clientY - P) > 5)) {
-            {
-              H = true;
-            }
-          }
-          if (H) {
-            {
-              D2.preventDefault();
-              let D8 = D6.clientX - Q;
-              let D9 = D6.clientY - v;
-              const DD = 5;
-              D8 = Math.max(DD, Math.min(D8, window.innerWidth - B.offsetWidth - DD));
-              D9 = Math.max(DD, Math.min(D9, window.innerHeight - B.offsetHeight - DD));
-              B.style.left = D8 + "px";
-              B.style.top = D9 + "px";
-            }
-          }
-        }
-      };
-      const D0 = D2 => {
-        {
-          const D4 = D2.type.startsWith("touch");
-          document.removeEventListener(D4 ? "touchmove" : "mousemove", X);
-          document.removeEventListener(D4 ? "touchend" : "mouseup", D0);
-          if (H) {
-            {
-              const D7 = {
-                top: B.style.top,
-                left: B.style.left
-              };
-              S.panel_pos = D7;
-              document.getElementById("accelerator-panel").style.top = B.style.top;
-              document.getElementById("accelerator-panel").style.left = B.style.left;
-              document.getElementById("accelerator-toggle-btn").style.top = B.style.top;
-              document.getElementById("accelerator-toggle-btn").style.left = B.style.left;
-              x();
-            }
-          }
-        }
-      };
-      c.addEventListener("mousedown", E);
-      const D1 = {
-        passive: false
-      };
-      c.addEventListener("touchstart", E, D1);
-    }
-  }
-  const Z = {
-    accelerator: false,
-    login: false
+  const E = {
+    GOLD: 190,
+    SILVER: 110,
+    COPPER: 48
   };
-  const r = {
-    quench: false,
-    nightmare: false,
-    horse_race: false
+  const M = {
+    GUARANTEED: k,
+    ESTIMATED: E
   };
-  const Y = {
-    authUser: false,
-    serverList: false,
-    isolate: false
-  };
-  const J = {
-    isReady: Z,
-    accelerator: {
-      hooksInjected: r,
-      engine_speed: {
-        isReady: false,
-        apply: () => {
+  const i = {
+    BOTTLE_VALUES: M,
+    patchPanel: function (Y6) {
+      {
+        const Y9 = Y6.prototype.onShow;
+        Y6.prototype.onShow = function () {
           {
-            if (J.accelerator.engine_speed.isReady) {
-              K.cc.director.getScheduler().setTimeScale(S.engine_speed_rate);
+            Y9.apply(this, arguments);
+            if (!q) {
+              return;
             }
-          }
-        }
-      },
-      horse_race: {
-        apply: function () {
-          const c = {
-            sozVI: "engine_speed_rate",
-            znLhF: "speed-indicator",
-            duLZO: function (B, p) {
-              return B(p);
-            },
-            GaKVE: "quench_speed_enabled",
-            wkhST: "nightmare_speed_enabled",
-            XwCQo: "horse_race_speed_enabled",
-            gbfxj: function (B) {
-              return B();
-            },
-            sODFT: "accelerator-panel",
-            sqeiA: "accelerator-toggle-btn",
-            NDYlJ: function (B, p) {
-              return B(p);
-            },
-            gmsJb: function (B, p) {
-              return B === p;
-            },
-            LyEbr: "MqFbs",
-            KCqQq: "tTvAH"
-          };
-          {
-            if (J.accelerator.hooksInjected.horse_race) {
+            if (this._calculateButton_bottle) {
               return;
             }
             try {
               {
-                const T = K.__require("Configs");
-                if (!T || !T.HorseConstant || !T.HorseConstant.config) {
-                  return;
-                }
-                const H = T.HorseConstant.config;
-                const Q = H.pvpBattleSpeed;
-                console.log(b + " 捕获到原始马/兔速度: " + Q);
-                Object.defineProperty(H, "pvpBattleSpeed", {
-                  get: function () {
-                    {
-                      return S.horse_race_speed_enabled ? 100 : Q;
-                    }
-                  },
-                  configurable: true
-                });
-                J.accelerator.hooksInjected.horse_race = true;
-                console.log(b + " 赛马/玉兔加速补丁已通过 Object.defineProperty 成功注入！");
-              }
-            } catch (v) {}
-          }
-        }
-      },
-      injectQuenchHook: () => {
-        {
-          if (J.accelerator.hooksInjected.quench) {
-            return;
-          }
-          try {
-            {
-              const p = K.__require("TimerManager").TimerManager;
-              if (!p || !p.instance || p.instance.onTimer.__isPatched) {
-                return;
-              }
-              const T = p.instance.onTimer;
-              p.instance.onTimer = function (...H) {
-                {
-                  if (S.quench_speed_enabled && H[0] && H[1] && H[0] === H[1]._updateQuench) {
-                    {
-                      H[2] = 1;
-                      const v = H[0];
-                      H[0] = function (W) {
-                        this._isInQuenchAnim = false;
-                        v.call(this, W);
-                      };
-                    }
-                  }
-                  return T.apply(this, H);
-                }
-              };
-              p.instance.onTimer.__isPatched = true;
-              console.log(b + " 淬炼加速补丁已注入。");
-              J.accelerator.hooksInjected.quench = true;
-            }
-          } catch (Q) {}
-        }
-      },
-      injectNightmareHook: () => {
-        {
-          if (J.accelerator.hooksInjected.nightmare) {
-            return;
-          }
-          try {
-            {
-              const p = K.__require("NightmareBattlePanel").NightmareBattlePanel;
-              if (!p || !p.prototype.onShow || p.prototype.onShow.__isPatched) {
-                return;
-              }
-              const T = p.prototype.onShow;
-              p.prototype.onShow = function (...H) {
-                {
-                  T.apply(this, H);
-                  if (this._originalDefaultTimescale === undefined) {
-                    this._originalDefaultTimescale = this.DEFAULT_TIMESCALE;
-                  }
-                  this.DEFAULT_TIMESCALE = S.nightmare_speed_enabled ? 100 : this._originalDefaultTimescale;
-                }
-              };
-              p.prototype.onShow.__isPatched = true;
-              console.log(b + " 十殿加速补丁已更新并注入。");
-              J.accelerator.hooksInjected.nightmare = true;
-            }
-          } catch (Q) {}
-        }
-      },
-      applyNightmareSpeed: () => {
-        {
-          try {
-            {
-              const p = K.cc.director.getScene()?.["getComponentInChildren"]("NightmareBattlePanel");
-              if (p) {
-                {
-                  p.DEFAULT_TIMESCALE = S.nightmare_speed_enabled ? 100 : p._originalDefaultTimescale || 1.4;
-                }
-              }
-            }
-          } catch (Q) {}
-        }
-      }
-    },
-    login: {
-      decryptedData: null,
-      unencryptedInfo: null,
-      patchesApplied: Y,
-      prepareLoginData: () => {
-        {
-          if (J.login.decryptedData || J.login.unencryptedInfo) {
-            return true;
-          }
-          if (!S.selectedAccountFileName) {
-            return false;
-          }
-          const p = S.accounts.find(H => H.fileName === S.selectedAccountFileName);
-          if (!p) {
-            console.error(b + " 找不到选定的账号文件: " + S.selectedAccountFileName);
-            return false;
-          }
-          const T = m(p.fileName);
-          if (p.fileName.endsWith(".bin")) {
-            {
-              const v = K.__require("13");
-              const W = p.content.match(/.{1,2}/g).map(P => parseInt(P, 16));
-              J.login.decryptedData = v.decMsg(new Uint8Array(W).buffer, {
-                decrypt: v.lz4XorDecode,
-                encrypt: v.lz4XorEncode
-              });
-              console.log(b + " 加密账号 [" + T + "] 解密成功。");
-            }
-          } else {
-            {
-              try {
-                J.login.unencryptedInfo = JSON.parse(p.content);
-                console.log(b + " 未加密账号 [" + T + "] JSON内容解析成功。");
-              } catch (X) {
-                {
-                  console.error(b + " 解析账号文件 [" + p.fileName + "] 的JSON内容失败:", X);
-                  alert("错误：账号文件 \"" + T + "\" 内容不是有效的JSON格式！");
-                  return false;
-                }
-              }
-            }
-          }
-          return true;
-        }
-      },
-      getLoginPayloadDetails: () => {
-        {
-          if (J.login.decryptedData) {
-            {
-              const p = J.login.decryptedData;
-              if (p._raw && p._raw.info) {
-                {
-                  const T = {
-                    platformExt: p._raw.platformExt,
-                    info: p._raw.info,
-                    serverId: p._raw.serverId,
-                    type: "标准 .bin"
-                  };
-                  return T;
-                }
-              } else {
-                {
-                  return {
-                    platformExt: "mix",
-                    info: JSON.stringify(p),
-                    serverId: null,
-                    type: "info-object .bin"
-                  };
-                }
-              }
-            }
-          } else {
-            if (J.login.unencryptedInfo) {
-              {
-                const P = J.login.unencryptedInfo;
-                const E = {
-                  platformExt: P.platformExt || "mix",
-                  info: P.info || P,
-                  serverId: P.serverId || null,
-                  type: "JSON/无后缀"
-                };
-                return E;
-              }
-            }
-          }
-          return null;
-        }
-      },
-      apply: () => {
-        const B = K.__require("data-index");
-        const p = B.LoginService;
-        if (!p || !p.authUser || !p.serverList || !B.Isolate) {
-          return false;
-        }
-        if (!p.authUser.isSelfCreate) {
-          const H = p.authUser;
-          p.authUser = Q => {
-            {
-              const W = S.selectedAccountFileName !== S.lastUsedAccountFileName;
-              const P = {
-                ...Q
-              };
-              let E = P;
-              const X = J.login.getLoginPayloadDetails();
-              if (X) {
-                {
-                  console.log(b + " authUser 已拦截 (账号类型: " + X.type + ")");
-                  E.platformExt = X.platformExt;
-                  E.info = X.info;
-                  if (W) {
-                    {
-                      if (X.serverId) {
-                        {
-                          E.serverId = X.serverId;
-                          console.log(b + " 首次/切换账号，强制使用文件中的 serverId: " + X.serverId);
-                        }
-                      } else {
-                        console.log(b + " 首次/切换账号，但文件中未提供 serverId，将使用游戏UI选择的服务器。");
+                const YL = unsafeWindow.fgui.UIPackage.createObject("ui_common", "BtnInfo2").asButton;
+                const Ys = this.ui;
+                const Yd = this.ui.m_btnHelp;
+                Yd ? YL.setPosition(Yd.x, Yd.y + Yd.height + 10) : YL.setXY((Ys.width - YL.width) / 2, (Ys.height - YL.height) / 2);
+                YL.onClick(() => {
+                  {
+                    try {
+                      {
+                        let Yz = this.bottleComps[0].obtainCnt || 0;
+                        let YB = this.bottleComps[1].obtainCnt || 0;
+                        let YW = this.bottleComps[2].obtainCnt || 0;
+                        const YS = Yz * i.BOTTLE_VALUES.GUARANTEED.GOLD + YB * i.BOTTLE_VALUES.GUARANTEED.SILVER + YW * i.BOTTLE_VALUES.GUARANTEED.COPPER;
+                        const YR = Yz * i.BOTTLE_VALUES.ESTIMATED.GOLD + YB * i.BOTTLE_VALUES.ESTIMATED.SILVER + YW * i.BOTTLE_VALUES.ESTIMATED.COPPER;
+                        const YX = "=====罐子计算结果=====\n\n金罐子: " + Yz + " 个\n银罐子: " + YB + " 个\n铜罐子: " + YW + " 个\n\n平均预估: " + YR.toLocaleString() + " 金砖\n保底金砖: " + YS.toLocaleString() + " 金砖\n\n========@苏御=========";
+                        const Yx = unsafeWindow.__require("index-ui");
+                        const YH = unsafeWindow.__require("HelpTextDialog");
+                        const Yc = YH.HelpTextDialog;
+                        const YF = {
+                          [Yc.OP_OBJ]: this._calculateButton_bottle,
+                          [Yc.OP_CONTENT]: YX
+                        };
+                        const YK = YF;
+                        Yx.SHOW_PROXY_OVER(Yc, YK);
                       }
-                      S.lastUsedAccountFileName = S.selectedAccountFileName;
-                      x();
+                    } catch (Ye) {
+                      console.error("[咸鱼助手][罐子计算器] 计算或显示时出错:", Ye);
+                      unsafeWindow.__require("TipsManager").SHOW_TIP("计算出错");
                     }
                   }
-                }
+                });
+                Ys.addChild(YL);
+                this._calculateButton_bottle = YL;
               }
-              console.log(b + " 最终登录参数 (authUser):", E);
-              return H(E);
-            }
-          };
-          p.authUser.isSelfCreate = true;
-          J.login.patchesApplied.authUser = true;
-        }
-        if (!p.serverList.isSelfCreate) {
-          const Q = p.serverList;
-          p.serverList = (...v) => {
-            if (J.login.decryptedData) {
-              const W = J.login.decryptedData;
-              if (W._raw) {
-                console.log(b + " serverList 已拦截 (标准加密账号)，使用 .bin 文件内数据。");
-                return Q(W._raw);
-              } else {
-                console.log(b + " serverList 已拦截 (info-object 加密账号)，正在合成请求数据...");
-                const P = {
-                  platform: "hortor",
-                  platformExt: "mix",
-                  info: JSON.stringify(W),
-                  serverId: null,
-                  scene: 0,
-                  referrerInfo: "",
-                  rtt: 0
-                };
-                return Q(P);
-              }
-            } else {
-              if (J.login.unencryptedInfo) {
-                const E = J.login.unencryptedInfo;
-                if (E.serverList) {
-                  console.log(b + " serverList 已拦截 (未加密账号)，使用文件内嵌的 serverList。");
-                  return Q(E);
-                } else {
-                  console.log(b + " serverList 已拦截 (未加密账号)，正在合成数据...");
-                  const X = E.info || E;
-                  const D0 = {
-                    platform: "hortor",
-                    platformExt: E.platformExt || "mix",
-                    info: JSON.stringify(X),
-                    serverId: E.serverId || null,
-                    scene: 0,
-                    referrerInfo: "",
-                    rtt: 0
-                  };
-                  return Q(D0);
-                }
+            } catch (Yl) {
+              {
+                console.error("[咸鱼助手][罐子计算器] 创建按钮时发生错误:", Yl);
               }
             }
-            console.log(b + " serverList 未拦截，使用原始逻辑。");
-            return Q(...v);
-          };
-          p.serverList.isSelfCreate = true;
-          J.login.patchesApplied.serverList = true;
-        }
-        if (!B.Isolate.isSelfCreate) {
-          const v = B.Isolate;
-          B.Isolate = function (...W) {
-            const E = new v(...W);
-            if (E.LoginService && !E.LoginService.authUser.isSelfCreate) {
-              const X = E.LoginService.authUser;
-              E.LoginService.authUser = D0 => {
-                const D1 = {
-                  ...D0
-                };
-                let D2 = D1;
-                const D3 = J.login.getLoginPayloadDetails();
-                D3 && (console.log(b + " Isolate.LoginService.authUser 已拦截 (账号类型: " + D3.type + ")"), D2.platformExt = D3.platformExt, D2.info = D3.info);
-                return X(D2);
-              };
-              E.LoginService.authUser.isSelfCreate = true;
+          }
+        };
+        const YY = Y6.prototype.onHide;
+        Y6.prototype.onHide = function () {
+          {
+            if (this._calculateButton_bottle) {
+              {
+                this._calculateButton_bottle.dispose();
+                this._calculateButton_bottle = null;
+              }
             }
-            return E;
-          };
-          B.Isolate.isSelfCreate = true;
-          J.login.patchesApplied.isolate = true;
-        }
-        const T = Object.values(J.login.patchesApplied).every(Boolean);
-        if (T && !J.isReady.login) {
-          const W = m(S.selectedAccountFileName);
-          document.title = "【" + W + "】" + document.title;
-          console.log(b + " 所有登录补丁应用成功！");
-        }
-        return T;
+            YY.apply(this, arguments);
+          }
+        };
+        console.log("[咸鱼助手] 成功注入罐子计算器到 <" + Y6.name + ">！");
       }
     }
   };
-  function I() {
-    g();
-    G();
-    console.log(b + " 初始化，开始轮询等待游戏模块...");
-    const T = setInterval(() => {
-      if (J.isReady.accelerator && J.isReady.login) {
-        console.log(b + " 所有模块已加载并注入，初始化完成。");
-        clearInterval(T);
-        return;
+  const Q = {
+    name: "木质宝箱",
+    points: 1
+  };
+  const v = {
+    name: "青铜宝箱",
+    points: 10
+  };
+  const h = {
+    name: "黄金宝箱",
+    points: 20
+  };
+  const P = {
+    name: "铂金宝箱",
+    points: 50
+  };
+  const p = {
+    name: "钻石宝箱",
+    points: 0
+  };
+  const N = {
+    "2001": Q,
+    "2002": v,
+    "2003": h,
+    "2004": P,
+    "2005": p
+  };
+  const u = {
+    values: [10, 20, 30, 40, 80, 100, 70, 50, 100],
+    boxes: ["青铜宝箱", "青铜宝箱", "黄金宝箱", "铂金宝箱", "铂金宝箱", "铂金宝箱", "黄金宝箱", "铂金宝箱", "钻石宝箱"]
+  };
+  const V = {
+    BOX_CONFIG: N,
+    STAGES_CONFIG: u,
+    calculateRecursive: function (Y6, Y7, Y8, Y9, YY = 0, Yj = 0) {
+      {
+        const {
+          values: Yd,
+          boxes: Yy
+        } = this.STAGES_CONFIG;
+        let Ym = Yy.findIndex((YS, YR) => YS === Y8 && Yd[YR] === Y7);
+        if (Ym === -1) {
+          return {
+            error: "档位错误"
+          };
+        }
+        if (Y6 < Y7) {
+          return {
+            total_point_value: Yj,
+            total_diamond_boxes: YY,
+            final_stage_info: "积分值：" + Y6 + "/" + Y7 + " (" + Y8 + ")"
+          };
+        }
+        let Yz = {
+          "青铜宝箱": 0,
+          "黄金宝箱": 0,
+          "铂金宝箱": 0,
+          "钻石宝箱": 0
+        };
+        let YB = Y6;
+        while (YB >= Yd[Ym]) {
+          YB -= Yd[Ym];
+          Yz[Yy[Ym]]++;
+          Ym = (Ym + 1) % Yd.length;
+        }
+        let YW = Yz["青铜宝箱"] * this.getPointsByName("青铜宝箱") + Yz["黄金宝箱"] * this.getPointsByName("黄金宝箱") + (Y9 ? 0 : Yz["铂金宝箱"] * this.getPointsByName("铂金宝箱"));
+        return this.calculateRecursive(YB + YW, Yd[Ym], Yy[Ym], Y9, YY + Yz["钻石宝箱"], Yj + YW);
       }
-      if (!J.isReady.accelerator) {
-        try {
-          !J.accelerator.engine_speed.isReady && K.cc && K.cc.director && K.cc.director.getScheduler() && (J.accelerator.engine_speed.isReady = true, J.accelerator.engine_speed.apply(), console.log(b + " Cocos引擎已就绪。"));
-          typeof K.__require === "function" && (J.accelerator.injectQuenchHook(), J.accelerator.injectNightmareHook(), J.accelerator.horse_race.apply());
-          J.accelerator.engine_speed.isReady && Object.values(J.accelerator.hooksInjected).every(Boolean) && (J.isReady.accelerator = true);
-        } catch (H) {}
+    },
+    calculate: function (Y6) {
+      {
+        const {
+          wood_chest: Y7,
+          bronze_chest: Y8,
+          gold_chest: Y9,
+          platinum_chest: YY,
+          current_points: Yj,
+          required_points: YG,
+          chest_type: YL
+        } = Y6;
+        const Ys = Y7 * 1 + Y8 * 10 + Y9 * 20 + YY * 50 + Yj;
+        const Yd = Y8 * 10 + Y9 * 20 + YY * 50 + Yj;
+        const Yy = Y7 * 1 + Y8 * 10 + Y9 * 20 + Yj;
+        const Ym = this.calculateRecursive(Ys, YG, YL, false);
+        const Yl = this.calculateRecursive(Yd, YG, YL, false);
+        const Yz = this.calculateRecursive(Yy, YG, YL, true);
+        const YB = {
+          res1: Ym,
+          res2: Yl,
+          res3: Yz,
+          p_all: Ys,
+          p_no_wood: Yd,
+          p_no_plat: Yy
+        };
+        return this.formatResult(YB);
       }
-      if (!J.isReady.login) {
-        if (!S.selectedAccountFileName) {
-          console.log(b + " 未选择任何账号，登录补丁将不生效。");
-          J.isReady.login = true;
+    },
+    formatResult: function (Y6) {
+      {
+        const Y8 = (Y9, YY, Yj) => {
+          {
+            if (Yj.error) {
+              return Y9 + "\n计算出错: " + Yj.error;
+            }
+            const YG = YY + Yj.total_point_value;
+            return ["" + Y9, "宝箱裸分: " + YY.toLocaleString(), "宝箱总分: " + YG.toLocaleString() + "分", "宝箱轮数: " + (YG / 8000).toFixed(2) + "轮 (下轮需: " + (8000 - YG % 8000).toLocaleString() + "分)", Yj.final_stage_info, "奖励钻石宝箱: " + Yj.total_diamond_boxes + "个"].join("\n");
+          }
+        };
+        return ["===== 宝箱计算结果 =====", Y8("【全开】", Y6.p_all, Y6.res1), "---------------------", Y8("【不开木质】", Y6.p_no_wood, Y6.res2), "---------------------", Y8("【不开铂金】", Y6.p_no_plat, Y6.res3), "=========@苏御========="].join("\n\n");
+      }
+    },
+    getPointsByName: function (Y6) {
+      {
+        for (const Y8 in this.BOX_CONFIG) if (this.BOX_CONFIG[Y8].name === Y6) {
+          return this.BOX_CONFIG[Y8].points;
+        }
+        return 0;
+      }
+    },
+    patchPanel: function (Y6) {
+      {
+        const Y9 = Y6.prototype.onShow;
+        Y6.prototype.onShow = function () {
+          {
+            Y9.apply(this, arguments);
+            if (!q) {
+              return;
+            }
+            if (this._calculateButton_box) {
+              return;
+            }
+            try {
+              {
+                const YL = unsafeWindow.fgui.UIPackage.createObject("ui_common", "BtnInfo2").asButton;
+                const Ys = this.ui;
+                const Yd = this.ui.m_quesHelp;
+                if (Yd) {
+                  {
+                    YL.setPosition(Yd.x + Yd.width + 10, Yd.y);
+                  }
+                } else {
+                  {
+                    YL.setPosition(20, Ys.height - YL.height - 20);
+                  }
+                }
+                YL.onClick(() => {
+                  {
+                    try {
+                      {
+                        const Yz = unsafeWindow.__require("ModuleManager").GET_MODULE(unsafeWindow.__require("Configs").ModuleType.BOX);
+                        Yz.syncRewardConf();
+                        const YB = Yz.curBoxPointLastRewardConf;
+                        const YW = {
+                          wood_chest: unsafeWindow.ROLE.getItemQuantity(2001),
+                          bronze_chest: unsafeWindow.ROLE.getItemQuantity(2002),
+                          gold_chest: unsafeWindow.ROLE.getItemQuantity(2003),
+                          platinum_chest: unsafeWindow.ROLE.getItemQuantity(2004),
+                          current_points: Yz.boxRenderPoint,
+                          required_points: YB ? YB.limit : 0,
+                          chest_type: YB ? unsafeWindow.__require("LanguageExt").GET_CONTENT(YB.description) || "未知宝箱" : "无"
+                        };
+                        const YS = V.calculate(YW);
+                        const YR = unsafeWindow.__require("index-ui");
+                        const YX = unsafeWindow.__require("HelpTextDialog");
+                        const Yx = YX.HelpTextDialog;
+                        const YH = {
+                          [Yx.OP_OBJ]: this._calculateButton_box,
+                          [Yx.OP_CONTENT]: YS
+                        };
+                        const Yc = YH;
+                        YR.SHOW_PROXY_OVER(Yx, Yc);
+                      }
+                    } catch (YK) {
+                      console.error("[咸鱼助手][宝箱计算器] 计算或显示时出错:", YK);
+                      unsafeWindow.__require("TipsManager").SHOW_TIP("计算出错");
+                    }
+                  }
+                });
+                Ys.addChild(YL);
+                this._calculateButton_box = YL;
+              }
+            } catch (Yz) {
+              {
+                console.error("[咸鱼助手][宝箱计算器] 创建按钮时发生错误:", Yz);
+              }
+            }
+          }
+        };
+        const YY = Y6.prototype.onHide;
+        Y6.prototype.onHide = function () {
+          {
+            if (this._calculateButton_box) {
+              {
+                this._calculateButton_box.dispose();
+                this._calculateButton_box = null;
+              }
+            }
+            YY.apply(this, arguments);
+          }
+        };
+        console.log("[咸鱼助手] 成功注入宝箱计算器到 <" + Y6.name + ">！");
+      }
+    }
+  };
+  const Z = {
+    rawMatchDataCache: {},
+    dataModulePatched: false,
+    patchDataModule: function () {
+      {
+        if (this.dataModulePatched) {
           return;
         }
         try {
-          J.login.prepareLoginData() && J.login.apply() && (J.isReady.login = true);
-        } catch (Q) {}
+          {
+            const Y8 = unsafeWindow.__require("GVGRecordData");
+            if (!Y8 || !Y8.GVGRecordData) {
+              return;
+            }
+            const Y9 = Y8.GVGRecordData;
+            const YY = Y9.prototype.unpackMatchDetails;
+            if (!YY) {
+              return;
+            }
+            Y9.prototype.unpackMatchDetails = function (Yj, YG) {
+              {
+                try {
+                  {
+                    const Yd = JSON.parse(JSON.stringify(YG));
+                    Z.rawMatchDataCache[Yj] = Yd;
+                  }
+                } catch (Yy) {
+                  {
+                    console.error("[咸鱼助手][排位预测]克隆数据失败:", Yy);
+                    Z.rawMatchDataCache[Yj] = YG;
+                  }
+                }
+                return YY.apply(this, arguments);
+              }
+            };
+            this.dataModulePatched = true;
+          }
+        } catch (YG) {
+          console.error("[咸鱼助手][排位预测] 注入数据模块时出错:", YG);
+        }
       }
-    }, 200);
-  }
-  I();
-  window.addEventListener("beforeunload", () => {
-    d && d.isScanning && d.stopScanMonitoring();
-    V && V.isWaitingCode && V.stopWaitCountdown();
-  });
+    },
+    patchPanel: function (Y6) {
+      {
+        const Y8 = Y6.prototype.onShown;
+        Y6.prototype.onShown = function () {
+          {
+            Y8.apply(this, arguments);
+            if (!q) {
+              return;
+            }
+            Z.patchDataModule();
+            if (this._predictButton_gvg) {
+              return;
+            }
+            try {
+              {
+                const YL = unsafeWindow.fgui.UIPackage.createObject("ui_common", "BtnInfo2").asButton;
+                const Ys = this.ui;
+                const Yd = this.ui.m_score;
+                const Yy = 20;
+                if (Yd) {
+                  YL.setPosition(Yy, Yd.y - (YL.height - Yd.height) / 2);
+                } else {
+                  {
+                    YL.setPosition(Yy, 80);
+                  }
+                }
+                YL.onClick(this.predictGVGMatches.bind(this, YL));
+                Ys.addChild(YL);
+                this._predictButton_gvg = YL;
+              }
+            } catch (Yz) {
+              {
+                console.error("[咸鱼助手][排位预测] 创建按钮时发生错误:", Yz);
+              }
+            }
+          }
+        };
+        Y6.prototype.predictGVGMatches = function (YY) {
+          {
+            const YG = unsafeWindow.__require("TipsManager");
+            try {
+              {
+                const YL = this._module;
+                if (!YL) {
+                  {
+                    YG.SHOW_TIP("内部错误：无法访问GVG模块。");
+                    return;
+                  }
+                }
+                const Ys = Z.rawMatchDataCache[3];
+                if (!Ys || !Ys.matchList || Ys.matchList.length === 0) {
+                  {
+                    YG.SHOW_TIP("请先在左侧切换到[周三]的战报以缓存原始数据！");
+                    return;
+                  }
+                }
+                const Yd = YL.arenaData.selfLegion.name;
+                const Yy = Ys.matchList;
+                const Ym = [];
+                const Yl = [];
+                Yy.forEach(Yn => {
+                  {
+                    Ym.push(Yn.leftLegion.legionName);
+                    Yl.push(Yn.rightLegion.legionName);
+                  }
+                });
+                let Yz = null;
+                let YB = Ym.indexOf(Yd);
+                if (YB !== -1) {
+                  Yz = "A" + (YB + 1);
+                } else {
+                  {
+                    YB = Yl.indexOf(Yd);
+                    if (YB !== -1) {
+                      Yz = "B" + (YB + 1);
+                    }
+                  }
+                }
+                if (!Yz) {
+                  {
+                    YG.SHOW_TIP("未在周三的对战列表中找到您的军团。");
+                    return;
+                  }
+                }
+                const YS = {
+                  A1: "B3",
+                  A2: "B1",
+                  A3: "B2",
+                  A4: "B5",
+                  A5: "B4",
+                  B1: "A2",
+                  B2: "A3",
+                  B3: "A1",
+                  B4: "A5",
+                  B5: "A4"
+                };
+                const YX = {
+                  A1: "B2",
+                  A2: "B3",
+                  A3: "B1",
+                  A4: "A5",
+                  A5: "A4",
+                  B1: "A3",
+                  B2: "A1",
+                  B3: "A2",
+                  B4: "B5",
+                  B5: "B4"
+                };
+                const Yx = YS[Yz];
+                const YH = YX[Yz];
+                if (!Yx || !YH) {
+                  {
+                    YG.SHOW_TIP("预测规则匹配失败，请检查脚本。");
+                    return;
+                  }
+                }
+                const Yc = YM => {
+                  {
+                    const Yv = parseInt(YM.substring(1)) - 1;
+                    if (YM.startsWith("A")) {
+                      return Ym[Yv] || "未知军团A";
+                    }
+                    return Yl[Yv] || "未知军团B";
+                  }
+                };
+                const YF = Yc(Yx);
+                const YK = Yc(YH);
+                const Ye = "=====排位预测=====\n\n当前俱乐部: " + Yd + "\n---------------------\n\n周四对手预测:\n" + Yd + " VS " + YF + "\n---------------------\n周五对手预测:\n" + Yd + " VS " + YK + "\n\n=========@苏御=========";
+                const Yf = unsafeWindow.__require("index-ui");
+                const Yo = unsafeWindow.__require("HelpTextDialog");
+                const YC = {
+                  [Yo.HelpTextDialog.OP_OBJ]: YY,
+                  [Yo.HelpTextDialog.OP_CONTENT]: Ye
+                };
+                const Yg = YC;
+                Yf.SHOW_PROXY_OVER(Yo.HelpTextDialog, Yg);
+              }
+            } catch (Yi) {
+              console.error("[咸鱼助手][排位预测] 预测时出错:", Yi);
+              YG.SHOW_TIP("预测出错，请查看控制台");
+            }
+          }
+        };
+        const Y9 = Y6.prototype.onHide;
+        Y6.prototype.onHide = function () {
+          {
+            if (this._predictButton_gvg) {
+              {
+                this._predictButton_gvg.dispose();
+                this._predictButton_gvg = null;
+              }
+            }
+            Y9.apply(this, arguments);
+          }
+        };
+        console.log("[咸鱼助手] 成功注入排位预测器到 <" + Y6.name + ">！");
+      }
+    }
+  };
+  const a = {
+    patchDialog: function (Y6) {
+      {
+        const Y9 = Y6.prototype.onShown;
+        Y6.prototype.onShown = function () {
+          {
+            Y9.apply(this, arguments);
+            if (!q || typeof XLSX === "undefined") {
+              return;
+            }
+            setTimeout(() => {
+              {
+                if (this._customExportButton) {
+                  return;
+                }
+                try {
+                  {
+                    const YL = this.ui;
+                    const Ys = YL.m_btnBest;
+                    if (!YL || !Ys || !Ys.node.active) {
+                      return;
+                    }
+                    const Yd = Ys.packageItem.owner;
+                    const Yy = Ys.packageItem.name;
+                    const Ym = Yd.createObject(Yy);
+                    if (!Ym) {
+                      return;
+                    }
+                    const Yl = Ym.asButton;
+                    Yl.setSize(Ys.width, Ys.height);
+                    Yl.title = "导出Excel";
+                    const Yz = 20;
+                    Yl.setPosition(Ys.x - Yl.width - Yz, Ys.y);
+                    Yl.onClick(this.handleExportToExcel.bind(this));
+                    Ys.parent.addChild(Yl);
+                    this._customExportButton = Yl;
+                  }
+                } catch (YW) {
+                  {
+                    console.error("[咸鱼助手][盐场战报] 添加按钮时出错:", YW);
+                  }
+                }
+              }
+            }, 100);
+          }
+        };
+        const YY = Y6.prototype.onHide;
+        Y6.prototype.onHide = function () {
+          {
+            if (this._customExportButton) {
+              {
+                this._customExportButton.dispose();
+                this._customExportButton = null;
+              }
+            }
+            YY.apply(this, arguments);
+          }
+        };
+        Y6.prototype.handleExportToExcel = function () {
+          {
+            const Ys = unsafeWindow.__require("TipsManager");
+            try {
+              {
+                const Yd = unsafeWindow.__require("ModuleManager");
+                const Yy = unsafeWindow.__require("Configs");
+                const Ym = Yd.GET_MODULE(Yy.ModuleType.LEGION_WAR);
+                const Yl = Ym?.["reportData"]?.["details"]?.["roleDetailsList"];
+                if (!Yl || Yl.length === 0) {
+                  {
+                    Ys.SHOW_TIP("未找到有效的战报数据！");
+                    return;
+                  }
+                }
+                Ys.SHOW_TIP("正在生成Excel报表...");
+                const Yz = XLSX.utils.book_new();
+                const YB = this.createPlayerSummarySheet(Yl);
+                const YW = this.createBattleDetailsSheet(Yl, Ym);
+                XLSX.utils.book_append_sheet(Yz, YB, "玩家汇总");
+                XLSX.utils.book_append_sheet(Yz, YW, "战斗详情");
+                const YS = this.gameDate.replace(/\s+/g, "").replace(/\//g, "-");
+                const YR = "军团战报_" + YS + ".xlsx";
+                XLSX.writeFile(Yz, YR);
+              }
+            } catch (YH) {
+              console.error("[咸鱼助手][盐场战报] 生成Excel报表时发生错误:", YH);
+              Ys.SHOW_TIP("生成报表失败，请查看控制台！");
+            }
+          }
+        };
+        Y6.prototype.createPlayerSummarySheet = function (Yj) {
+          {
+            const YL = ["ID", "玩家名称", "战力(亿)", "胜场", "负场", "胜率", "摧毁建筑", "复活丹(估)"];
+            const Ys = [...Yj].sort((Yc, YF) => (YF.winCnt || 0) - (Yc.winCnt || 0) || (Yc.loseCnt || 0) - (YF.loseCnt || 0));
+            const Yd = Ys.map(Yc => {
+              {
+                const Ye = Yc.winCnt || 0;
+                const Yf = Yc.loseCnt || 0;
+                const Yo = Ye + Yf;
+                return [Yc.roleId, Yc.name, (Yc.power || 0) / 100000000, Ye, Yf, Yo > 0 ? Ye / Yo : 0, Yc.buildingCnt || 0, Math.max(0, Yf - 6)];
+              }
+            });
+            const Yy = ["总计", null, null, 0, 0, 0, 0, 0];
+            Yd.forEach(Yc => {
+              Yy[3] += Yc[3];
+              Yy[4] += Yc[4];
+              Yy[6] += Yc[6];
+              Yy[7] += Yc[7];
+            });
+            const Ym = Yy[3] + Yy[4];
+            Yy[5] = Ym > 0 ? Yy[3] / Ym : 0;
+            Yd.push(Yy);
+            const Yl = XLSX.utils.aoa_to_sheet([YL, ...Yd]);
+            const Yz = {
+              wch: 15
+            };
+            const YB = {
+              wch: 20
+            };
+            const YW = {
+              wch: 15
+            };
+            const YS = {
+              wch: 10
+            };
+            const YR = {
+              wch: 10
+            };
+            const YX = {
+              wch: 10
+            };
+            const Yx = {
+              wch: 12
+            };
+            const YH = {
+              wch: 12
+            };
+            Yl["!cols"] = [Yz, YB, YW, YS, YR, YX, Yx, YH];
+            Yd.forEach((Yc, YF) => {
+              {
+                const Ye = YF + 2;
+                if (Yl["C" + Ye]) {
+                  Yl["C" + Ye].z = "0.00";
+                }
+                if (Yl["F" + Ye]) {
+                  Yl["F" + Ye].z = "0.00%";
+                }
+              }
+            });
+            return Yl;
+          }
+        };
+        Y6.prototype.createBattleDetailsSheet = function (Yj, YG) {
+          {
+            const Yd = ["玩家ID", "玩家名称", "对手ID", "对手名称", "战斗结果", "战斗时间"];
+            let Yy = [];
+            Yj.forEach(Yx => {
+              {
+                (Yx.targetRoleList || []).forEach(YF => {
+                  {
+                    const Ye = YF.targetRoleInfo || {};
+                    let Yf = "未知";
+                    if (YF.timestamp) {
+                      try {
+                        {
+                          Yf = new Date(YF.timestamp * 1000).toLocaleString("sv-SE");
+                        }
+                      } catch (YC) {
+                        Yf = "无效时间";
+                      }
+                    }
+                    Yy.push({
+                      rid: Yx.roleId,
+                      rname: Yx.name || YG.getAnonymousRoleName(Yx.roleId),
+                      tid: Ye.roleId,
+                      tname: Ye.name || YG.getAnonymousRoleName(Ye.roleId),
+                      res: YF.winFlag ? "胜利" : "失败",
+                      ts: YF.timestamp || 0,
+                      time: Yf
+                    });
+                  }
+                });
+              }
+            });
+            Yy.sort((Yx, YH) => YH.ts - Yx.ts);
+            const Ym = Yy.map(Yx => [Yx.rid, Yx.rname, Yx.tid, Yx.tname, Yx.res, Yx.time]);
+            const Yl = XLSX.utils.aoa_to_sheet([Yd, ...Ym]);
+            const Yz = {
+              wch: 15
+            };
+            const YB = {
+              wch: 20
+            };
+            const YW = {
+              wch: 15
+            };
+            const YS = {
+              wch: 20
+            };
+            const YR = {
+              wch: 10
+            };
+            const YX = {
+              wch: 20
+            };
+            Yl["!cols"] = [Yz, YB, YW, YS, YR, YX];
+            return Yl;
+          }
+        };
+        console.log("[咸鱼助手] 成功注入盐场战报导出器到 <" + Y6.name + ">！");
+      }
+    }
+  };
+  const O = {
+    patched: false,
+    patchModule: function () {
+      {
+        if (this.patched || !q) {
+          return;
+        }
+        try {
+          {
+            const Y9 = unsafeWindow.__require("ModuleManager");
+            const YY = unsafeWindow.__require("Configs");
+            const Yj = unsafeWindow.__require("data-index");
+            const YG = unsafeWindow.__require("TipsManager");
+            const YL = unsafeWindow.__require("Configs").ItemConf;
+            const Ys = unsafeWindow.__require("LanguageExt");
+            const Yd = Y9.GET_MODULE(YY.ModuleType.BOX);
+            if (!Yd) {
+              return;
+            }
+            Yd.sendOpenBox = function (Yy, Ym) {
+              {
+                const YB = this;
+                return new Promise(function (YW) {
+                  {
+                    const YX = {
+                      itemId: Yy,
+                      number: Ym
+                    };
+                    Yj.ItemService.openBox(YX).then(function (Yx) {
+                      {
+                        if (Yx.code) {
+                          {
+                            YW(null);
+                          }
+                        } else {
+                          {
+                            YB.syncBoxPoint();
+                            const Yf = YL.getById(Yy);
+                            const Yo = Yf ? Ys.GET_CONTENT(Yf.name) : "宝箱";
+                            YG.SHOW_TIP("成功开启 " + Ym + " 个" + Yo);
+                            YW(null);
+                          }
+                        }
+                      }
+                    });
+                  }
+                });
+              }
+            };
+            this.patched = true;
+            console.log("[咸鱼助手] 成功注入宝箱增强模块 (无CD/跳过所有动画)！");
+          }
+        } catch (Yy) {}
+      }
+    }
+  };
+  const w = {
+    patchDialog: function (Y6) {
+      {
+        Y6.prototype._isSkipRed = false;
+        Y6.prototype._skipRedCheckbox = null;
+        Y6.prototype._skipRedLabel = null;
+        const Y9 = Y6.prototype._changeAutoState;
+        Y6.prototype._changeAutoState = function () {
+          {
+            Y9.apply(this, arguments);
+            if (this._isOpenAuto) {
+              {
+                if (!this._skipRedCheckbox) {
+                  {
+                    try {
+                      {
+                        const Ym = this.ui.m_btnHelp;
+                        if (!Ym) {
+                          {
+                            console.error("[咸鱼助手][淬炼增强] 找不到帮助按钮作为定位锚点。");
+                            return;
+                          }
+                        }
+                        const Yl = unsafeWindow.fgui.UIPackage.createObject("ui_common", "BtnCheckBox").asButton;
+                        Yl.selected = this._isSkipRed;
+                        const Yz = unsafeWindow.fgui.UIPackage.createObject("ui_common", "TextArea").asButton;
+                        Yz.text = "跳过红色";
+                        Yz.fontSize = 24;
+                        Yz.color = new unsafeWindow.cc.Color(155, 92, 46);
+                        const YB = 30;
+                        const YW = 0;
+                        Yl.setPosition(YB, Ym.y + (Ym.height - Yl.height) / 2);
+                        Yz.setPosition(Yl.x + Yl.width + YW, Ym.y + 12 + (Ym.height - Yl.height) / 2);
+                        Yl.onClick(() => {
+                          {
+                            if (Yl.selected) {
+                              {
+                                const Yx = unsafeWindow.__require("index-ui");
+                                const YH = unsafeWindow.__require("NormalDialog");
+                                Yx.SHOW_SIMPLE_DIALOG(YH.NormalDialog, {
+                                  content: "确定关闭红色淬炼提醒弹窗吗?自动淬炼过程中如果遇到红色淬炼将不再出现确认弹窗，并会自动继续洗炼",
+                                  hook: Yc => {
+                                    {
+                                      this._isSkipRed = Yc;
+                                      Yl.selected = Yc;
+                                    }
+                                  }
+                                });
+                              }
+                            } else {
+                              this._isSkipRed = false;
+                            }
+                          }
+                        });
+                        this.ui.addChild(Yl);
+                        this.ui.addChild(Yz);
+                        this._skipRedCheckbox = Yl;
+                        this._skipRedLabel = Yz;
+                      }
+                    } catch (YR) {
+                      console.error("[咸鱼助手][淬炼增强] 创建自定义UI时出错", YR);
+                    }
+                  }
+                }
+              }
+            } else {
+              this._skipRedCheckbox && (this._skipRedCheckbox.dispose(), this._skipRedCheckbox = null);
+              this._skipRedLabel && (this._skipRedLabel.dispose(), this._skipRedLabel = null);
+              this._isSkipRed = false;
+            }
+          }
+        };
+        const YY = Y6.prototype.onHide;
+        Y6.prototype.onHide = function () {
+          {
+            this._skipRedCheckbox && (this._skipRedCheckbox.dispose(), this._skipRedCheckbox = null);
+            if (this._skipRedLabel) {
+              {
+                this._skipRedLabel.dispose();
+                this._skipRedLabel = null;
+              }
+            }
+            this._isSkipRed = false;
+            YY.apply(this, arguments);
+          }
+        };
+        const Yj = Y6.prototype._checkQuenchConfirm;
+        Y6.prototype._checkQuenchConfirm = function () {
+          {
+            if (q) {
+              {
+                const Ys = this._equipInfo.quenches;
+                let Yd = false;
+                this._needConfrimQuenches.length = 0;
+                const Yy = 5;
+                const Ym = 6;
+                Ys.forEach((Yl, Yz) => {
+                  {
+                    if (this._locks.has(Yz)) {
+                      return;
+                    }
+                    let YS = false;
+                    if (Yl.colorId === Yy && !this._isSkipOrange) {
+                      {
+                        YS = true;
+                      }
+                    }
+                    if (Yl.colorId === Ym && !this._isSkipRed) {
+                      {
+                        YS = true;
+                      }
+                    }
+                    YS && (Yd = true, this._needConfrimQuenches.push(Yl));
+                  }
+                });
+                return Yd;
+              }
+            }
+            return Yj.apply(this, arguments);
+          }
+        };
+        console.log("[咸鱼助手] 成功注入淬炼增强模块到 <" + Y6.name + ">！");
+      }
+    }
+  };
+  const b = {
+    DIALOGS_TO_BLOCK: ["TimeGiftDialog", "ActivityFestivalSpringFaceDialog24", "ActivityFestivalSpringFaceLongAnimationDialog24"],
+    isPatched: false,
+    patchDialog: function (Y6) {
+      {
+        try {
+          {
+            const Y9 = unsafeWindow.__require(Y6);
+            if (!Y9 || !Y9[Y6]) {
+              {
+                console.warn("[咸鱼助手][拦截器] 警告：无法找到模块 " + Y6 + "，已跳过。");
+                return;
+              }
+            }
+            const YY = Y9[Y6];
+            const Yj = YY.prototype.show;
+            if (typeof Yj !== "function") {
+              {
+                console.warn("[咸鱼助手][拦截器] 警告：" + Y6 + " 的 show 方法不存在，无法实现无感拦截。");
+                return;
+              }
+            }
+            YY.prototype.show = function () {
+              {
+                console.log("[咸鱼助手][拦截器] " + Y6 + " 尝试显示，已被无感拦截！");
+                if (this.isShow) {
+                  {
+                    setTimeout(() => {
+                      {
+                        if (typeof this.close === "function") {
+                          this.close();
+                        } else {
+                          if (typeof this.hide === "function") {
+                            this.hide();
+                          }
+                        }
+                      }
+                    }, 0);
+                  }
+                }
+                return Promise.resolve();
+              }
+            };
+            console.log("[咸鱼助手][拦截器] 成功修改 " + Y6 + " 的 show 方法，实现无感拦截。");
+          }
+        } catch (Ys) {
+          {
+            Ys.message.includes("Cannot find module") ? console.warn("[咸鱼助手][拦截器] 警告：模块 " + Y6 + " 未找到，已跳过。") : console.error("[咸鱼助手][拦截器] 在修改 " + Y6 + " 过程中发生错误:", Ys);
+          }
+        }
+      }
+    },
+    patchAllDialogs: function () {
+      {
+        if (this.isPatched || typeof unsafeWindow.__require !== "function") {
+          return;
+        }
+        console.log("[咸鱼助手] 开始批量部署无感弹窗拦截...");
+        console.log("[咸鱼助手] 当前拦截列表:", this.DIALOGS_TO_BLOCK);
+        this.DIALOGS_TO_BLOCK.forEach(this.patchDialog);
+        this.isPatched = true;
+        console.log("[咸鱼助手] 所有目标弹窗拦截器已部署完毕。");
+      }
+    }
+  };
+  const r = {
+    patched: false,
+    patchModule: function () {
+      {
+        if (this.patched || !q) {
+          {
+            return;
+          }
+        }
+        try {
+          {
+            if (typeof unsafeWindow.__require !== "function") {
+              {
+                return;
+              }
+            }
+            const YY = unsafeWindow.__require("data-index");
+            const Yj = YY.EMTeamType.nightMare;
+            if (!YY || !YY.TeamService || typeof YY.TeamService.setTeam !== "function" || Yj === undefined) {
+              {
+                return;
+              }
+            }
+            const YG = YY.TeamService.setTeam;
+            console.log("[咸鱼助手][防同步] 已成功定位到原始的 TeamService.setTeam 方法。");
+            YY.TeamService.setTeam = function (Yd) {
+              {
+                if (Yd && Yd.teamType === Yj) {
+                  {
+                    console.warn("[咸鱼助手][防同步] 拦截到“噩梦模式”的布阵同步请求，已阻止发送到服务器。");
+                    console.log("[咸鱼助手][防同步] 拦截到的阵容数据:", Yd.battleTeam);
+                    console.log("[咸鱼助手][防同步] 拦截到的武器ID:", Yd.lordWeaponId);
+                    return Promise.resolve({
+                      code: 0,
+                      rawData: {},
+                      getData: function () {
+                        {
+                          return {};
+                        }
+                      }
+                    });
+                  }
+                }
+                console.log("[咸鱼助手][防同步] 检测到非噩梦模式的布阵请求，已放行。类型: " + Yd.teamType);
+                return YG.apply(this, arguments);
+              }
+            };
+            this.patched = true;
+            console.log("[咸鱼助手][十殿] 成功注入！十殿模式的布阵将不会同步到服务器。");
+          }
+        } catch (Yd) {}
+      }
+    }
+  };
+  let U = false;
+  let A = false;
+  let t = false;
+  let J = false;
+  let T = false;
+  let D = false;
+  let Y0 = false;
+  let Y1 = false;
+  let Y2 = false;
+  const Y3 = setInterval(() => {
+    if (typeof unsafeWindow.__require !== "function" || typeof unsafeWindow.fgui !== "object") {
+      {
+        return;
+      }
+    }
+    const Y6 = U && A && t && J && T && D && Y0 && Y1 && Y2;
+    if (Y6) {
+      {
+        clearInterval(Y3);
+        console.log("[咸鱼助手] 所有模块已成功注入。脚本运行中...");
+        return;
+      }
+    }
+    !Y2 && (b.patchAllDialogs(), Y2 = b.isPatched);
+    if (!U) {
+      try {
+        const YY = unsafeWindow.__require("MainPanel");
+        YY && YY.MainPanel && (n.patchPanel(YY.MainPanel), U = true);
+      } catch (Yj) {}
+    }
+    if (!A) {
+      try {
+        const YG = unsafeWindow.__require("BottleRobotDialog");
+        YG && YG.BottleRobotDialog && (i.patchPanel(YG.BottleRobotDialog), A = true);
+      } catch (YL) {}
+    }
+    if (!t) {
+      try {
+        const Ys = unsafeWindow.__require("BoxPanel");
+        Ys && Ys.BoxPanel && (V.patchPanel(Ys.BoxPanel), t = true);
+      } catch (Yd) {}
+    }
+    if (!J) {
+      try {
+        const Yy = "GVGRecordDialogNew";
+        const Ym = unsafeWindow.__require(Yy);
+        Ym && Ym[Yy] && (Z.patchPanel(Ym[Yy]), J = true);
+      } catch (Yl) {}
+    }
+    if (!T) {
+      try {
+        const Yz = "LegionWarReportDialog";
+        const YB = unsafeWindow.__require(Yz);
+        YB && YB[Yz] && (a.patchDialog(YB[Yz]), T = true);
+      } catch (YW) {}
+    }
+    !D && (O.patchModule(), D = O.patched);
+    if (!Y0) {
+      try {
+        const YS = unsafeWindow.__require("QuenchStageUpDialog");
+        YS && YS.QuenchStageUpDialog && (w.patchDialog(YS.QuenchStageUpDialog), Y0 = true);
+      } catch (YR) {}
+    }
+    !Y1 && (r.patchModule(), Y1 = r.patched);
+  }, 500);
 })();
